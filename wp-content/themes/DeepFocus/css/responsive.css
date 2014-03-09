@@ -92,8 +92,12 @@ embed, iframe, object, video { max-width: 100%; }
 
 @media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
 	.container, #menu, .slide .overlay, .slide .overlay2 { width: 750px; }
-		#menu { background-image: url(../images/menu-bg_750.png); }
-			#search-form { position: absolute; right: 14px; top: -60px; }
+		/*#menu { background-image: url(../images/menu-bg_750.png); }*//*this is the defult of 
+            "deep foucs" and i changed it to the row bellow*/
+        #menu {background: #FCD26E;}
+			/*#search-form { position: absolute; right: 14px; top: -60px; }*//*this is the defult of 
+            "deep foucs" and i changed it to the row bellow*/
+            #search-form { position: absolute; left: 0px; top: -100px; }
 		#featured { background-image: url(../images/featured-bottom-shadow_750.png); }
 
 		#tagline p { font-size: 37px; line-height: 37px; }
@@ -135,10 +139,15 @@ embed, iframe, object, video { max-width: 100%; }
 }
 
 @media only screen and ( max-width: 767px ) {
+    /*start cambium comments*/
+    #top {padding-top: 190px;}
+    #logo {margin: auto;top: -190px;}
+    /*end cambium comments*/
 	.container, #menu, .slide .overlay, .slide .overlay2 { width: 460px; }
 		.slides .description, #blog, ul.nav, #sidebar { display:none; }
-		#menu { background-image: url(../images/menu-bg_460.png); text-align: center; }
-			#search-form { position: absolute; right: 14px; top: -60px; }
+		#menu { /*background-image: url(../images/menu-bg_460.png);this is the defult*/background: #FCD26E; text-align: center; }
+			/*#search-form { position: absolute; right: 14px; top: -60px; }*//*this is defult of "deep-focus"*/
+            #search-form { position: absolute; margin: auto; right: 0px;left: 0px;top: -82px; }
 		#featured { background: none; }
 
 		div.service:nth-child(2) { padding-right: 0; }
@@ -190,8 +199,14 @@ embed, iframe, object, video { max-width: 100%; }
 }
 
 @media only screen and ( max-width: 479px ) {
+    
+    /*start comments in cambium*/
+    #top {padding-top: 135px;}
+    #tagline p:first-child {top: -97px;}
+    #logo {margin: auto;top: -135px;}
+    /*end comments in cambium*/
 	.container, #menu, #comment-wrap { width: 300px; }
-		#menu { background-image: url(../images/menu-bg_300.png); }
+		#menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/background: #FCD26E; }
 		body#home-featured #hr { min-height: 0; }
 		#featured, #search-form, body.home #portfolio-items, h3.recentworks, ul.nav, #home-top, .blog-thumb { display:none; }
 		#tagline p, #tagline span { background:none; padding: 0; }
