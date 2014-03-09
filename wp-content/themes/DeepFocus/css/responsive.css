@@ -91,6 +91,10 @@ embed, iframe, object, video { max-width: 100%; }
 }
 
 @media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
+    /*cambium comments*/
+    ul.nav {padding: 20px 178px 0px 9px;}
+    #tagline p {margin-right: 10px;}
+    /*end cambium*/
 	.container, #menu, .slide .overlay, .slide .overlay2 { width: 750px; }
 		/*#menu { background-image: url(../images/menu-bg_750.png); }*//*this is the defult of 
             "deep foucs" and i changed it to the row bellow*/

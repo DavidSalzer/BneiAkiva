@@ -9,6 +9,15 @@ body {
 
 /******************header******************************/
 
+ul.nav li {
+    margin-left: 0px;
+}
+
+#primary img {
+    position: relative;
+    top: -14px;
+}
+
 #menu {
     background: #FCD26E;
     border-radius: 15px 15px 0px 0px;
