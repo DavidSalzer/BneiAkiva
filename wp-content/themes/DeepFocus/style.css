@@ -138,8 +138,8 @@ body#home-featured #hr { min-height: 479px; }
 		a.zoom-icon { left: 31px; background: url(images/zoom-icon.png) no-repeat; }
 		a.more-icon { left: 128px; background: url(images/readmore-icon.png) no-repeat; }
 			#tagline {line-height: 26px; padding-bottom: 60px; padding-top:30px;}
-				#tagline p {font-size: 48px; color: #fff; background:url(images/quote-left.png) no-repeat left top; padding:0px 0px 0 40px; min-height:34px; }
-				#tagline span {background:url(images/quote-right.png) no-repeat right bottom; padding:0 50px 3px 40px; font-size: 24px; color: #fff;  }
+				#tagline p {font-size: 48px; color: #fff; /*background:url(images/quote-left.png) no-repeat left top;*/ padding:0px 0px 0 40px; min-height:34px; }
+				#tagline span {/*background:url(images/quote-right.png) no-repeat right bottom;*/ padding:0 50px 3px 40px; font-size: 24px; color: #fff;  }
 		div.service {float:left; width:274px; padding: 52px 65px 26px 0px;}
 		#blog {padding-right: 0px; width:282px; background: url(images/fromblog-bottom.png) no-repeat bottom left; padding-bottom: 16px; position: relative; }
 			h3.hometitle {font-size: 30px; color:#fff; padding-bottom: 8px; }
