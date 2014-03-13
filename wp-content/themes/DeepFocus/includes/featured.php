@@ -82,13 +82,15 @@
 
 	<div id="controllers-wrapper">
 		<div id="controllers">
-			<a href="#" id="left-arrow"><?php esc_html_e('Previous','DeepFocus'); ?></a>
-
+			<a href="#" id="left-arrow">  </a>
+ <?php /*   this is the defult one that i changed    <a href="#" id="left-arrow">  <?php esc_html_e('Previous','DeepFocus'); ?>  </a>  */?>
 			<?php for ($i=1; $i <= count($ids); $i++) { ?>
-				<a href="#" rel="<?php echo $i; ?>" class="switch<?php if ($i == 1) echo(' active'); ?>"><?php echo $i; ?></a>
+				<a href="#" rel="<?php echo $i; ?>" class="switch<?php if ($i == 1) echo(' active'); ?>"></a>
+ <?php /*   this is the defult one that i changed    <a href="#" rel="<?php echo $i; ?>" class="switch<?php if ($i == 1) echo(' active'); ?>"><?php echo $i; ?></a> */?>
 			<?php } ?>
 
-			<a href="#" id="right-arrow"><?php esc_html_e('Next','DeepFocus'); ?></a>
+			<a href="#" id="right-arrow"></a>
+<?php /*   this is the defult one that i changed             <a href="#" id="right-arrow"><?php esc_html_e('Next','DeepFocus'); ?></a>  */?>
 		</div>	<!-- end #controllers -->
 		<div id="controllers-right"></div>
 	</div> <!-- end #controllers-wrapper -->

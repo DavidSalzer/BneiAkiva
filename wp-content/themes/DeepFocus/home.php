@@ -28,20 +28,23 @@
 			<div class="container">
 
 				<?php if (get_option('deepfocus_blog_style') == 'false') { ?>
-					<?php for ($i=1; $i <= 2; $i++) { ?>
+					<?php for ($i=1; $i <= 3; $i++) { ?>
 						<?php query_posts('page_id=' . get_pageId(html_entity_decode(get_option('deepfocus_home_page_'.$i)))); while (have_posts()) : the_post(); ?>
-							<div class="service">
-								<h3 class="hometitle"><?php the_title(); ?></h3>
-								<?php global $more;
+							<div class="service" id="homeService<?php echo $i;?>">
+							<h3 class="hometitle"><?php the_title(); ?></h3>      
+                                <a href="<?php the_permalink(); ?>" class="home-links" >
+                                 <?php echo get_the_post_thumbnail( $post->ID, 'full',array() ); ?> 
+								</a>
+                                <?php /* global $more;
 								$more = 0;
-								the_content(''); ?>
+								the_content(''); 
 								<a href="<?php the_permalink(); ?>" class="readmore"><span><?php esc_html_e('Learn More','DeepFocus'); ?></span></a>
-							</div> <!-- end .service -->
+							*/ ?></div> <!-- end .service -->
 						<?php endwhile; wp_reset_query(); ?>
 					<?php } ?>
 
 
-					<div class="service" id="blog">
+					<?php /*<div class="service" id="blog">
 						<div id="blog-top"></div>
 						<div id="blog-wrapper">
 							<div id="blog-content">
@@ -59,12 +62,14 @@
 								</div> <!-- end .recentscroll -->
 							</div> <!-- end #blog-center -->
 						</div> <!-- end #blog-wrapper -->
-
-						<div id="controllers2">
+                        */?>
+<?php /*						<div id="controllers2">
 							<a href="#" id="cleft-arrow"><?php esc_html_e('Previous','DeepFocus'); ?></a>
 							<a href="#" id="cright-arrow"><?php esc_html_e('Next','DeepFocus'); ?></a>
 						</div>	<!-- end #controllers2 -->
-					</div> <!-- end .service -->
+					</div>
+     
+         <!-- end .service --> */?>  
 
 					<div class="clear"></div>
 
@@ -75,7 +80,7 @@
 
 						<div class="clear"></div>
 
-						<a href="<?php echo esc_url(get_category_link(get_catId(get_option('deepfocus_portfolio_cat')))); ?>" class="readmore entergallery"><span><?php esc_html_e('Enter The Gallery','DeepFocus'); ?></span></a>
+						<a href="<?php echo esc_url(get_category_link(get_catId(get_option('deepfocus_portfolio_cat')))); ?>" class="readmore entergallery"><span><?php esc_html_e('כניסה לגלריה','DeepFocus'); ?></span></a>
 					</div> <!-- end #portfolio-items -->
 
 				<?php } else { ?>

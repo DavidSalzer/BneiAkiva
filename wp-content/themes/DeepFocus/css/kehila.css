@@ -53,6 +53,7 @@ ul.nav {
     -webkit-justify-content: space-around;
     width: 100%;
     box-sizing: border-box;
+    text-align: right;
 }
 
 
@@ -61,3 +62,26 @@ ul.nav {
         left: 0px;
     }
 }*/
+
+/*********************************middle place**************************/
+/*.service a.readmore {
+    float: none;
+    height: 77px;
+    background: none;
+    position: relative;
+    top: -128px;
+}
+
+.service a.readmore span {
+    display: none;
+}*/
+
+
+.service h3 {
+    display: none;
+}
+
+#homeService3 {
+    padding-right: 0px;
+}
+/*********************************end middle place**************************/
