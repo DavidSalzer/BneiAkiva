@@ -44,7 +44,7 @@ $et_ptemplate_gallery_perpage = isset( $et_ptemplate_settings['et_ptemplate_gall
 					<?php if (get_option('deepfocus_integration_single_top') <> '' && get_option('deepfocus_integrate_singletop_enable') == 'on') echo(get_option('deepfocus_integration_single_top')); ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<div class="entry clearfix post<?php if($fullwidth) echo(' full');?>">
-							<h1 class="title"><?php the_title(); ?></h1>
+							<h1 class="title gallery"><?php the_title(); ?></h1>
 
 							<?php $width = 185;
 								  $height = 185;
@@ -113,7 +113,7 @@ $et_ptemplate_gallery_perpage = isset( $et_ptemplate_settings['et_ptemplate_gall
 
 					</div> <!-- end #left-area -->
 
-				<?php if (!$fullwidth) get_sidebar(); ?>
+				<?php  if (!$fullwidth) get_sidebar(); ?>
 
 			</div> <!-- end #content-area -->
 
