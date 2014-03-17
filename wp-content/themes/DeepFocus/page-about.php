@@ -24,7 +24,7 @@ Template Name: דפי אודות
 	<div class="center-highlight">
 		<div class="container">
 
-			<div id="full" class="clearfix">
+			<div id="full" class="clearfix about-clearfix">
 
 
 					<?php if (get_option('deepfocus_integration_single_top') <> '' && get_option('deepfocus_integrate_singletop_enable') == 'on') echo(get_option('deepfocus_integration_single_top')); ?>

@@ -89,26 +89,49 @@ ul.nav {
 }
 
 
+
 /******about******/
 
-.title.about-title {
-    text-align: center
+/*.about-container .entry.clearfix.post.full p {
+    color: green;
+}*/
+
+
+h1.title.about-title {
+    text-align: center;
+    background-image: url("../images/pic-kehila/about_button.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90px;
+    font-size: 20px;
+    color: #9D9D9D;
+    line-height: 115px;
+    text-indent: -61px;
+    margin-bottom: 72px;
 }
 
-.container.about-container {
+/*container.about-container {
     background-color: #2089A2;
-}
+}*/
+
+
 
 .about-container #breadcrumbs {
     text-align: right;
     text-indent: 34px;
     font-size: 20px;
+    background-color: #2089A2;
 }
 
-.about-container #breadcrumbs .raquo,.about-container #breadcrumbs a{
+.about-container #breadcrumbs .raquo, .about-container #breadcrumbs a {
     color: white;
 }
 
-.about-container 
+.clearfix.about-clearfix p {
+    color: #909193;
+    font-size: 20px;
+}
+
+
 
 /******end-about******/
