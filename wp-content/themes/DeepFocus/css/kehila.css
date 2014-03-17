@@ -7,6 +7,9 @@ body {
     padding-top: 52px;
 }
 
+.post-meta {
+    display: none;
+}
 /******************header******************************/
 
 ul.nav li {
@@ -63,7 +66,7 @@ ul.nav {
     }
 }*/
 
-/*********************************middle place**************************/
+
 /*.service a.readmore {
     float: none;
     height: 77px;
@@ -84,4 +87,28 @@ ul.nav {
 #homeService3 {
     padding-right: 0px;
 }
-/*********************************end middle place**************************/
+
+
+/******about******/
+
+.title.about-title {
+    text-align: center
+}
+
+.container.about-container {
+    background-color: #2089A2;
+}
+
+.about-container #breadcrumbs {
+    text-align: right;
+    text-indent: 34px;
+    font-size: 20px;
+}
+
+.about-container #breadcrumbs .raquo,.about-container #breadcrumbs a{
+    color: white;
+}
+
+.about-container 
+
+/******end-about******/
