@@ -94,7 +94,11 @@ embed, iframe, object, video { max-width: 100%; }
     /*cambium comments*/
     ul.nav {padding: 20px 178px 0px 9px;}
     #tagline p {margin-right: 10px;}
+  
     /*end cambium*/
+    #et_pt_gallery\20 main-gal {
+    width: 750px;
+    }
 	.container, #menu, .slide .overlay, .slide .overlay2 { width: 750px; }
 		/*#menu { background-image: url(../images/menu-bg_750.png); }*//*this is the defult of 
             "deep foucs" and i changed it to the row bellow*/
@@ -147,6 +151,7 @@ embed, iframe, object, video { max-width: 100%; }
     #top {padding-top: 190px;}
     #logo {margin: auto;top: -190px;}
     /*end cambium comments*/
+    #et_pt_gallery\20 main-gal {width: 494px; padding-right: 33px; }
 	.container, #menu, .slide .overlay, .slide .overlay2 { width: 460px; }
 		.slides .description, #blog, ul.nav, #sidebar { display:none; }
 		#menu { /*background-image: url(../images/menu-bg_460.png);this is the defult*/background: #FCD26E; text-align: center; }
@@ -209,6 +214,7 @@ embed, iframe, object, video { max-width: 100%; }
     #tagline p:first-child {top: -97px;}
     #logo {margin: auto;top: -135px;}
     /*end comments in cambium*/
+    #et_pt_gallery\20 main-gal {width: 350px; padding-right: 0px; }
 	.container, #menu, #comment-wrap { width: 300px; }
 		#menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/background: #FCD26E; }
 		body#home-featured #hr { min-height: 0; }
