@@ -2,7 +2,7 @@
 
 	<?php if(function_exists('bcn_display')) { bcn_display(); }
 		  else { ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e('Home','DeepFocus') ?></a> <span class="raquo">&raquo;</span>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e('דף הבית','DeepFocus') ?></a> <span class="raquo">&raquo;</span>
 
 				<?php if( is_tag() ) { ?>
 					<?php esc_html_e('Posts Tagged ','DeepFocus') ?><span class="raquo">&quot;</span><?php single_tag_title(); echo('&quot;'); ?>

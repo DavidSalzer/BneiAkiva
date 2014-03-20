@@ -22,7 +22,8 @@ Template Name: דפי אודות
 	</div> <!-- end #hr -->
 
 	<div class="center-highlight">
-		<div class="container">
+        <h1 class="title about-title"><?php the_title(); ?></h1>
+		<div id="container-aboutpage" class="container">
 
 			<div id="full" class="clearfix about-clearfix">
 
@@ -38,7 +39,7 @@ Template Name: דפי אודות
 								  $thumbnail = get_thumbnail($width,$height,$classtext,$titletext,$titletext);
 								  $thumb = $thumbnail["thumb"]; ?>
 
-							<h1 class="title about-title"><?php the_title(); ?></h1>
+							
 							<?php get_template_part('includes/postinfo'); ?>
 
 							<?php if($thumb == '') echo('<div class="clear"></div>'); ?>
