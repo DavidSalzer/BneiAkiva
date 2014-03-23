@@ -96,7 +96,7 @@ Template Name: Contact Page
 
 					<?php if (get_option('deepfocus_integration_single_top') <> '' && get_option('deepfocus_integrate_singletop_enable') == 'on') echo(get_option('deepfocus_integration_single_top')); ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<div class="entry clearfix post<?php if($fullwidth) echo(' full');?>">
+						<div id="main-contact" class="entry clearfix post<?php if($fullwidth) echo(' full');?>">
 							<?php $width = 185;
 								  $height = 185;
 								  $classtext = '';
@@ -144,13 +144,14 @@ Template Name: Contact Page
 
 										<div id="et_contact_right">
 											<p class="clearfix">
-												<?php
+												<?php /*
 													esc_html_e('Captcha: ','DeepFocus');
 													echo '<br/>';
 													echo esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
-												?>
+												
 												<input type="text" name="et_contact_captcha" value="<?php if ( isset($_POST['et_contact_captcha']) ) echo esc_attr($_POST['et_contact_captcha']); ?>" id="et_contact_captcha" class="input" size="2" />
-											</p>
+											    */?>
+                                            </p>
 										</div> <!-- #et_contact_right -->
 
 										<div class="clear"></div>

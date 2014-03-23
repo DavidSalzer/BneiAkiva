@@ -14,6 +14,13 @@ body {
 .post-edit-link {
     display: none;
 }
+
+#breadcrumbs {
+    text-align: right;
+    text-indent: 34px;
+    font-size: 20px;
+    background-color: #2089A2;
+}
 /******************header******************************/
 
 ul.nav li {
@@ -171,6 +178,17 @@ h1.title.about-title {
     width: 960px;
 }
 
+.more-icon.gal {
+    left: 75px !important; 
+}
 
 
 /********end-main-gallery*************/
+/********contact*************/
+#main-contact {
+    background: blue;
+    width: 80%;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
