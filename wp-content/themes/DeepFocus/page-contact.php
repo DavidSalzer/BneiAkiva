@@ -125,20 +125,20 @@ Template Name: Contact Page
 
 								<?php if ( $et_contact_error ) { ?>
 									<form action="<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>" method="post" id="et_contact_form">
-										<div id="et_contact_left">
+										<div id="et_contact_left et__left">
 											<p class="clearfix">
-												<label for="et_contact_name" class="et_contact_form_label"><?php esc_html_e('Name','DeepFocus'); ?></label>
-												<input type="text" name="et_contact_name" value="<?php if ( isset($_POST['et_contact_name']) ) echo esc_attr($_POST['et_contact_name']); else esc_attr_e('Name','DeepFocus'); ?>" id="et_contact_name" class="input" />
+												<label for="et_contact_name" class="et_contact_form_label"><?php esc_html_e('שם ושם משפחה','DeepFocus'); ?></label>
+												<input type="text" name="et_contact_name" value="<?php if ( isset($_POST['et_contact_name']) ) echo esc_attr($_POST['et_contact_name']); else esc_attr_e('שם ושם משפחה','DeepFocus'); ?>" id="et_contact_name" class="input" />
 											</p>
 
 											<p class="clearfix">
-												<label for="et_contact_email" class="et_contact_form_label"><?php esc_html_e('Email Address','DeepFocus'); ?></label>
-												<input type="text" name="et_contact_email" value="<?php if ( isset($_POST['et_contact_email']) ) echo esc_attr($_POST['et_contact_email']); else esc_attr_e('Email Address','DeepFocus'); ?>" id="et_contact_email" class="input" />
+												<label for="et_contact_email" class="et_contact_form_label"><?php esc_html_e('אמייל','DeepFocus'); ?></label>
+												<input type="text" name="et_contact_email" value="<?php if ( isset($_POST['et_contact_email']) ) echo esc_attr($_POST['et_contact_email']); else esc_attr_e('אמייל','DeepFocus'); ?>" id="et_contact_email" class="input" />
 											</p>
 
 											<p class="clearfix">
-												<label for="et_contact_subject" class="et_contact_form_label"><?php esc_html_e('Subject','DeepFocus'); ?></label>
-												<input type="text" name="et_contact_subject" value="<?php if ( isset($_POST['et_contact_subject']) ) echo esc_attr($_POST['et_contact_subject']); else esc_attr_e('Subject','DeepFocus'); ?>" id="et_contact_subject" class="input" />
+												<label for="et_contact_subject" class="et_contact_form_label"><?php esc_html_e('נושא הפנייה','DeepFocus'); ?></label>
+												<input type="text" name="et_contact_subject" value="<?php if ( isset($_POST['et_contact_subject']) ) echo esc_attr($_POST['et_contact_subject']); else esc_attr_e('נושא הפנייה','DeepFocus'); ?>" id="et_contact_subject" class="input" />
 											</p>
 										</div> <!-- #et_contact_left -->
 
@@ -170,6 +170,15 @@ Template Name: Contact Page
 									</form>
 								<?php } ?>
 							</div> <!-- end #et-contact -->
+								<div class="castoum_contant">
+                                    <div id="are-address" class="kehila-details">כתובתינו:</div>
+									<div id="kehila-address" class="kehila-details"><?php echo get_theme_mod('add_text'); ?></div>
+									<div id="kehila-phone" class="kehila-details">טל: <?php echo get_theme_mod('add_phone'); ?></div>
+									<div id="kehila-fax" class="kehila-details">פקס: <?php echo get_theme_mod('add_fax'); ?></div>
+									<a href='<?php echo get_theme_mod('add_facebook'); ?>' targrt='new' id="conect-good-point" class="kehila-details">לדף הפייסבוק של נקודה טובה</a>
+									
+
+								</div>
 
 							<div class="clear"></div>
 
@@ -180,6 +189,9 @@ Template Name: Contact Page
 					<?php if (get_option('deepfocus_integration_single_bottom') <> '' && get_option('deepfocus_integrate_singlebottom_enable') == 'on') echo(get_option('deepfocus_integration_single_bottom')); ?>
 
 					</div> <!-- end #left-area -->
+
+
+
 
 				<?php if (!$fullwidth) get_sidebar(); ?>
 

@@ -179,7 +179,7 @@ h1.title.about-title {
 }
 
 .more-icon.gal {
-    left: 75px !important; 
+    left: 75px !important;
 }
 
 
@@ -191,4 +191,27 @@ h1.title.about-title {
     margin: auto;
     left: 0px;
     right: 0px;
+}
+
+#et-contact {
+    background: green;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.castoum_contant {
+    position: absolute;
+    bottom: 0px;
+    width: 619px;
+    background-color: rgba(255,255,255,0.7);
+    height: 300px;
+}
+
+#et_contact_right{
+    display: none;
+}
+
+#et_contact_left#et__left {
+    float: none;
 }
