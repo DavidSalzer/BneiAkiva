@@ -68,7 +68,7 @@
 ?>
 
 <?php get_header(); ?>
-
+<div id="page-wrapper"></div>
 <div id="content-full">
     <div id="hr">
         <div id="hr-center">
@@ -182,8 +182,10 @@
     </div>
                         </div>
 
-
-                        <div class="castoum_contant">
+                        <div id="wrapper1-castoum">
+                           <div id="wrapper2-castoum">
+                               <div id="wrapper3-castoum">
+                                  <div class="castoum_contant">
                             <div id="are-address" class="kehila-details">כתובתינו:</div>
                             <div id="kehila-address" class="kehila-details"><?php echo get_theme_mod('add_text'); ?></div>
                             <div id="kehila-phone" class="kehila-details">טל: <?php echo get_theme_mod('add_phone'); ?></div>
@@ -192,7 +194,9 @@
 
 
                         </div>
-
+                               </div>
+                            </div>
+                        </div>
 
                         <!-- end .entry -->
                         <?php endwhile; endif; ?>

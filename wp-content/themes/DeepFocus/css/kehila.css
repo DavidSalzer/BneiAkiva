@@ -114,10 +114,10 @@ h1.title.about-title {
     background-position: center;
     background-repeat: no-repeat;
     height: 90px;
-    font-size: 20px;
+    font-size: 23px;
     color: #9D9D9D;
-    line-height: 115px;
-    text-indent: -61px;
+    line-height: 108px;
+    text-indent: -73px;
     margin-bottom: 20px;
     background-position-y: 2px;
     position: relative;
@@ -198,12 +198,11 @@ h1.title.about-title {
     /*background: green;*/
     width: 530px;
     margin: auto;
-    margin-top: 40px;
 }
 
 .castoum_contant {
     position: relative;
-    bottom: 0px;
+    bottom: -7px;
     width: 100%;
     background-color: rgba(255,255,255,0.7);
     height: 300px;
@@ -257,6 +256,32 @@ h1.title.about-title {
     box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.52);
 }
 
-.c-title {
+h1.title.c-title {
     text-align: center;
+    position: relative;
+    top: -50px;
+    background-image: url("../images/pic-kehila/contactus.png");
+    background-repeat: no-repeat;
+    background-position-x: 182px;
+    color: black;
+    background-position-y: -2px;
+    height: 78px;
+    line-height: 100px;
+    text-indent: -13px;
+    color: #797979;
+    font-size: 23px;
+}
+
+#wrapper1-castoum {
+    background: url(../images/shadow-bar-bg.png) repeat-x top left;
+    background-position-y: -40px;
+    height: 307px;
+    position: relative;
+    bottom: 0px;
+}
+
+
+#wrapper2-castoum {
+    background: url(../images/shadow-bar-centerbg.png) no-repeat top center;
+    background-position-y: -40px;
 }

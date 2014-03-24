@@ -19,13 +19,13 @@
 define('DB_NAME', 'kehilat_beni_akiva');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'kehila');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'kehila2014');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'kehila.co.il.tigris.nethost.co.il');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
