@@ -9,7 +9,7 @@
 
 	ul#sitemap-categories li a { background: url(images/sitemap-category.png) no-repeat left center; }
 	ul#sitemap-tags li a { background: url(images/sitemap-tag.png) no-repeat left center; }
-	ul#sitemap-authors li a { background: url(images/sitemap-author.png) no-repeat left center; }
+	ul# sitemap-authors li a { background: url(images/sitemap-author.png) no-repeat left center; }
 
 .et_pt_blogentry { padding:17px 0px 15px; }
 	h2.et_pt_title { font-size:24px; padding-bottom:14px; padding-left:2px; }
@@ -38,8 +38,9 @@
 input.input { width: 300px; }
 textarea.input { width: 478px; height:130px; }
 
-#et-contact p input, #et-contact p textarea { background: url(images/contact_input.png) repeat-x #f7f7f7 !important; border: 1px solid #cccccc !important; width: 100% !important; color: #111111 !important; padding: 8px !important; }
-#et-contact p textarea { width: 95% !important; }
+#et-contact p textarea { background: url(images/contact_input.png) repeat-x #f7f7f7 !important; border: 1px solid #cccccc !important; width: 100% !important; color: #111111 !important; padding: 8px !important; }
+#et-contact p input { background: url(images/contact_input.png) repeat-x #f7f7f7 !important; border: 1px solid #cccccc !important; width: 100%; color: #111111 !important; padding: 8px !important; }
+#et-contact p textarea { width: 95% !important;height: 190px;color: #767676 !important;-webkit-border-radius: 6px !important;-moz-border-radius: 6px !important; }
 #et-contact p #et_contact_captcha { width: 20px !important; }
 
 #et-contact p .et_contact_error { border: 1px solid red !important; }
@@ -52,7 +53,7 @@ textarea.input { width: 478px; height:130px; }
 
 #et_contact_submit, #et_contact_reset { border: 0px !important; color: #4c4b4b !important; float: right; font-size: 12px; text-shadow: 1px 1px 1px #fff; text-transform: uppercase; margin-right: 9px; height: 35px; }
 
-#et_contact_submit { background: url(images/contact_submit.png) no-repeat; width: 73px; margin-right: 6px; }
+#et_contact_submit { background: url(images/contact_submit.png) no-repeat;width: 73px;margin-bottom: 36px;position: relative;right: 96px; }
 #et_contact_reset { background: url(images/contact_reset.png) no-repeat; width: 61px; }
 
 #et-search { background: url(images/et_search_bg.png) no-repeat; width: 574px; height: 172px; }
