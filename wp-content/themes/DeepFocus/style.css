@@ -337,10 +337,66 @@ padding:9px 5px 4px 12px; color:#323232 !important; }
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/
 
-#footer { background: url(images/footer-overlay-bg.png); padding-bottom: 15px; }
-	#footer-wrapper { background: url(images/footer-top-bg.png) repeat-x; }
-		#footer-center { background: url(images/footer-top-centerbg.png) no-repeat top center; /*min-height: 147px;*/ padding-top: 35px; color: #b9b9b9; }
-			#footer p#copyright a { color: #ffffff; font: italic 12px Arial, sans-serif;  }
+#footer { background-color: #325465; }
+    #footer-newsletter {height: 100px; background-color: #325465; position: relative;}
+        #footer-newsletter > form {
+            width: 400px;
+            margin: auto;
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 60px;
+        }
+        #footer-newsletter input[type='checkbox']{ opacity:0; margin: auto; width: 1px; height:18px; cursor: pointer; }
+        
+        #footer-newsletter input[type='checkbox'] + label {
+            margin: 0;
+            clear: none;
+            padding: 2px 25px 2px 0;
+            cursor: pointer;
+            background: url(images/pic-kehila/check-box.png) right center no-repeat; 
+            background-size: 25px;
+            background-position-y: -25px;
+            text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8);
+            font-size: 16px;
+        }
+
+        #footer-newsletter input[type='checkbox']:checked + label {
+	        background-position-y:-25px;
+        }
+        #footer-newsletter input[type="text"] {
+            width: 213px;
+            background-color: #708894;
+            border-radius: 6px;
+            border: 0;
+            height: 25px;
+            line-height: 25px;
+            color: #fff;
+            font-size: 16px;
+            margin-left: 6px;
+        }
+        #footer-newsletter input[type="submit"] {
+            background-color: #2088a2;
+            border: 1px solid #959595;
+            margin: auto;
+            border-radius: 6px;
+            height: 28px;
+            color: #fff;
+            font-size: 18px;
+            text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8);
+            display: inline-block;
+        }
+        .notice-msg.updated{ display: none;}
+	#footer-wrapper { height: 90px; background-color: #325465; }
+		#footer-center { background: url(images/footer-top-centerbg.png) no-repeat top center; background-size: 90%; padding-top: 26px; min-height: 54px; color: #b9b9b9; }
+            #footer p {display: inline-block;}
+            #footer p#developer {float: left; color: #fff; direction: ltr; vertical-align: top; width: 190px; text-align: left;}
+            #footer p#developer a{background-image: url("images/pic-kehila/cambium_logo.png"); width: 95px; height: 40px; display: inline-block; background-position-y: -7px; background-size: auto 100%; background-repeat: no-repeat;}
+            #footer #contact-us {height: 30px; line-height: 30px; width: 100px; background-color: #fcd26e; border-radius: 6px; text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8); display: inline-block; text-align: center; font-size: 18px; color: #fff; left: 0; position: absolute; right: 0; margin: auto; cursor: pointer; margin-top: -4px;}
+			#footer p#copyright a { color: #ffffff; vertical-align: top; }
 		#footer .widget { float: left; width: 280px; margin: 0px 60px 45px 0px; }
 			#footer .widget a { color: #ffffff; }
 			#footer .last { margin-right: 0px; }

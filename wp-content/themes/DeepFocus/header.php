@@ -26,6 +26,17 @@
 <script type="text/javascript">
 	document.documentElement.className = 'js';
 </script>
+<!--START Scripts for newsletter form-->
+<script type="text/javascript" src="http://localhost/kehila/wp-includes/js/jquery/jquery.js?ver=2.6"></script>
+<script type="text/javascript" src="http://localhost/kehila/wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-he.js?ver=2.6"></script>
+<script type="text/javascript" src="http://localhost/kehila/wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js?ver=2.6"></script>
+<script type="text/javascript" src="http://localhost/kehila/wp-content/plugins/wysija-newsletters/js/front-subscribers.js?ver=2.6"></script>
+<script type="text/javascript">
+                /* <![CDATA[ */
+                var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":"http://localhost/kehila/wp-admin/admin-ajax.php","loadingTrans":"טוען..."};
+                /* ]]> */
+                </script><script type="text/javascript" src="http://localhost/kehila/wp-content/plugins/wysija-newsletters/js/front-subscribers.js?ver=2.6"></script>
+<!--END Scripts-->
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>

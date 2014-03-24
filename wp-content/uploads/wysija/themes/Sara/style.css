@@ -1,0 +1,50 @@
+/*
+Theme Name: Sketchy
+Description: Sketch it out right. Simple and efficient design with a nice cut out footer.
+Author: ArtCore
+Author URI: http://artcore-illustrations.de/
+Author Email: artcorehro@googlemail.com
+Tags: blue, simple
+
+Note: the styles below offer all the possibilities of Wysija. The plugin won't recognize any additional styles if you add them.
+
+replaced by Sara    
+*/
+html {
+    background-color: #b3dfe7; /* cannot be transparent and will default to white */
+}
+
+header {
+    background-color: #2088a2; /* can be transparent */
+}
+body {
+    color:#3b3b3b;
+    font-family: "Arial";
+    font-size: 12px;
+    background-color: #ffffff; /* can be transparent */
+}
+footer {
+    background-color: #b3dfe7; /* can be transparent */
+}
+h1 {
+    color: #fff;
+    font-family: "Arial";
+    font-size: 36px;
+}
+h2 {
+    color: #3b3b3b;
+    font-family: "Arial";
+    font-size: 30px;
+}
+h3 {
+    color: #3b3b3b;
+    font-family: "Arial";
+    font-size: 24px;
+}
+a {
+    color: #3b3b3b;
+    text-decoration:none;
+}
+unsubscribe {
+    color:#000000;
+}
