@@ -66,9 +66,13 @@
         $et_error_message = '<p>' . esc_html__('Thanks for contacting us','DeepFocus') . '</p>';
     }
 ?>
-
-<?php get_header(); ?>
 <div id="page-wrapper"></div>
+<script>
+  element = document.getElementById("page-wrapper");
+  element.style.height=window.outerHeight+"px";
+</script>
+<?php get_header(); ?>
+
 <div id="content-full">
     <div id="hr">
         <div id="hr-center">
@@ -182,10 +186,8 @@
     </div>
                         </div>
 
-                        <div id="wrapper1-castoum">
-                           <div id="wrapper2-castoum">
-                               <div id="wrapper3-castoum">
-                                  <div class="castoum_contant">
+                        <div id="wrapper1-castoum"> 
+                            <div class="castoum_contant">
                             <div id="are-address" class="kehila-details">כתובתינו:</div>
                             <div id="kehila-address" class="kehila-details"><?php echo get_theme_mod('add_text'); ?></div>
                             <div id="kehila-phone" class="kehila-details">טל: <?php echo get_theme_mod('add_phone'); ?></div>
@@ -194,8 +196,6 @@
 
 
                         </div>
-                               </div>
-                            </div>
                         </div>
 
                         <!-- end .entry -->
