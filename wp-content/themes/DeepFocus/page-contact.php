@@ -66,9 +66,13 @@
         $et_error_message = '<p>' . esc_html__('Thanks for contacting us','DeepFocus') . '</p>';
     }
 ?>
-
-<?php get_header(); ?>
 <div id="page-wrapper"></div>
+<script>
+  element = document.getElementById("page-wrapper");
+  element.style.height=window.outerHeight+"px";
+</script>
+<?php get_header(); ?>
+
 <div id="content-full">
     <div id="hr">
         <div id="hr-center">

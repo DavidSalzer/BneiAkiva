@@ -285,3 +285,14 @@ h1.title.c-title {
     background: url(../images/shadow-bar-centerbg.png) no-repeat top center;
     background-position-y: -40px;
 }
+
+#page-wrapper {
+    background-color: rgba(255,255,255,0.52);
+    height: 100%;
+    z-index: 0;
+    width: 960px;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
