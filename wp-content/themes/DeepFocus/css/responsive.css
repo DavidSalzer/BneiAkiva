@@ -205,8 +205,15 @@ embed, iframe, object, video { max-width: 100%; }
 		#et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon { left: 195px !important; }
 
 	body#home-featured #hr { min-height: 0px; }
-}
-
+    /*footer*/
+    #footer .container{ width: 515px; margin: auto;}
+    #footer p#copyright { text-align: center; width: 140px; }
+    @media only screen and ( max-width: 520px ) {
+        #footer .container{ width: 320px; margin: auto;}
+        #footer-center p { display: inline-block; margin-top: 20px; }
+        #footer #contact-us { margin-top: -18px;}
+        #footer p#developer { width: 120px; margin-left: 10px;}
+    }
 @media only screen and ( max-width: 479px ) {
     
     /*start comments in cambium*/
@@ -247,4 +254,5 @@ embed, iframe, object, video { max-width: 100%; }
 			.et_portfolio_zoom_icon, #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon { left: 134px !important; }
 
 	.entry .et_portfolio_small .et_pt_portfolio_item { width: 280px !important; margin-left: 6px !important; }
+    /*footer*/
 }
