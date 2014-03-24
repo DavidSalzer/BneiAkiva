@@ -462,6 +462,24 @@ img.alignright { display:inline; float:right; margin-left:15px; }
 		#wp-calendar #prev a { padding-left: 10px; text-align: left; }
 
 /*------------------------------------------------*/
+/*-------------------[CALENDAR]-----------------*/
+/*------------------------------------------------*/
+
+#embedded-calender{
+    width: 540px;
+    height: 600px;
+}
+#container-calender h1.title.about-title {
+    background-image: url("./images/pic-kehila/calendar_button.png");
+    /*background-image: url("../images/pic-kehila/whats_new2.png");*/
+}
+#events-calender{
+    width: 540px;
+    height: auto;
+    border-top: 1px solid #000;
+}
+
+/*------------------------------------------------*/
 /*-------------------[PAGE NAVI]------------------*/
 /*------------------------------------------------*/
 .pagination { overflow: hidden; padding: 15px 12px 0px; }
