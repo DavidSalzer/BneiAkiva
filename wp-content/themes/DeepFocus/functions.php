@@ -288,3 +288,71 @@ if ( function_exists( 'get_custom_header' ) ) {
 		wp_enqueue_style( 'et_google_fonts_style', get_template_directory_uri() . '/epanel/google-fonts/et_google_fonts.css', array(), null );
 	}
 }
+
+
+/*----------------------------------castuom functions----------------------------*/
+
+function kehila_customize_register( $wp_customize ) {
+   //All our sections, settings, and controls will be added here
+	$wp_customize->add_section( 'kehila_section' , array(
+    'title'      => 'פרטי יצירת קשר',
+    'priority'   => 30,
+    'description' => 'פרטי יצירת קשר לעמוד יצרית קשר', 
+	));
+
+
+	$wp_customize->add_setting( 'add_text', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
+         array(
+            'default' => 'כתובת מקום'
+           ) 
+      ); 
+
+	$wp_customize->add_setting( 'add_facebook', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
+         array(
+            'default' => 'http://facebook.co.il',
+           ) 
+      ); 
+	$wp_customize->add_setting( 'add_phone', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
+         array(
+            'default' => '4123456', //Default setting/value to save
+           ) 
+      );
+
+	$wp_customize->add_setting( 'add_fax', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
+         array(
+            'default' => '132674*788', //Default setting/value to save
+           ) 
+      );
+
+	$wp_customize->add_control( 'add_text',
+	    array(
+	        'label' => 'טקסט',
+	        'section' => 'kehila_section',
+	        'type' => 'text',
+	    ));
+
+
+	$wp_customize->add_control( 'add_facebook',
+	    array(
+	        'label' => 'link facebook',
+	        'section' => 'kehila_section',
+	        'type' => 'text'
+	    ));
+
+
+	$wp_customize->add_control( 'add_phone',
+	    array(
+	        'label' => 'טלפון',
+	        'section' => 'kehila_section',
+	        'type' => 'text'
+	    ));
+
+	$wp_customize->add_control( 'add_fax',
+	    array(
+	        'label' => 'fax',
+	        'section' => 'kehila_section',
+	        'type' => 'text'
+	    ));
+
+}
+add_action( 'customize_register', 'kehila_customize_register' );
