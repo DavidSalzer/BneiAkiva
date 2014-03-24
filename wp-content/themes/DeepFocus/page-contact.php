@@ -107,7 +107,7 @@
                                                                  $thumb = $thumbnail["thumb"];
                             ?>
 <div id="contact-wrapper">
-                            <h1 class="title"><?php the_title(); ?></h1>
+                            <h1 class="title c-title"><?php the_title(); ?></h1>
 
                             <?php if($thumb == '') echo('<div class="clear"></div>'); ?>
 
