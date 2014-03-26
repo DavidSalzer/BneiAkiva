@@ -1,9 +1,10 @@
 <?php
-     if ( ! isset( $_SESSION ) ) session_start();
-    /*
-    Template Name: Contact Page
-    */
+/*
+Template Name: מה-חדש
+*/
 ?>
+<?php get_header(); ?>
+
 <?php
     $et_ptemplate_settings = array();
     $et_ptemplate_settings = maybe_unserialize( get_post_meta(get_the_ID(),'et_ptemplate_settings',true) );
@@ -66,7 +67,7 @@
         $et_error_message = '<p>' . esc_html__('Thanks for contacting us','DeepFocus') . '</p>';
     }
 ?>
-<div id="page-wrapper"></div>
+<!--<div id="page-wrapper"></div>-->
 <script>
   //element = document.getElementById("page-wrapper");
   //element.style.height=window.outerHeight+"px";
@@ -94,7 +95,7 @@
             <?php if ($fullwidth) { ?>
             <div id="full" class="clearfix full-contact">
                 <?php } else { ?>
-                <div id="content-area" class="clearfix">
+                <div id="content-area" class="clearfix news">
                     <div id="left-area">
                         <?php } ?>
 
@@ -121,8 +122,9 @@
                                 <span class="overlay"></span>
                             </div> 	<!-- end .thumbnail -->
                             <?php }; ?>
-
-                            <?php the_content(); ?>
+                            <?php $urlImg=$cfs->get('addImg');//, $post_id, $options ?>
+                                
+                            <img src="<?php echo $urlImg ?>">
                             <?php wp_link_pages(array('before' => '<p><strong>'.esc_html__('Pages','DeepFocus').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
                             <div id="et-contact">
@@ -130,54 +132,6 @@
                                 <div id="et-contact-message"><?php echo($et_error_message); ?>
                                 </div>
 
-                                <?php if ( $et_contact_error ) { ?>
-                                <form action="<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>" method="post" id="et_contact_form">
-                                    <div id="et_contact_left et__left">
-                                        <p class="clearfix">
-                                            <label for="et_contact_name" class="et_contact_form_label"><?php esc_html_e('שם ושם משפחה','DeepFocus'); ?></label>
-                                            <input type="text" name="et_contact_name" value="<?php if ( isset($_POST['et_contact_name']) ) echo esc_attr($_POST['et_contact_name']); else esc_attr_e('שם ושם משפחה','DeepFocus'); ?>" id="et_contact_name" class="input" />
-                                        </p>
-
-                                        <p class="clearfix">
-                                            <label for="et_contact_email" class="et_contact_form_label"><?php esc_html_e('אמייל','DeepFocus'); ?></label>
-                                            <input type="text" name="et_contact_email" value="<?php if ( isset($_POST['et_contact_email']) ) echo esc_attr($_POST['et_contact_email']); else esc_attr_e('אמייל','DeepFocus'); ?>" id="et_contact_email" class="input" />
-                                        </p>
-
-                                        <p class="clearfix">
-                                            <label for="et_contact_subject" class="et_contact_form_label"><?php esc_html_e('נושא הפנייה','DeepFocus'); ?></label>
-                                            <input type="text" name="et_contact_subject" value="<?php if ( isset($_POST['et_contact_subject']) ) echo esc_attr($_POST['et_contact_subject']); else esc_attr_e('נושא הפנייה','DeepFocus'); ?>" id="et_contact_subject" class="input" />
-                                        </p>
-                                    </div> <!-- #et_contact_left -->
-                                    <div id="et_contact_right">
-                                        <p class="clearfix">
-                                            <?php
-                                                /*
-                                                                                                   esc_html_e('Captcha: ','DeepFocus');
-                                                                                                   echo '<br/>';
-                                                                                                   echo esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
-                                                
-                                                                                               <input type="text" name="et_contact_captcha" value="<?php if ( isset($_POST['et_contact_captcha']) ) echo esc_attr($_POST['et_contact_captcha']); ?>" id="et_contact_captcha" class="input" size="2" />
-                                                                                               */?>
-                                                                                           </p>
-                                                                                       </div> <!-- #et_contact_right -->
-                                                
-                                                                                       <div class="clear"></div>
-                                                
-                                                                                       <p class="clearfix wrap-message-contact">
-                                                                                           <label for="et_contact_message" class="et_contact_form_label"><?php esc_html_e('טקסט ההודעה','DeepFocus');
-                                            ?></label>
-                                            <textarea class="input" id="et_contact_message" name="et_contact_message"><?php if ( isset($_POST['et_contact_message']) ) echo esc_textarea($_POST['et_contact_message']); else echo esc_textarea( __('טקסט ההודעה','DeepFocus') ); ?></textarea>
-                                        </p>
-
-                                        <input type="hidden" name="et_contactform_submit" value="et_contact_proccess" />
-
-                                        <input type="reset" id="et_contact_reset" value="<?php esc_attr_e('Reset','DeepFocus'); ?>" />
-
-                                        <input class="et_contact_submit" type="submit" value="<?php esc_attr_e('שלח >','DeepFocus'); ?>" id="et_contact_submit" />
-
-                                        <?php wp_nonce_field( 'et-contact-form-submit', '_wpnonce-et-contact-form-submitted' ); ?>
-                                </form>
-                                <?php } ?>
                             </div> <!-- end #et-contact -->
                             <div class="clear"></div>
 
@@ -187,14 +141,9 @@
                         </div>
 
                         <div id="wrapper1-castoum"> 
-                            <div class="castoum_contant">
-                            <div id="are-address" class="kehila-details">כתובתינו:</div>
-                            <div id="kehila-address" class="kehila-details"><?php echo get_theme_mod('add_text'); ?></div>
-                            <div id="kehila-phone" class="kehila-details">טל: <?php echo get_theme_mod('add_phone'); ?></div>
-                            <div id="kehila-fax" class="kehila-details">פקס: <?php echo get_theme_mod('add_fax'); ?></div>
-                            <a href="<?php echo get_theme_mod('add_facebook'); ?>" targrt="new" id="conect-good-point" class="kehila-details">לדף הפייסבוק של נקודה טובה</a>
-
-
+                            <div class="text-container">
+                                <?php the_content(); ?>
+                            </div>
                         </div>
                         </div>
 
@@ -204,7 +153,7 @@
                         <?php if (get_option('deepfocus_integration_single_bottom') <> '' && get_option('deepfocus_integrate_singlebottom_enable') == 'on') echo(get_option('deepfocus_integration_single_bottom')); ?>
 
                     </div> <!-- end #left-area -->
-                    <?php if (!$fullwidth) get_sidebar(); ?>
+                    
 
                 </div> <!-- end #content-area -->
             </div> <!-- end .container -->

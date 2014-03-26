@@ -73,7 +73,7 @@
 
 					<div class="clear"></div>
 
-					<h3 class="hometitle recentworks"><?php esc_html_e('Recent Works','DeepFocus'); ?></h3>
+					<h3 class="hometitle recentworks"></h3>
 
 					<div id="portfolio-items" class="clearfix">
 						<?php get_template_part('includes/gallery'); ?>

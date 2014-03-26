@@ -25,6 +25,7 @@ body {
 
 ul.nav li {
     margin-left: 0px;
+    padding: 20px 10px 0 10px;
 }
 
 #primary img {
@@ -68,6 +69,7 @@ ul.nav {
     width: 100%;
     box-sizing: border-box;
     text-align: right;
+    padding-top: 0;
 }
 
 
@@ -244,6 +246,8 @@ h1.title.about-title {
 
 #full.full-contact {
     padding: 0px 0px;
+    padding-top: 30px;
+    background-color: rgba(255,255,255,0.52);
 }
 
 #contact-wrapper {
@@ -288,11 +292,50 @@ h1.title.c-title {
 
 #page-wrapper {
     background-color: rgba(255,255,255,0.52);
-    height: 100%;
+    height: 227px;
     z-index: 0;
     width: 960px;
     position: absolute;
     margin: auto;
     left: 0px;
     right: 0px;
+}
+/*-------------------news-------------------*/
+#content-area.news{
+    background-image: none;
+    background-color: rgba(255,255,255,0.52);
+    padding: 0;
+}
+#content-area.news #left-area{
+    width: 100%;
+}
+#content-area.news #contact-wrapper{
+    width: 100%;
+    height: auto;
+}
+#content-area.news #left-area img {
+    max-width: 90%;
+    height: auto;
+    padding: 0 5% 20px 5%;
+}
+#content-area.news h1.title.c-title{
+    background-position-x: 50%;
+    text-indent: -43px;
+    background-image: url("../images/pic-kehila/whats_new2.png");
+}
+#content-area.news .castoum_contant {
+    height: auto;
+    padding-bottom: 37px;
+}
+#content-area.news #wrapper1-castoum {
+    height: auto;
+    background-color: rgba(255,255,255,0.52);
+    background-position-y: -44px;
+}
+#content-area.news #wrapper1-castoum .text-container {
+    width: 80%;
+    padding: 30px 0 30px 0;
+    color: #797979;
+    margin: auto;
+    font-size: 15px;
 }
