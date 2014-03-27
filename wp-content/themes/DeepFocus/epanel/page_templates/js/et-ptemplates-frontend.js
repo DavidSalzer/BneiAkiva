@@ -87,10 +87,10 @@ jQuery(document).ready(function() {
 
 	$portfolioItem.hover(function(){
 		jQuery(this).find('.et_pt_item_image').stop(true, true).animate({top: -10}, 500).find('img.portfolio').stop(true, true).animate({opacity: 0.7},500);
-		jQuery(this).find('.zoom-icon').stop(true, true).animate({opacity: 1, left: 43},400);
+		jQuery(this).find('.zoom-icon').stop(true, true).animate({opacity: 1, left: 80},400);
 		jQuery(this).find('.more-icon').stop(true, true).animate({opacity: 1, left: 110},400);
 	}, function(){
-		jQuery(this).find('.zoom-icon').stop(true, true).animate({opacity: 0, left: 31},400);
+		jQuery(this).find('.zoom-icon').stop(true, true).animate({opacity: 0, left: 80},400);
 		jQuery(this).find('.more-icon').stop(true, true).animate({opacity: 0, left: 128},400);
 		jQuery(this).find('.et_pt_item_image').stop(true, true).animate({top: 0}, 500).find('img.portfolio').stop(true, true).animate({opacity: 1},500);
 	});

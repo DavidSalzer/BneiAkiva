@@ -136,7 +136,7 @@ body#home-featured #hr { min-height: 479px; }
 		.item-image span.overlay { position: absolute; top: 3px; left: 3px; background: url(images/item-overlay.png) no-repeat; width: 207px; height: 136px; }
 		a.zoom-icon, a.more-icon { display: block; width: 61px; height: 61px; text-indent: -9999px; position: absolute; top: 41px; }
 		a.zoom-icon { left: 31px; background: url(images/zoom-icon.png) no-repeat; }
-		a.more-icon { left: 128px; background: url(images/readmore-icon.png) no-repeat; }
+		a.more-icon { left: 128px; background: url(images/readmore-icon.png) no-repeat; /*display: none;*/}
 			#tagline {line-height: 26px; /*padding-bottom: 60px; padding-top:30px;*/}
 				#tagline p {font-size: 48px; color: #fff; /*background:url(images/quote-left.png) no-repeat left top;*/ padding:0px 0px 0 40px; min-height:34px; }
 				#tagline span {/*background:url(images/quote-right.png) no-repeat right bottom;*/ padding:0 50px 3px 40px; font-size: 24px; color: #fff;  }

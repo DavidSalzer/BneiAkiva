@@ -306,7 +306,7 @@
 
 #fancybox-title-float-left {
 	padding: 0 0 0 15px;
-	background: url('images/fancybox.png') -40px -90px no-repeat;
+	background: url('images/fancybox.png') -55px -90px no-repeat;
 }
 
 #fancybox-title-float-main {
@@ -319,5 +319,5 @@
 
 #fancybox-title-float-right {
 	padding: 0 0 0 15px;
-	background: url('images/fancybox.png') -55px -90px no-repeat;
+	background: url('images/fancybox.png') -40px -90px no-repeat;
 }

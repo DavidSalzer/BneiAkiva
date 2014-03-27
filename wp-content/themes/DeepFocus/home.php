@@ -76,7 +76,7 @@
 					<h3 class="hometitle recentworks"></h3>
 
 					<div id="portfolio-items" class="clearfix">
-						<?php get_template_part('includes/gallery'); ?>
+						<?php get_template_part('includes/gallery'); ?><!--sara check it out-->
 
 						<div class="clear"></div>
 

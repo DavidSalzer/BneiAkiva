@@ -178,12 +178,16 @@ div.et_pt_thumb span.overlay {
 
 .et_pt_item_image a.zoom-icon {
     background: url("images/zoom-icon.png") no-repeat;
-    left: 31px;
+    left: 80px;
 }
 
 .et_pt_item_image a.more-icon {
     background: url("images/readmore-icon.png") no-repeat;
     left: 128px;
+    display: none;
+}
+.et_pt_gallery_entry .et_pt_item_image a.more-icon.gal {
+    display: inline-block;
 }
 
 #et_pt_gallery .page-nav {
