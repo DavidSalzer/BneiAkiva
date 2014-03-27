@@ -186,6 +186,7 @@ div.et_pt_thumb span.overlay {
     left: 128px;
     display: none;
 }
+
 .et_pt_gallery_entry .et_pt_item_image a.more-icon.gal {
     display: inline-block;
 }
@@ -282,6 +283,9 @@ textarea.input {
     border-radius: 6px;
     right: 196px;
     top: 9px;
+    -webkit-box-shadow: 3px 4px 10px 2px rgba(0,0,0,0.62);
+    -moz-box-shadow: 3px 4px 10px 2px rgba(0,0,0,0.62);
+    box-shadow: 3px 4px 10px 2px rgba(0,0,0,0.62);
 }
 
 #et_contact_reset {
