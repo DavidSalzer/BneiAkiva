@@ -184,7 +184,7 @@
 
     </div>
                         </div>
-
+                        <div id="cshadow-down"></div>
                         <div id="wrapper1-castoum"> 
                             <div class="castoum_contant">
                             <div id="are-address" class="kehila-details">כתובתינו:</div>

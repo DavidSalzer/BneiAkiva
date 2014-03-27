@@ -178,10 +178,41 @@ embed, iframe, object, video { max-width: 100%; }
         margin-right: 0px;
     }
 
-    #et_contact_submit {
+    #et-contact #et_contact_submit {
     right: 102px;
     
 }
+
+.kehila-details {
+    right: 75px;
+}
+
+
+#kehila-address {
+    width: 260px;
+    margin-top: 20px;
+}
+
+#kehila-phone {
+    margin-top: 20px;
+}
+
+#wrapper1-castoum{
+    height: 285px;
+}
+
+.castoum_contant{
+    height: 238px;
+}
+#conect-good-point {
+    top: 20px;
+    width: 300px;
+    height: 42px;
+    text-indent: 56px;
+    right: 67px;
+}
+
+
     #et-contact p input.input {
         width: 290px;
     }
@@ -413,6 +444,57 @@ embed, iframe, object, video { max-width: 100%; }
             margin: auto;
             top: -135px;
         }
+
+        h1.title.c-title {
+            background-position-x: -5px;
+        }
+        #contact-wrapper {
+            width: 87%;
+        }
+        #et-contact {
+            width: 250px;
+        }
+        #et-contact p input.input {
+            width: 250px;
+        }
+        .clearfix.wrap-message-contact {
+            width: 262px;
+        }
+        
+        #et-contact #et_contact_submit {
+            right: 85px;
+      }
+    
+    
+    .kehila-details {
+    right: 30px;
+}
+
+
+#kehila-address {
+    width: 240px;
+}
+
+
+#wrapper1-castoum{
+    height: 285px;
+}
+
+.castoum_contant{
+    height: 218px;
+}
+#conect-good-point {
+    top: 20px;
+    width: 221px;
+    height: 52px;
+    text-indent: 0px;
+    right: 23px;
+    line-height: 22px;
+    padding-right: 55px;
+    background-position-y: -2px;
+}
+
+    
         /*end comments in cambium*/
         #et_pt_gallery\20 main-gal {
             width: 350px;
