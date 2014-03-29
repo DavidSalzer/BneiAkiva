@@ -66,7 +66,6 @@
         $et_error_message = '<p>' . esc_html__('Thanks for contacting us','DeepFocus') . '</p>';
     }
 ?>
-<div id="page-wrapper"></div>
 <script>
   //element = document.getElementById("page-wrapper");
   //element.style.height=window.outerHeight+"px";
