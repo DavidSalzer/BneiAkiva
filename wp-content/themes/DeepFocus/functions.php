@@ -178,7 +178,7 @@ function et_delete_featured_ids_cache(){
 add_action( 'et_header_menu', 'et_add_mobile_navigation' );
 function et_add_mobile_navigation(){
 	if ( 'on' != get_option('deepfocus_responsive_layout') ) return;
-	echo '<a href="#" id="mobile_nav" class="closed">' . esc_html__( 'Navigation Menu', 'DeepFocus' ) . '<span></span></a>';
+	echo '<a href="#" id="mobile_nav" class="closed">' . esc_html__( 'תפריט', 'DeepFocus' ) . '<span></span></a>';
 }
 
 function et_epanel_custom_colors_css(){

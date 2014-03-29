@@ -2,11 +2,11 @@
 
 	<div id="content-full">
 		<div id="home-top"></div>
-		<div id="hr">
-			<div id="hr-center">
-				<div id="intro">
+		<div class="hr">
+			<div class="hr-center">
+				<div class="intro">
 					<div class="center-highlight">
-
+                        <div class="wrap-container">
 						<div class="container">
 
 							<?php if (get_option('deepfocus_featured') == 'on') get_template_part('includes/featured'); ?>
@@ -19,12 +19,14 @@
 							<?php } ?>
 
 						</div> <!-- end .container -->
+                        </div> <!-- wrap-container -->
 					</div> <!-- end .center-highlight -->
-				</div>	<!-- end #intro -->
-			</div> <!-- end #hr-center -->
-		</div> <!-- end #hr -->
-
-		<div class="center-highlight">
+				</div>	<!-- end .intro -->
+			</div> <!-- end .hr-center -->
+		</div> <!-- end .hr -->
+        
+	    <div class="center-highlight">
+            <div class="wrap-container">
 			<div class="container">
 
 				<?php if (get_option('deepfocus_blog_style') == 'false') { ?>
@@ -82,7 +84,7 @@
 
 						<a href="<?php echo esc_url(get_category_link(get_catId(get_option('deepfocus_portfolio_cat')))); ?>" class="readmore entergallery"><span><?php esc_html_e('כניסה לגלריה','DeepFocus'); ?></span></a>
 					</div> <!-- end #portfolio-items -->
-
+            </div> <!-- wrap-container -->
 				<?php } else { ?>
 					<div id="content-area" class="clearfix">
 
@@ -96,5 +98,5 @@
 				<?php } ?>
 
 			</div> <!-- end .container -->
-
+        
 			<?php get_footer(); ?>
