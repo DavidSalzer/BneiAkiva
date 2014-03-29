@@ -21,6 +21,8 @@ Template Name: לוח שנה
             </div>	<!-- end #intro -->
         </div> <!-- end .hr-center -->
     </div> <!-- end .hr -->
+    <div class="hr">
+    <div class="hr-center">
     <div class="center-highlight">
         <div class="container">
 
@@ -91,5 +93,7 @@ Template Name: לוח שנה
                 </div> <!-- end #content-area -->
             </div> <!-- end .container -->
         </div> <!-- end .center-highlight -->
-        </div> <!-- end #content-full -->
+    </div> <!-- end .hr-center -->
+    </div> <!-- end .hr -->
+    </div> <!-- end #content-full -->
             <?php get_footer(); ?>

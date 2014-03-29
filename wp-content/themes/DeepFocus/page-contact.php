@@ -87,6 +87,8 @@
             </div>	<!-- end #intro -->
         </div> <!-- end #hr-center -->
     </div> <!-- end #hr -->
+    <div class="hr">
+    <div class="hr-center">
     <div class="center-highlight">
         <div class="container">
 
@@ -209,4 +211,6 @@
             </div> <!-- end .container -->
             </div> <!-- end .center-highlight -->
         </div> <!-- end #content-full -->
+    </div> <!-- end .hr-center -->
+    </div> <!-- end .hr -->
             <?php get_footer(); ?>
