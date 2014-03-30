@@ -95,7 +95,7 @@ embed, iframe, object, video { max-width: 100%; }
     ul.nav {padding: 20px 178px 0px 9px; padding-top: 0px;}
     #tagline p {margin-right: 10px;}
     /*ul.nav li{padding: 0;}*/
-  
+    #et-contact-message {right: 200px;}
     /*end cambium*/
     #et_pt_gallery\20 main-gal {
     width: 750px;

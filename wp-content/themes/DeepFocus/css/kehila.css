@@ -212,8 +212,6 @@ h1.title.about-title {
 .kehila-details {
     color: #575758;
     font-size: 20px;
-    position: relative;
-    right: 142px;
     width: 345px;
 }
 
@@ -241,16 +239,18 @@ h1.title.about-title {
     background-image: url("../images/pic-kehila/facebook.png");
     background-repeat: no-repeat;
     background-position: right;
-    right: 135px;
+    margin-right: -7px;
+    margin-top: 20px;
 }
 
 .castoum_contant {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
     background-color: rgba(255,255,255,0.7);
     height: 310px;
-    padding-top: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 167px;
+    padding-top: 62px;
 }
 
 #et_contact_right {
@@ -297,11 +297,19 @@ h1.title.about-title {
 #contact-wrapper {
     width: 70%;
     margin: auto;
-    height: 581px;
+    height: 735px;
     background-color: rgba(255,255,255,0.3);
     -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.52);
+}
+
+
+#et-contact-message {
+    position: absolute;
+    top: 653px;
+    color: red;
+    right: 255px;
 }
 
 h1.title.c-title {
@@ -321,9 +329,6 @@ h1.title.c-title {
 }
 
 #wrapper1-castoum {
-    height: 350px;
-    position: relative;
-    bottom: 0px;
     -webkit-box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
     -moz-box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
     box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
