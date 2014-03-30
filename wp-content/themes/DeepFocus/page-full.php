@@ -11,7 +11,7 @@ Template Name: Full Width Page
 			<div id="intro">
 				<div class="center-highlight">
 
-					<div class="container">
+					<div class="container breadcrumbs">
 
 						<?php get_template_part('includes/breadcrumbs'); ?>
 

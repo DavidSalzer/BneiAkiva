@@ -12,15 +12,17 @@ Template Name: לוח שנה
             <div id="intro">
                 <div class="center-highlight">
 
-                    <div class="container">
+                    <div class="container breadcrumbs">
 
                         <?php get_template_part('includes/breadcrumbs'); ?>
 
                     </div> <!-- end .container -->
                 </div> <!-- end .center-highlight -->
             </div>	<!-- end #intro -->
-        </div> <!-- end #hr-center -->
-    </div> <!-- end #hr -->
+        </div> <!-- end .hr-center -->
+    </div> <!-- end .hr -->
+    <div class="hr">
+    <div class="hr-center">
     <div class="center-highlight">
         <div class="container">
 
@@ -44,7 +46,8 @@ Template Name: לוח שנה
                                                                  $thumb = $thumbnail["thumb"];
                             ?>
 <div id="contact-wrapper">
-                            <h1 class="title c-title"><?php the_title(); ?></h1>
+                            <?php $urlImg=$cfs->get('Icon');//, $post_id, $options ?>
+                            <h1 class="title c-title" style="background-image: url('<?php echo $urlImg ?>')"><?php the_title(); ?></h1>
 
                             <?php if($thumb == '') echo('<div class="clear"></div>'); ?>
 
@@ -54,9 +57,9 @@ Template Name: לוח שנה
                                 <span class="overlay"></span>
                             </div> 	<!-- end .thumbnail -->
                             <?php }; ?>
-                            <?php $urlImg=$cfs->get('addImg');//, $post_id, $options ?>
-                                
-                            <iframe src="https://www.google.com/calendar/embed?src=vfot1h1682mg47q2rido0vgeos%40group.calendar.google.com&ctz=Asia/Jerusalem" style="border: 0" max-width="90%" width="540" height="400" frameborder="0" scrolling="no"></iframe>
+                            <?php $urlCalender=$cfs->get('addCalender');//, $post_id, $options ?>
+                            
+                            <iframe src="<?php echo $urlCalender?>" style="border: 0" max-width="540" width="90%" height="400" frameborder="0" scrolling="no"></iframe>
                             <?php wp_link_pages(array('before' => '<p><strong>'.esc_html__('Pages','DeepFocus').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
                             <div id="et-contact">
@@ -89,4 +92,8 @@ Template Name: לוח שנה
 
                 </div> <!-- end #content-area -->
             </div> <!-- end .container -->
+        </div> <!-- end .center-highlight -->
+    </div> <!-- end .hr-center -->
+    </div> <!-- end .hr -->
+    </div> <!-- end #content-full -->
             <?php get_footer(); ?>

@@ -79,8 +79,8 @@ Template Name:  תבנית גנרית לטקסט
         <div id="hr-center">
             <div id="intro">
                 <div class="center-highlight">
-
-                    <div class="container">
+                    <div class="wrap-container">
+                    <div class="container breadcrumbs">
 
                         <?php get_template_part('includes/breadcrumbs'); ?>
 
@@ -152,4 +152,7 @@ Template Name:  תבנית גנרית לטקסט
 
                 </div> <!-- end #content-area -->
             </div> <!-- end .container -->
+            </div> <!-- end .wrap-container -->
+            </div> <!-- end .center-highlight -->
+        </div> <!-- end #content-full -->
             <?php get_footer(); ?>

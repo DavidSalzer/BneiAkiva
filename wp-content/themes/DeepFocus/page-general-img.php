@@ -80,7 +80,7 @@ Template Name:  תבנית גנרית עם תמונה
             <div id="intro">
                 <div class="center-highlight">
 
-                    <div class="container">
+                    <div class="container breadcrumbs">
 
                         <?php get_template_part('includes/breadcrumbs'); ?>
 
@@ -90,6 +90,7 @@ Template Name:  תבנית גנרית עם תמונה
         </div> <!-- end #hr-center -->
     </div> <!-- end #hr -->
     <div class="center-highlight">
+        <div class="wrap-container">
         <div class="container">
 
             <?php if ($fullwidth) { ?>
@@ -161,4 +162,7 @@ Template Name:  תבנית גנרית עם תמונה
 
                 </div> <!-- end #content-area -->
             </div> <!-- end .container -->
+            </div> <!-- end .wrap-container -->
+        </div> <!-- end .center-highlight -->
+        </div> <!-- end #content-full -->
             <?php get_footer(); ?>

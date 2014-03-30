@@ -1,6 +1,6 @@
 <?php
     /*
-    Template Name: עמו גלרייה ראשי
+    Template Name: עמוד גלרייה ראשי
     */
 ?>
 <?php get_header(); ?>
@@ -71,4 +71,5 @@
 
 
 </div> <!-- end .container -->
+
 <?php get_footer(); ?>

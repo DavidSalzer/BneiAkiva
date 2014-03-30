@@ -11,7 +11,7 @@ Template Name: דפי אודות
 			<div id="intro">
 				<div class="center-highlight">
 
-					<div class="container about-container">
+					<div class="container about-container breadcrumbs">
 
 						<?php get_template_part('includes/breadcrumbs'); ?>
 

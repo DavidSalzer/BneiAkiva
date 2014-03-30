@@ -43,7 +43,8 @@
 
 </head>
 <body<?php if (is_home()) { if (get_option('deepfocus_featured') == 'on') echo(' id="home-featured"'); else echo(' id="home"'); } ?> <?php body_class(); ?>>
-	<div id="top">
+	<div class="wrap-container">
+    <div id="top">
 		<div class="container">
 			<div id="header">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -72,7 +73,7 @@
 
 					<div id="search-form">
 						<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<input type="text" value="<?php esc_attr_e('search this site...','DeepFocus'); ?>" name="s" id="searchinput" />
+							<input type="text" value="<?php esc_attr_e('חפש באתר...','DeepFocus'); ?>" name="s" id="searchinput" />
 
 							<input type="image" src="<?php echo get_template_directory_uri(); ?>/images/search-btn.png" id="searchsubmit" />
 						</form>
@@ -83,3 +84,4 @@
 			</div> <!-- end #header -->
 		</div> <!-- end .container -->
 	</div> <!-- end #top -->
+    </div> <!--end .wrap-container-->

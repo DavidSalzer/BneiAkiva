@@ -100,7 +100,9 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/
-
+.wrap-container { width: 990px; background-color: rgba(255,255,255,0.52); margin: auto;}
+#hr, .hr{width: 990px;}
+.container.breadcrumbs{width: 990px}
 .container { /*text-align: left;*/ text-align: right; margin: 0 auto; width: 960px; position: relative; }
 /*the next line is the defult of deep foucs and i am going to change it in onother row*/
 /*#top { background: #d2d2d2 url(images/top-bg.png) repeat-x; border-bottom: 1px solid #ffffff; padding-top: 70px; }*/
@@ -112,25 +114,27 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 
 	#logo { position: absolute; top: 0px; left: 0px; }
 
-	#menu { position: absolute; top: 46px; left: 0px; background: url(images/menu-bg.png) no-repeat; width: 960px; height: 55px; }
+	#menu { position: absolute; top: 46px; left: -15px; background: url(images/menu-bg.png) no-repeat; width: 990px; height: 55px; }
 
 		#search-form {float: right; background: url(images/search-bg.png) no-repeat; width: 150px; height: 31px; margin: 13px 10px 0px 0px;}
 			input#searchinput { background:none; border: none; font-size: 12px; font-style: italic; color: #7d7d7d; text-shadow: 1px 1px 1px #ffffff; margin-top:0px; padding-left:13px; width:105px; float: left; margin-right: 4px; position: relative; top: 6px; }
 			input#searchsubmit { float:left; margin-top:9px; }
 
-#content-full { position: relative; padding-bottom: 196px;}
-	.center-highlight { background: url(images/light-overlay.png) repeat-y top center; text-shadow: 2px 2px 1px rgba(0,0,0,0.25); }
+#content-full { position: relative; padding-bottom: 196px; height: 100%;}
+	.center-highlight { background: url(images/light-overlay.png) repeat-y top center; text-shadow: 2px 2px 1px rgba(0,0,0,0.25); background-color: rgba(255,255,255,0.52); color: #797979;}
+    #content-full > div.center-highlight {background-color: transparent;}
 
 
 
-#intro { /*background: url(images/intro-bg.png);*/ }
-	#hr { /*background: url(images/shadow-bar-bg.png) repeat-x bottom left;*/ }
-body#home-featured #hr { min-height: 479px; }
-		#hr-center { /*background: url(images/shadow-bar-centerbg.png) no-repeat bottom center;*/ }
+#intro, .intro { background: url(images/intro-bg.png); }
+	#hr, .hr { background: url(images/shadow-bar-bg.png) repeat-x bottom left; margin: auto;}
+body#home-featured #hr, body#home-featured .hr { min-height: 479px; margin: auto;}
+		#hr-center, .hr-center { background: url(images/shadow-bar-centerbg.png) no-repeat bottom center; }
 
 #portfolio-items { padding-bottom: 20px; }
 	#portfolio-items .item { position: relative; background: url(images/item-bottom-shadow.png) no-repeat bottom left; padding-bottom: 5px; float: left; margin: 0px 33px 32px 0px; }
 	#portfolio-items .last {margin-right: 0px;}
+    #portfolio-items > a {float: left; margin-left: 13px;}
 	.item-image { position:relative; top:0; }
 		#portfolio-items .item img.portfolio { border: 3px solid #e5e5e5; }
 		.item-image span.overlay { position: absolute; top: 3px; left: 3px; background: url(images/item-overlay.png) no-repeat; width: 207px; height: 136px; }
@@ -170,7 +174,7 @@ body#home-featured #hr { min-height: 479px; }
 
 	#content-area { background: url(images/sidebar-bg.png) 688px 0px repeat-y; padding: 38px 0px; }
 	#full { background: none; padding: 38px 0px }
-		#left-area { width: 688px; float: left; }
+		#left-area { width: 673px; float: left; }
 
 			.entry { margin-bottom: 45px; }
 				.blog-thumb { position: relative; float: left; margin-right: 23px;  }
@@ -337,7 +341,7 @@ padding:9px 5px 4px 12px; color:#323232 !important; }
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/
 
-#footer { background-color: #325465; position: absolute; bottom: 0; width: 100%;}
+#footer { background-color: #325465; position: absolute; bottom: 0; width: 100%; height: 196px;}
     #footer-newsletter {height: 100px; background-color: #325465; position: relative;}
         #footer-newsletter > form {
             width: 400px;
@@ -362,6 +366,7 @@ padding:9px 5px 4px 12px; color:#323232 !important; }
             background-position-y: -25px;
             text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8);
             font-size: 16px;
+            color: #f5f5f5;
         }
 
         #footer-newsletter input[type='checkbox']:checked + label {
@@ -406,12 +411,12 @@ padding:9px 5px 4px 12px; color:#323232 !important; }
 /*------------------------------------------------*/
 
 #sidebar { float: left; width: 269px;text-align: right; }
-	.widget h4.widgettitle { font-size: 30px; text-shadow: 1px 1px 0px rgba(255,255,255,0.3); color: #000000; }
-	#sidebar  a { color: #ffffff; }
+	.widget h4.widgettitle { font-size: 30px; text-shadow: 1px 1px 0px rgba(255,255,255,0.3); color: #000000; color: #5f5f5f }
+	#sidebar  a { color: #ffffff; color: #5f5f5f}
 	#sidebar .widget { padding: 0px 0px 50px 22px; }
-
+    #sidebar #search-2 {display: none;}
 	.widget ul ul { margin: 0px 0px 0px 15px; }
-		.widget ul li { background: url(images/widget-bullet.png) no-repeat 0px 12px; padding: 4px 16px 4px 0px; background-position: right; }
+		.widget ul li { background: url(images/widget-bullet.png) no-repeat 0px 12px; padding: 4px 16px 4px 0px; background-position: right; color: #5f5f5f}
 			.widget ul li ul { padding:5px 0px 0px 7px; margin: 0px 0px -4px; }
 
 /*------------------------------------------------*/
@@ -445,6 +450,7 @@ img.alignright { display:inline; float:right; margin-left:15px; }
 	.nav li ul { width: 191px; }
 		.nav li li a:link, .nav li li a:visited {	display: block; height: auto; float: left; }
 		.nav li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ background-color: rgba(255,255,255,0.4);}
+        .nav .sub-menu li:hover {background-color: transparent;}
 
 
 /*------------------------------------------------*/
@@ -542,6 +548,7 @@ ul.nav a, #featured h2.title, #tagline, h3.hometitle, .entry h2.title, .entry h1
 	.et_pt_blogentry a.readmore span { padding: 0px 0 0 13px !important; }
 
 #tagline, h3.hometitle, .entry h2.title, .entry h1.title, .comment-author, h3#comments, #reply-title span, .entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6  { text-shadow:2px 2px 2px rgba(0,0,0,0.2); }
+.entry h1.title {color: #797979;}
 
 a.readmore, .reply-container a, #blog-content h4.widgettitle { text-shadow: 1px 1px 0px #fff; font-weight: normal; }
 	a.readmore span, .reply-container a { padding-top: 7px; }

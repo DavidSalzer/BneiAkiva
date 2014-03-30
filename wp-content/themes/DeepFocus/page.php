@@ -5,8 +5,8 @@
 		<div id="hr-center">
 			<div id="intro">
 				<div class="center-highlight">
-
-					<div class="container">
+                    <div class="wrap-container">
+					<div class="container breadcrumbs">
 
 						<?php get_template_part('includes/breadcrumbs'); ?>
 
@@ -64,5 +64,5 @@
 			</div> <!-- end #content-area -->
 
 		</div> <!-- end .container -->
-
+        </div> <!-- end .wrap-container -->
 		<?php get_footer(); ?>

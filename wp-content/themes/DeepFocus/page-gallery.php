@@ -21,7 +21,7 @@ $et_ptemplate_gallery_perpage = isset( $et_ptemplate_settings['et_ptemplate_gall
 			<div id="intro">
 				<div class="center-highlight">
 
-					<div class="container">
+					<div class="container breadcrumbs">
 
 						<?php get_template_part('includes/breadcrumbs'); ?>
 

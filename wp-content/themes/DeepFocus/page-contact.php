@@ -78,7 +78,7 @@
             <div id="intro">
                 <div class="center-highlight">
 
-                    <div class="container">
+                    <div class="container breadcrumbs">
 
                         <?php get_template_part('includes/breadcrumbs'); ?>
 
@@ -87,6 +87,8 @@
             </div>	<!-- end #intro -->
         </div> <!-- end #hr-center -->
     </div> <!-- end #hr -->
+    <div class="hr">
+    <div class="hr-center">
     <div class="center-highlight">
         <div class="container">
 
@@ -207,4 +209,8 @@
 
                 </div> <!-- end #content-area -->
             </div> <!-- end .container -->
+            </div> <!-- end .center-highlight -->
+        </div> <!-- end #content-full -->
+    </div> <!-- end .hr-center -->
+    </div> <!-- end .hr -->
             <?php get_footer(); ?>
