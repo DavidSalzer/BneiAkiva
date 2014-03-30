@@ -239,7 +239,8 @@ textarea.input {
 }
 
 #et-contact p #et_contact_captcha {
-    width: 20px !important;
+    width: 79px !important;
+    height: 35px;
 }
 
 #et-contact p .et_contact_error {

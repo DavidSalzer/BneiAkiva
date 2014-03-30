@@ -1,4 +1,4 @@
-html, body{
+html, body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
@@ -114,7 +114,8 @@ ul.nav {
 #homeService3 {
     padding-right: 0px;
 }
-@media only screen and ( max-width: 767px ) and (min-width: 479px){
+
+@media only screen and ( max-width: 767px ) and (min-width: 479px) {
     #homeService3 {
         padding-left: 27%;
     }
@@ -195,7 +196,7 @@ h1.title.about-title {
 
 #et_pt_gallery\20 main-gal {
     margin: auto;
-    width: 960px;
+    width: 990px;
 }
 
 .more-icon.gal {
@@ -266,7 +267,9 @@ h1.title.about-title {
 }
 
 #et_contact_right {
-    display: none;
+    position: absolute;
+    top: 594px;
+    right: 235px;
 }
 
 #et_contact_left#et__left {
@@ -289,6 +292,10 @@ h1.title.about-title {
 #et_contact_form > p {
     margin-bottom: 20px;
     margin-right: 1px;
+}
+
+#content-full.my-content-full{
+    height: auto;
 }
 
 #et_contact_message {
@@ -341,7 +348,6 @@ h1.title.c-title {
 }
 
 #wrapper1-castoum {
-   
     -webkit-box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
     -moz-box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
     box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
@@ -425,6 +431,6 @@ h1.title.c-title {
 }
 /**************calender***************/
 #contact-wrapper > iframe {
-     display: block; 
-     margin: auto; 
+    display: block;
+    margin: auto;
 }

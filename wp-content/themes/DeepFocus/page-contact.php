@@ -72,7 +72,7 @@
 </script>
 <?php get_header(); ?>
 
-<div id="content-full">
+<div id="content-full" class="my-content-full">
     <div id="hr">
         <div id="hr-center">
             <div id="intro">
@@ -152,13 +152,14 @@
                                     <div id="et_contact_right">
                                         <p class="clearfix">
                                             <?php
-                                                /*
-                                                                                                   esc_html_e('Captcha: ','DeepFocus');
-                                                                                                   echo '<br/>';
-                                                                                                   echo esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
+                                               
+                                                  esc_html_e('Captcha: ','DeepFocus');
+                                                    echo '<br/>';
+                                                   echo esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
+                                                   ?>
                                                 
-                                                                                               <input type="text" name="et_contact_captcha" value="<?php if ( isset($_POST['et_contact_captcha']) ) echo esc_attr($_POST['et_contact_captcha']); ?>" id="et_contact_captcha" class="input" size="2" />
-                                                                                               */?>
+                                                  <input type="text" name="et_contact_captcha" value="<?php if ( isset($_POST['et_contact_captcha']) ) echo esc_attr($_POST['et_contact_captcha']); ?>" id="et_contact_captcha" class="input" size="2" />
+
                                                                                            </p>
                                                                                        </div> <!-- #et_contact_right -->
                                                 

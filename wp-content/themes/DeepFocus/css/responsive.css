@@ -105,7 +105,7 @@ embed, iframe, object, video { max-width: 100%; }
     @media only screen  ( max-width: 780px ) {
         .wrap-container, #hr, .hr { width: 768px;}
     }
-    .container.breadcrumbs{width: 750px}
+    .container.breadcrumbs{width: 780px}
     h1.title.c-title {background-position-x: 152px;text-indent: -46px; }
     #contact-wrapper{width: 78%;}
     #et-contact {width: 430px;}
@@ -114,7 +114,8 @@ embed, iframe, object, video { max-width: 100%; }
     }
     #et-contact #et_contact_submit{right: 165px;}
     #et-contact p input.input {width: 430px; height: 48px; }
-	.container, #menu, .slide .overlay, .slide .overlay2 { width: 750px; }
+	.container, #menu, .slide .overlay, .slide .overlay2 { width: 780px; }
+    #menu{left: 0px;}
 		/*#menu { background-image: url(../images/menu-bg_750.png); }*//*this is the defult of 
             "deep foucs" and i changed it to the row bellow*/
         #menu {background: #FCD26E;}
@@ -248,9 +249,11 @@ embed, iframe, object, video { max-width: 100%; }
     }
 
     .container, #menu, .slide .overlay, .slide .overlay2 {
-        width: 460px;
+        width: 490px;
     }
-
+    #menu {
+    left: 0px;
+    }
     .slides .description, #blog, ul.nav, #sidebar {
         display: none;
     }
@@ -543,7 +546,7 @@ embed, iframe, object, video { max-width: 100%; }
         }
 
         .container, #menu, #comment-wrap {
-            width: 300px;
+            width: 330px;
         }
 
         #menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/

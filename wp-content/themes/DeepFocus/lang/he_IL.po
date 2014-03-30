@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../functions.php:183
 msgid "Navigation Menu"
-msgstr ""
+msgstr "תפריט ניווט"
 
 #: ../functions.php:220
 msgid "Fonts"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: ../page-contact.php:148
 msgid "Captcha: "
-msgstr ""
+msgstr "הכנס קוד אימות:"
 
 #: ../page-contact.php:159 ../page-contact.php:160
 msgid "Message"
@@ -221,7 +221,7 @@ msgstr ""
 #: ../page-contact.php:165 ../epanel/core_functions.php:203
 #: ../epanel/core_functions.php:377
 msgid "Reset"
-msgstr ""
+msgstr "אפס"
 
 #: ../page-contact.php:166 ../page-search.php:102
 msgid "Submit"
@@ -695,7 +695,7 @@ msgstr ""
 
 #: ../includes/no-results.php:3
 msgid "No Results Found"
-msgstr ""
+msgstr "לא נמצאו תוצאות"
 
 #: ../includes/no-results.php:4
 msgid ""
@@ -713,7 +713,7 @@ msgstr ""
 
 #: ../includes/functions/comments.php:24
 msgid "Reply"
-msgstr ""
+msgstr "השב"
 
 #: ../includes/functions/installation.php:1
 msgid "Read DeepFocus Documentation"
