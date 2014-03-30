@@ -301,8 +301,8 @@ h1.title.about-title {
 }
 
 #full.full-contact {
-    padding: 0px 0px;
-    padding-top: 30px;
+    /*padding: 0px 0px;
+    padding-top: 30px;*/
     /*background-color: rgba(255,255,255,0.52);*/
 }
 
@@ -341,6 +341,7 @@ h1.title.c-title {
 }
 
 #wrapper1-castoum {
+   
     -webkit-box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
     -moz-box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
     box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
