@@ -131,10 +131,10 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 body#home-featured #hr, body#home-featured .hr { min-height: 479px; margin: auto;}
 		#hr-center, .hr-center { background: url(images/shadow-bar-centerbg.png) no-repeat bottom center; }
 
-#portfolio-items { padding-bottom: 20px; }
+#portfolio-items { /*padding-bottom: 20px;*/ }
 	#portfolio-items .item { position: relative; background: url(images/item-bottom-shadow.png) no-repeat bottom left; padding-bottom: 5px; float: left; margin: 0px 33px 32px 0px; }
 	#portfolio-items .last {margin-right: 0px;}
-    #portfolio-items > a {float: left; margin-left: 13px;}
+    #portfolio-items > a {float: left; margin-left: 13px; margin-bottom: 20px;}
 	.item-image { position:relative; top:0; }
 		#portfolio-items .item img.portfolio { border: 3px solid #e5e5e5; }
 		.item-image span.overlay { position: absolute; top: 3px; left: 3px; background: url(images/item-overlay.png) no-repeat; width: 207px; height: 136px; }
@@ -224,7 +224,7 @@ ul.nav { float: left; padding: 20px 0px 0px 4px; }
 	ul.nav ul, #mobile_menu { background:#fee497; width: 189px; /*background: #e7e7e7 url(images/dropdown-bottom.png) bottom left repeat-x;*/ border: 1px solid #ffffff; border-top: none; top: 34px !important; box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.1); -moz-box-shadow:3px 6px 7px 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.1); border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-top-left-radius: 0px;-moz-border-radius-topleft: 0px; border-top-right-radius: 0px; -webkit-border-top-left-radius: 0px; -moz-border-radius-topright: 0px; -webkit-border-top-right-radius: 0px; padding: 16px 0px 10px; z-index: 9999px; display: none; margin-top: 20px;}
 		ul.nav ul li, #mobile_menu li { margin: 0px; padding: 0px 4px 20px 18px; }
 			/*ul.nav ul li a, #mobile_menu li a { background: url(images/dropdown-bullet2.png) no-repeat 0px 4px; padding: 0px 0px 0px 17px; width: 130px; }*/
-            ul.nav ul li a, #mobile_menu li a {background: url(images/dropdown-bullet2.png) no-repeat 139px 4px;padding: 0px 17px 0px 0px;width: 130px; }
+            ul.nav ul li a, #mobile_menu li a {background: url(images/dropdown-bullet2.png) no-repeat 139px 4px;padding: 0px 17px 0px 0px;width: 130px;position: relative;top: 3px; }
 
 			ul.nav li:hover ul ul, ul.nav li.sfHover ul ul { top: -16px !important; left: 191px !important; border-top-right-radius: 8px; -moz-border-radius-topright: 8px; -webkit-border-top-right-radius: 8px; }
 
@@ -396,7 +396,7 @@ padding:9px 5px 4px 12px; color:#323232 !important; }
         }
         .notice-msg.updated{ display: none;}
 	#footer-wrapper { height: 90px; background-color: #325465; }
-		#footer-center { background: url(images/footer-top-centerbg.png) no-repeat top center; background-size: 90%; padding-top: 36px; min-height: 60px; color: #b9b9b9; }
+		#footer-center { background: url(images/footer-top-centerbg.png) no-repeat top center; background-size: 90%; /*padding-top: 36px;*/ min-height: 60px; color: #b9b9b9; }/*took of padding becuase the new footer*/
             #footer p {display: inline-block;}
             #footer p#developer {float: left; color: #fff; direction: ltr; vertical-align: top; width: 190px; text-align: left;}
             #footer p#developer a{background-image: url("images/pic-kehila/cambium_logo.png"); width: 95px; height: 40px; display: inline-block; background-position-y: -7px; background-size: auto 100%; background-repeat: no-repeat;}

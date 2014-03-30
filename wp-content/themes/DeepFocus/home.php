@@ -99,4 +99,6 @@
 
 			</div> <!-- end .container -->
       </div>  
+</div>
+
 			<?php get_footer(); ?>

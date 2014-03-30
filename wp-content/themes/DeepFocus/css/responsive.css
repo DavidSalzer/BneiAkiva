@@ -1,4 +1,4 @@
-/* Browser Resets */
+*/ Browser Resets */
 .flex-container a:active,
 .flexslider a:active {outline: none;}
 .slides,
@@ -88,7 +88,7 @@ embed, iframe, object, video { max-width: 100%; }
 	#et-searchinput { width: auto !important; }
 	p#et_choose_posts, p#et_choose_pages, p#et_choose_date, p#et_choose_cat { float: none !important; }
 	#et-search-left { float: none !important; width: 100% !important; }
-    #portfolio-items { margin: auto; width: 463px;}
+    #portfolio-items { margin: auto; width: 463px; }
 }
 
 @media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
@@ -99,7 +99,9 @@ embed, iframe, object, video { max-width: 100%; }
     #et-contact-message {right: 200px;}
     /*end cambium*/
     #et_pt_gallery\20 main-gal {
-    width: 750px;
+    width: 623px;
+position: relative;
+left: 106px;
     }
     .wrap-container, #hr, .hr { width: 780px;}
     @media only screen  ( max-width: 780px ) {
@@ -245,7 +247,8 @@ embed, iframe, object, video { max-width: 100%; }
 
     #et_pt_gallery\20 main-gal {
         width: 494px;
-        padding-right: 33px;
+position: relative;
+right: -28px;
     }
 
     .container, #menu, .slide .overlay, .slide .overlay2 {
@@ -270,6 +273,7 @@ embed, iframe, object, video { max-width: 100%; }
         left: 0px;
         top: -82px;
     }
+  
 
     #featured {
         background: none;
@@ -461,7 +465,7 @@ embed, iframe, object, video { max-width: 100%; }
     #logo {margin: auto;top: -135px;}
     /*end comments in cambium*/
     #et_pt_gallery\20 main-gal {width: 360px; padding-right: 0px; }
-	.container.breadcrumbs{width: 330px}
+	.container.breadcrumbs{width: 100%;}
     .container, #menu, #comment-wrap { width: 300px; }
 		#menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/background: #FCD26E; }
 		body#home-featured #hr, body#home-featured .hr { min-height: 0; }
@@ -479,6 +483,8 @@ embed, iframe, object, video { max-width: 100%; }
         #top {
             padding-top: 135px;
         }
+    
+     .wrap-container, #hr, .hr { width: 95%; }
 
         #tagline p:first-child {
             top: -97px;
@@ -546,7 +552,7 @@ embed, iframe, object, video { max-width: 100%; }
         }
 
         .container, #menu, #comment-wrap {
-            width: 330px;
+            width: 100%;
         }
 
         #menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/
