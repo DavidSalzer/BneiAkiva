@@ -271,8 +271,13 @@ h1.title.about-title {
 
 #et_contact_right {
     position: absolute;
-    top: 594px;
+    top: 570px;
     right: 235px;
+}
+
+#et_contact_right > p {
+    line-height: 33px;
+    font-size: 16px;
 }
 
 #et_contact_left#et__left {
@@ -297,7 +302,7 @@ h1.title.about-title {
     margin-right: 1px;
 }
 
-#content-full.my-content-full{
+#content-full.my-content-full {
     height: auto;
 }
 
@@ -396,8 +401,12 @@ h1.title.c-title {
 
 #content-area.news h1.title.c-title {
     background-position-x: 50%;
-    text-indent: -84px;
+    text-indent: -60px;
     /*background-image: url("../images/pic-kehila/whats_new2.png");*/
+}
+
+#intro > div > div {
+    width: 100%;
 }
 
 #content-area.news .castoum_contant {

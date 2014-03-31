@@ -188,7 +188,17 @@
     </div>
                         </div>
                         <div id="cshadow-down"></div>
-                        <div id="wrapper1-castoum"> 
+                    
+                        <!-- end .entry -->
+                        <?php endwhile; endif; ?>
+
+                        <?php if (get_option('deepfocus_integration_single_bottom') <> '' && get_option('deepfocus_integrate_singlebottom_enable') == 'on') echo(get_option('deepfocus_integration_single_bottom')); ?>
+
+                    </div> <!-- end #left-area -->
+                    <?php if (!$fullwidth) get_sidebar(); ?>
+
+                </div> <!-- end #content-area -->
+          <div id="wrapper1-castoum"> 
                             <div class="castoum_contant">
                             <div id="are-address" class="kehila-details">כתובתינו:</div>
                             <div id="kehila-address" class="kehila-details"><?php echo get_theme_mod('add_text'); ?></div>
@@ -200,16 +210,7 @@
                         </div>
                         </div>
 
-                        <!-- end .entry -->
-                        <?php endwhile; endif; ?>
-
-                        <?php if (get_option('deepfocus_integration_single_bottom') <> '' && get_option('deepfocus_integrate_singlebottom_enable') == 'on') echo(get_option('deepfocus_integration_single_bottom')); ?>
-
-                    </div> <!-- end #left-area -->
-                    <?php if (!$fullwidth) get_sidebar(); ?>
-
-                </div> <!-- end #content-area -->
-            </div> <!-- end .container -->
+                      </div> <!-- end .container -->
             </div> <!-- end .center-highlight -->
         </div> <!-- end #content-full -->
     </div> <!-- end .hr-center -->

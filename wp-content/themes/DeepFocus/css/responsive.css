@@ -96,6 +96,10 @@ embed, iframe, object, video { max-width: 100%; }
     ul.nav {padding: 20px 190px 0px 9px; padding-top: 0px;}
     #tagline p {margin-right: 10px;}
     /*ul.nav li{padding: 0;}*/
+#et_contact_right {
+
+right: 183px;
+}
     #et-contact-message {right: 200px;}
     /*end cambium*/
     #et_pt_gallery\20 main-gal {
@@ -176,8 +180,13 @@ margin-left: 19px;
         margin: auto;
         top: -190px;
     }
+
+#et_contact_right {right: 108px;width: 122px !important;}
+    #contact-wrapper #et-contact p #et_contact_captcha {width: 50px !important;}
+
     /*end cambium comments*/
-    #et_pt_gallery\20 main-gal {width: 494px; padding-right: 33px; }
+        
+#et_pt_gallery\20 main-gal {width: 494px; padding-right: 33px; }
     .wrap-container, #hr, .hr { width: 490px; }
     @media only screen  ( max-width: 490px ) {
         .wrap-container, #hr, .hr { width: 460px;}
@@ -205,77 +214,35 @@ margin-left: 19px;
 		#tagline span { font-size: 20px; display: block; text-align: center; }
 		div.service { width:202px; padding: 52px 36px 0px 0px;}
     #et_contact_submit {
-    right: 102px;
+    right: 90px !important;
     
 }
 
-.kehila-details {
-    right: 75px;
-}
+.kehila-details {right: 75px;}
 
 
-#kehila-address {
-    width: 260px;
-    margin-top: 20px;
-}
+#kehila-address { width: 260px;margin-top: 20px;}
 
-#kehila-phone {
-    margin-top: 20px;
-}
+#kehila-phone {margin-top: 20px;}
 
-#wrapper1-castoum{
-    height: 285px;
-}
+#wrapper1-castoum{height: 285px;}
+.castoum_contant{height: 238px;}
+#conect-good-point {top: 20px;width: 300px;height: 42px;text-indent: 56px; right: 67px;}
 
-.castoum_contant{
-    height: 238px;
-}
-#conect-good-point {
-    top: 20px;
-    width: 300px;
-    height: 42px;
-    text-indent: 56px;
-    right: 67px;
-}
+    #et-contact p input.input {width: 290px;}
 
-
-    #et-contact p input.input {
-        width: 290px;
-    }
-
-    .clearfix.wrap-message-contact {
-        width: 306px;
-    }
-
-    #et_pt_gallery\20 main-gal {
-        width: 494px;
-position: relative;
-right: -28px;
-    }
-
-    .container, #menu, .slide .overlay, .slide .overlay2 {
-        width: 490px;
-    }
-    #menu {
-    left: 0px;
-    }
-    .slides .description, #blog, ul.nav, #sidebar {
-        display: none;
-    }
+    .clearfix.wrap-message-contact {width: 306px;}
+    #et_pt_gallery\20 main-gal {width: 494px;position: relative;right: -28px;}
+    .container, #menu, .slide .overlay, .slide .overlay2 {width: 490px;}
+    #menu {left: 0px;}
+    .slides .description, #blog, ul.nav, #sidebar {display: none;}
 
     #menu { /*background-image: url(../images/menu-bg_460.png);this is the defult*/
         background: #FCD26E;
         text-align: center;
     }
     /*#search-form { position: absolute; right: 14px; top: -60px; }*/ /*this is defult of "deep-focus"*/
-    #search-form {
-        position: absolute;
-        margin: auto;
-        right: 0px;
-        left: 0px;
-        top: -82px;
-    }
-  
+    #search-form {position: absolute;margin: auto;right: 0px;left: 0px;top: -82px;}
 
     #featured {
         background: none;
@@ -455,6 +422,9 @@ margin-bottom: 10px;
         width: 140px;
     }
 
+#et-contact-message {top: 694px;right: 124px;}
+
+
     @media only screen and ( max-width: 520px ) {
         #footer .container {
             width: 320px;
@@ -476,7 +446,9 @@ margin-bottom: 10px;
         }
     }
 @media only screen and ( max-width: 479px ) {
-    
+    #et_contact_submit {right: 68px !important;}
+#et-contact-message {right: 85px;}
+
     /*start comments in cambium*/
     #top {padding-top: 135px;}
     #tagline p:first-child {top: -97px;}
@@ -524,22 +496,11 @@ right: inherit;
             left: 0%;
         }
 
-        h1.title.c-title {
-            background-position-x: -5px;
-        }
-        #contact-wrapper {
-            width: 87%;
-        }
-        #et-contact {
-            width: 250px;
-        }
-        #et-contact p input.input {
-            width: 250px;
-        }
-        .clearfix.wrap-message-contact {
-            width: 262px;
-        }
-        
+        h1.title.c-title {background-position-x: 50%;}
+        #contact-wrapper {width: 87%; }
+        #et-contact {width: 250px;}
+        #et-contact p input.input { width: 250px;}
+        .clearfix.wrap-message-contact {width: 262px;}      
         #et-contact #et_contact_submit {
             right: 85px;
       }
@@ -648,12 +609,12 @@ right: inherit;
             margin-left: 0;
         }
 
-        #et_contact_left, #et_contact_right {
+        #et_contact_left {
             width: 93% !important;
         }
 
         #et_contact_right {
-            margin-left: 0 !important;
+            margin-left: 0 !important;right: 71px;
         }
 
         .et_pt_gallery_entry {
