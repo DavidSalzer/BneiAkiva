@@ -48,7 +48,7 @@ div.service img, #left-area img { max-width: 100%; height: auto; }
 
 .slides .description { visibility: hidden; }
 
-#controllers-wrapper { left: 50%; }
+#controllers-wrapper { /*left: 50%; i changed*/left: 51%; }
 
 #featured { height: auto; }
 
@@ -129,7 +129,9 @@ left: 106px;
 		#tagline p { font-size: 37px; line-height: 37px; }
 		#tagline span { font-size: 20px; display: block; text-align: center; }
 		div.service { width:220px; padding: 52px 40px 26px 0px;}
-
+#homeService1 {
+margin-left: 19px;
+}
 	#left-area { width: 533px; }
 		.post p.post-meta { width: 288px; }
 	#sidebar { width: 217px; }
@@ -297,8 +299,24 @@ right: -28px;
 
     div.service {
         width: 202px;
-        padding: 52px 36px 26px 0px;
+        /*padding: 52px 36px 26px 0px;*/
+        padding: 0px;/*yishai changed padding becuase it made it look bad*/
     }
+
+#homeService2 {
+    margin-top: 7px;
+position: relative;
+right: -70px;
+}
+#homeService1 {
+    margin-top: 7px;
+position: relative;
+left: 4%;
+}
+#homeService3 {
+margin-top: 7px;
+margin-bottom: 10px;
+}
 
 	body#home-featured #hr,body#home-featured .hr { min-height: 0px; }
     #footer p#copyright {
@@ -493,6 +511,17 @@ right: -28px;
         #logo {
             margin: auto;
             top: -135px;
+        }
+
+
+        #homeService1, #homeService2, #homeService3 {
+            float: none;
+margin: auto;
+right: inherit;
+        }
+
+        #homeService1 {
+            left: 0%;
         }
 
         h1.title.c-title {
