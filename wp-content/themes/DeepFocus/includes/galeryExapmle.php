@@ -52,14 +52,15 @@
                 // $thumbnail = get_thumbnail($width,$height,$classtext,$titletext,$titletext);
                  // $thumb = $thumbnail["thumb"];
             ?>
+            
 
             <?php
-                
+                  //  var_dump($page);    
                 
                    echo get_the_post_thumbnail($page->ID,array(237,136), array('class' => "portfolio",'alt'=> $page->post_title ,));
                 //  print_thumbnail($thumb, $thumbnail["use_timthumb"], $titletext , $width, $height, $classtext);
             ?>
-
+            <span class="post-title"><?php echo $page->post_title ;?></span>
             <a class="more-icon gal" href="<?php echo $page->guid; ?>" style="opacity: 0; visibility: visible; left: 128px;">Read more</a>
 
         </div> <!-- end .et_pt_item_image -->

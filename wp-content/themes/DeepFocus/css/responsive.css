@@ -95,6 +95,8 @@ embed, iframe, object, video { max-width: 100%; }
     /*cambium comments*/
     ul.nav {padding: 20px 190px 0px 9px; padding-top: 0px;}
     #tagline p {margin-right: 10px;}
+
+
     /*ul.nav li{padding: 0;}*/
 #et_contact_right {
 
@@ -102,12 +104,10 @@ right: 183px;
 }
     #et-contact-message {right: 200px;}
     /*end cambium*/
-    #et_pt_gallery\20 main-gal {
-    width: 623px;
-position: relative;
-left: 106px;
-    }
+    #et_pt_gallery\20 main-gal {width: 623px;position: relative;left: 106px; }
     .wrap-container, #hr, .hr { width: 780px;}
+
+
     @media only screen  ( max-width: 780px ) {
         .wrap-container, #hr, .hr { width: 768px;}
     }
@@ -129,13 +129,12 @@ left: 106px;
             "deep foucs" and i changed it to the row bellow*/
             #search-form { position: absolute; left: 0px; top: -100px; }
 		#featured { background-image: url(../images/featured-bottom-shadow_750.png); }
-
+        .castoum_contant{height: auto;padding-right: 101px;padding-bottom: 32px;}
 		#tagline p { font-size: 37px; line-height: 37px; }
 		#tagline span { font-size: 20px; display: block; text-align: center; }
 		div.service { width:220px; padding: 52px 40px 26px 0px;}
-#homeService1 {
-margin-left: 19px;
-}
+#homeService1 {margin-left: 19px;}
+#wrap-service {height: 238px;width: 781px;right: -2px;}
 	#left-area { width: 533px; }
 		.post p.post-meta { width: 288px; }
 	#sidebar { width: 217px; }
@@ -172,19 +171,20 @@ margin-left: 19px;
 
 @media only screen and ( max-width: 767px ) {
     /*start cambium comments*/
-    #top {
-        padding-top: 190px;
-    }
+    #top { padding-top: 190px;}
+    
+    #logo { margin: auto;top: -190px;}
 
-    #logo {
-        margin: auto;
-        top: -190px;
-    }
+#copyright {top: 11px;right: -34px;}
+#footer p#developer {top: 10px;left: -21px;}
 
 #et_contact_right {right: 108px;width: 122px !important;}
     #contact-wrapper #et-contact p #et_contact_captcha {width: 50px !important;}
 
     /*end cambium comments*/
+
+#wrap-service {height: 220px;width: 100%;position: relative;right: -2px; margin-bottom: 0px; padding-top: 14px;}
+
         
 #et_pt_gallery\20 main-gal {width: 494px; padding-right: 33px; }
     .wrap-container, #hr, .hr { width: 490px; }
@@ -198,37 +198,22 @@ margin-left: 19px;
 			/*#search-form { position: absolute; right: 14px; top: -60px; }*//*this is defult of "deep-focus"*/
             #search-form { position: absolute; margin: auto; right: 0px;left: 0px;top: -82px; }
 		#featured { background: none; }
-    h1.title.c-title {
-        background-position-x: 28px;
-        text-indent: -28px;
-    }
-
-    #et-contact {
-        width: 290px;
-    }
-    #et_contact_form > p {
-        margin-right: 0px;
-    }
+    h1.title.c-title { background-position-x: 28px; text-indent: -28px; }
+    #et-contact { width: 290px; }
+    #et_contact_form > p {  margin-right: 0px; }
 
 		#tagline p { font-size: 37px; line-height: 37px; text-align: center; }
 		#tagline span { font-size: 20px; display: block; text-align: center; }
 		div.service { width:202px; padding: 52px 36px 0px 0px;}
-    #et_contact_submit {
-    right: 90px !important;
-    
-}
-
+    #et_contact_submit {right: 90px !important;}
 .kehila-details {right: 75px;}
-
-
 #kehila-address { width: 260px;margin-top: 20px;}
-
 #kehila-phone {margin-top: 20px;}
-
-#wrapper1-castoum{height: 285px;}
-.castoum_contant{height: 238px;}
+#wrapper1-castoum{height: auto;}
+.castoum_contant{height: 217px; padding-right:85px;padding-top: 20px;}
+    #full.clearfix.full-contact {padding-bottom: 0px; }
+    #main-contact.my-change-contact.entry.clearfix.post.full {margin-bottom: 15px;}
 #conect-good-point {top: 20px;width: 300px;height: 42px;text-indent: 56px; right: 67px;}
-
     #et-contact p input.input {width: 290px;}
 
     .clearfix.wrap-message-contact {width: 306px;}
@@ -244,59 +229,25 @@ margin-left: 19px;
     /*#search-form { position: absolute; right: 14px; top: -60px; }*/ /*this is defult of "deep-focus"*/
     #search-form {position: absolute;margin: auto;right: 0px;left: 0px;top: -82px;}
 
-    #featured {
-        background: none;
-    }
+    #featured { background: none;  }
 
-    div.service:nth-child(2) {
-        padding-right: 0;
-    }
+    div.service:nth-child(2) {   padding-right: 0; }
 
-    #tagline p {
-        font-size: 37px;
-        line-height: 37px;
-        text-align: center;
-    }
+    #tagline p {    font-size: 37px;   line-height: 37px;   text-align: center; }
 
-    #tagline span {
-        font-size: 20px;
-        display: block;
-        text-align: center;
-    }
+    #tagline span {    font-size: 20px;    display: block;    text-align: center;   }
+    div.service {     width: 202px;     /*padding: 52px 36px 26px 0px;*/    padding: 0px;/*yishai changed padding becuase it made it look bad*/  }
 
-    div.service {
-        width: 202px;
-        /*padding: 52px 36px 26px 0px;*/
-        padding: 0px;/*yishai changed padding becuase it made it look bad*/
-    }
-
-#homeService2 {
-    margin-top: 7px;
-position: relative;
-right: -70px;
-}
-#homeService1 {
-    margin-top: 7px;
-position: relative;
-left: 4%;
-}
-#homeService3 {
-margin-top: 7px;
-margin-bottom: 10px;
-}
+#homeService2 { /*margin-top: 7px;*/position: relative;right: -70px;}
+#homeService1 {  /*margin-top: 7px;*/position: relative;left: 4%;}
+#homeService3 {margin-top: 7px;margin-bottom: 10px;}
 
 	body#home-featured #hr,body#home-featured .hr { min-height: 0px; }
-    #footer p#copyright {
-        text-align: center;
-    }
+    #footer p#copyright {text-align: center;}
 
-    #left-area {
-        width: auto;
-    }
+    #left-area {    width: auto; }
 
-    .entry-description {
-        width: 250px;
-    }
+    .entry-description {   width: 250px; }
 
     .post {
         width: 460px;
@@ -387,23 +338,10 @@ margin-bottom: 10px;
         left: 77px !important;
     }
 
-    #et_pt_portfolio_gallery.et_portfolio_large {
-        margin-left: 0 !important;
-    }
-
-    #et_pt_portfolio_gallery.et_portfolio_large .et_pt_portfolio_item {
-        margin-left: 0 !important;
-        width: 404px !important;
-    }
-
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon, #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        top: 109px !important;
-    }
-
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon {
-        left: 155px !important;
-    }
-
+    #et_pt_portfolio_gallery.et_portfolio_large {        margin-left: 0 !important;   }
+    #et_pt_portfolio_gallery.et_portfolio_large .et_pt_portfolio_item {       margin-left: 0 !important;     width: 404px !important;  }
+    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon, #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {  top: 109px !important; }
+    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon {     left: 155px !important; }
     #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
         left: 195px !important;
     }
@@ -426,10 +364,7 @@ margin-bottom: 10px;
 
 
     @media only screen and ( max-width: 520px ) {
-        #footer .container {
-            width: 320px;
-            margin: auto;
-        }
+        #footer .container {   width: 320px;   margin: auto; }
 
         #footer-center p {
             display: inline-block;
@@ -437,23 +372,25 @@ margin-bottom: 10px;
         }
 
         #footer #contact-us {
-            margin-top: -18px;
+            /*margin-top: -18px;*/
         }
 
-        #footer p#developer {
-            width: 120px;
-            margin-left: 10px;
-        }
+        #footer p#developer {width: 120px;margin-left: 10px;/*from here my comennts for smart-phone*/position: absolute;top: 38px;padding-bottom: 0px;margin-top: 0px;left: 0px;}
+      
+        
+      
     }
 @media only screen and ( max-width: 479px ) {
     #et_contact_submit {right: 68px !important;}
 #et-contact-message {right: 85px;}
-
+  #footer p#copyright {width: 88px;right: 15px;}/*yishai changed*/
     /*start comments in cambium*/
     #top {padding-top: 135px;}
     #tagline p:first-child {top: -97px;}
     #logo {margin: auto;top: -135px;}
     /*end comments in cambium*/
+
+#wrap-service {height: auto;width: 100%;position: relative;right: -2px;}
     #et_pt_gallery\20 main-gal {width: 360px; padding-right: 0px; }
 	.container.breadcrumbs{width: 100%;}
     .container, #menu, #comment-wrap { width: 300px; }
@@ -501,74 +438,25 @@ right: inherit;
         #et-contact {width: 250px;}
         #et-contact p input.input { width: 250px;}
         .clearfix.wrap-message-contact {width: 262px;}      
-        #et-contact #et_contact_submit {
-            right: 85px;
-      }
-    
-    
-    .kehila-details {
-    right: 30px;
-}
+        #et-contact #et_contact_submit {right: 85px;  } 
+    .kehila-details { right: 30px; width: 60%;}
+#kehila-address { width: 240px;}
+#wrapper1-castoum{  height: 250px;}
 
-
-#kehila-address {
-    width: 240px;
-}
-
-
-#wrapper1-castoum{
-    height: 285px;
-}
-
-.castoum_contant{
-    height: 218px;
-}
-#conect-good-point {
-    top: 20px;
-    width: 221px;
-    height: 52px;
-    text-indent: 0px;
-    right: 23px;
-    line-height: 22px;
-    padding-right: 55px;
-    background-position-y: -2px;
-}
+.castoum_contant{ height: 250px; padding-right: 48px; padding-top: 30px;}
+#conect-good-point { top: 20px;width: 221px;height: 52px;text-indent: 0px;right: 23px;line-height: 22px;padding-right: 55px;background-position-y: -2px;}
 
     
         /*end comments in cambium*/
-        #et_pt_gallery\20 main-gal {
-            width: 350px;
-            padding-right: 0px;
-        }
+        #et_pt_gallery\20 main-gal {width: 350px;padding-right: 0px;}
+        .container, #menu, #comment-wrap { width: 100%; }
+        #menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/ background: #FCD26E; }
+        body#home-featured #hr { min-height: 0;  }
 
-        .container, #menu, #comment-wrap {
-            width: 100%;
-        }
-
-        #menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/
-            background: #FCD26E;
-        }
-
-        body#home-featured #hr {
-            min-height: 0;
-        }
-
-        #featured, #search-form, body.home #portfolio-items, h3.recentworks, ul.nav, #home-top, .blog-thumb {
-            display: none;
-        }
-
-        #tagline p, #tagline span {
-            background: none;
-            padding: 0;
-        }
-
-        #tagline p {
-            font-size: 31px;
-        }
-
-        #tagline span {
-            font-size: 20px;
-        }
+        #featured, #search-form, body.home #portfolio-items, h3.recentworks, ul.nav, #home-top, .blog-thumb { display: none; }
+        #tagline p, #tagline span { background: none;  padding: 0;  }
+        #tagline p { font-size: 31px;  }
+        #tagline span {     font-size: 20px;  }
 
         div.service {
             width: 300px;

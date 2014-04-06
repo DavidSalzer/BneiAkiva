@@ -196,6 +196,49 @@ h1.title.about-title {
 /********main-gallery*************/
 
 
+.hometitle.recentworks {display: none;}
+
+#wrap-service {
+    height: 243px;
+    width: 989px;
+    position: relative;
+    right: -15px;
+    background-color: rgba(255,255,255,0.5);
+    margin-bottom: 25px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+
+.post-title {
+    position: absolute;
+    display: block;
+    background: rgba(255,255,255,0.5);
+    width: 94%;
+    z-index: 500000000;
+    bottom: -30px;
+    transition: all .3s;
+    -webkit-transition: all 0.3s;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    font-size: 20px;
+    height: 35px;
+    line-height: 34px;
+    border-radius: 9px;
+    color: white;
+    text-align: center;
+}
+
+.et_pt_item_image:hover .post-title {
+    bottom: 5px;
+}
+
+.et_pt_item_image {
+    overflow: hidden;
+}
+
 
 #et_pt_gallery\20 main-gal {
     margin: auto;
@@ -249,7 +292,7 @@ h1.title.about-title {
     display: block;
     line-height: 59px;
     top: 30px;
-    width: 300px;
+    width: 315px;
     height: 42px;
     text-indent: 68px;
     background-image: url("../images/pic-kehila/facebook.png");
@@ -267,6 +310,7 @@ h1.title.about-title {
     box-sizing: border-box;
     padding-right: 167px;
     padding-top: 62px;
+    text-align: right;
 }
 
 #et_contact_right {
@@ -445,4 +489,11 @@ h1.title.c-title {
 #contact-wrapper > iframe {
     display: block;
     margin: auto;
+}
+
+
+/*************last-post***********************/
+
+.my-last-post #recent-comments-2,.my-last-post #archives-2,.my-last-post #categories-2,.my-last-post #meta-2 {
+    display: none;
 }

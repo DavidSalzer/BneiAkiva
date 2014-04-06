@@ -101,7 +101,7 @@
 
                         <?php if (get_option('deepfocus_integration_single_top') <> '' && get_option('deepfocus_integrate_singletop_enable') == 'on') echo(get_option('deepfocus_integration_single_top')); ?>
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <div id="main-contact" class="entry clearfix post<?php if($fullwidth) echo(' full');?>">
+                        <div id="main-contact" class="my-change-contact entry clearfix post<?php if($fullwidth) echo(' full');?>">
                             <?php
                                 $width = 185;
                                                                  $height = 185;

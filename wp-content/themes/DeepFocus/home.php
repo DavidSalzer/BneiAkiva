@@ -28,7 +28,7 @@
 	    <div class="center-highlight">
             <div class="wrap-container">
 			<div class="container">
-
+<div id="wrap-service">
 				<?php if (get_option('deepfocus_blog_style') == 'false') { ?>
 					<?php for ($i=1; $i <= 3; $i++) { ?>
 						<?php query_posts('page_id=' . get_pageId(html_entity_decode(get_option('deepfocus_home_page_'.$i)))); while (have_posts()) : the_post(); ?>
@@ -44,7 +44,7 @@
 							*/ ?></div> <!-- end .service -->
 						<?php endwhile; wp_reset_query(); ?>
 					<?php } ?>
-
+</div>
 
 					<?php /*<div class="service" id="blog">
 						<div id="blog-top"></div>

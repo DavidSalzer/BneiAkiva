@@ -116,12 +116,12 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 
 	#menu { position: absolute; top: 46px; left: -15px; background: url(images/menu-bg.png) no-repeat; width: 990px; height: 55px; }
 
-		#search-form {float: right; background: url(images/search-bg.png) no-repeat; width: 150px; height: 31px; margin: 13px 10px 0px 0px;}
+		#search-form {float: right; /*background: url(images/search-bg.png) no-repeat;*/background-color: white;border-radius: 13px; border: 1px solid gray; width: 150px; height: 31px; margin: 13px 10px 0px 0px;}
 			input#searchinput { background:none; border: none; font-size: 12px; font-style: italic; color: #7d7d7d; text-shadow: 1px 1px 1px #ffffff; margin-top:0px; padding-left:13px; width:105px; float: left; margin-right: 4px; position: relative; top: 6px; }
 			input#searchsubmit { float:left; margin-top:9px; }
 
 #content-full { position: relative; /*padding-bottom: 196px;*/ height: 100%;}
-	.center-highlight { background: url(images/light-overlay.png) repeat-y top center; text-shadow: 2px 2px 1px rgba(0,0,0,0.25); background-color: rgba(255,255,255,0.52); color: #797979;}
+	.center-highlight { background: url(images/light-overlay.png) repeat-y top center; text-shadow: 2px 2px 1px rgba(0,0,0,0.25); /*background-color: rgba(255,255,255,0.52);it is doubled*/ color: #797979;}
     #content-full > div.center-highlight {background-color: transparent;}
 
 
@@ -218,7 +218,7 @@ body#home-featured #hr, body#home-featured .hr { min-height: 479px; margin: auto
 
 ul.nav { float: left; padding: 20px 0px 0px 4px; }
 	ul.nav li { margin-left: 17px; }
-		ul.nav a { font-size: 16px; color: #535353; text-decoration: none; text-shadow: 1px 1px 0px #fff; padding-bottom: 13px; }
+		ul.nav a { font-size: 16px; color: #535353; text-decoration: none; /*text-shadow: 1px 1px 0px #fff*/; padding-bottom: 13px; }
 		ul.nav a:hover { color: #000000; text-shadow: 1px 1px 0px #fff; }
     ul.nav ul{ direction: rtl;}
 	ul.nav ul, #mobile_menu { background:#fee497; width: 189px; /*background: #e7e7e7 url(images/dropdown-bottom.png) bottom left repeat-x;*/ border: 1px solid #ffffff; border-top: none; top: 34px !important; box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.1); -moz-box-shadow:3px 6px 7px 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.1); border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-top-left-radius: 0px;-moz-border-radius-topleft: 0px; border-top-right-radius: 0px; -webkit-border-top-left-radius: 0px; -moz-border-radius-topright: 0px; -webkit-border-top-right-radius: 0px; padding: 16px 0px 10px; z-index: 9999px; display: none; margin-top: 20px;}
@@ -234,8 +234,8 @@ ul.nav { float: left; padding: 20px 0px 0px 4px; }
 
 #featured { position: relative; /*top: -102px; margin-bottom:-95px;*/ padding-bottom: 31px; background: url(images/featured-bottom-shadow.png) no-repeat bottom left; height: 447px; z-index:4; }
 	#featured span#left-shadow, #featured span#right-shadow { width: 9px; height: 132px; display: block; position: absolute; z-index: 1; top: -30px; }
-	#featured span#left-shadow { background: url(images/featured-leftshadow.png) no-repeat; left: -9px; }
-	#featured span#right-shadow { background: url(images/featured-rightshadow.png) no-repeat; right: -9px; }
+	#featured span#left-shadow { /*background: url(images/featured-leftshadow.png) no-repeat;*/ left: -9px; }
+	#featured span#right-shadow { /*background: url(images/featured-rightshadow.png) no-repeat;*/ right: -9px; }
 		#slides, .slides { position: relative; height: auto; background: #000000; }
 			.slide .overlay { background: url(images/slide-top-shadow.png) repeat-x; top: 0px; left: 0px; height: 17px; position: absolute; width: 960px; }
 			.slide .overlay2 { background: url(images/slide-bottom-shadow.png) repeat-x; bottom: 0px; left: 0px; height: 4px; position: absolute; width: 960px; }
@@ -398,13 +398,14 @@ padding:9px 5px 4px 12px; color:#323232 !important; }
 	#footer-wrapper { height: 90px; background-color: #325465; }
 		#footer-center { background: url(images/footer-top-centerbg.png) no-repeat top center; background-size: 90%; /*padding-top: 36px;*/ min-height: 60px; color: #b9b9b9; }/*took of padding becuase the new footer*/
             #footer p {display: inline-block;}
-            #footer p#developer {float: left; color: #fff; direction: ltr; vertical-align: top; width: 190px; text-align: left;}
+            #footer p#developer {float: left; color: #fff; direction: ltr; vertical-align: top; width: 190px; text-align: left;position: relative; top: 34px;}
             #footer p#developer a{background-image: url("images/pic-kehila/cambium_logo.png"); width: 95px; height: 40px; display: inline-block; background-position-y: -7px; background-size: auto 100%; background-repeat: no-repeat;}
-            #footer #contact-us {height: 30px; line-height: 30px; width: 100px; background-color: #fcd26e; border-radius: 6px; text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8); display: inline-block; text-align: center; font-size: 18px; color: #fff; left: 0; position: absolute; right: 0; margin: auto; cursor: pointer; margin-top: -4px;}
+            #footer #contact-us {height: 30px; line-height: 30px; width: 100px; background-color: #fcd26e; border-radius: 6px; text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8); display: inline-block; text-align: center; font-size: 18px; color: #fff; left: 0; position: absolute; right: 0; margin: auto; cursor: pointer;top: 28px;}
 			#footer p#copyright a { color: #ffffff; vertical-align: top; }
 		#footer .widget { float: left; width: 280px; margin: 0px 60px 45px 0px; }
 			#footer .widget a { color: #ffffff; }
 			#footer .last { margin-right: 0px; }
+            #copyright {position: relative;top: 33px;}
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
