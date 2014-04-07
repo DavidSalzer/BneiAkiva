@@ -89,7 +89,7 @@
     </div> <!-- end #hr -->
     <div class="hr">
     <div class="hr-center">
-    <div class="center-highlight">
+    <div class="center-highlight big-contact">
         <div class="container">
 
             <?php if ($fullwidth) { ?>

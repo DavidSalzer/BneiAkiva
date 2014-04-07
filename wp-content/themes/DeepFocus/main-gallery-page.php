@@ -20,7 +20,7 @@
         $mypages = get_pages($arg);    
         
     ?>
-    <div id="et_pt_gallery main-gal" class="clearfix">
+    <div id="et_pt_gallery main-gal backround-main-gall" class="clearfix">
 
 
 

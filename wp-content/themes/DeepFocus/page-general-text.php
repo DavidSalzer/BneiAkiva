@@ -74,7 +74,7 @@ Template Name:  תבנית גנרית לטקסט
 </script>
 <?php get_header(); ?>
 
-<div id="content-full">
+<div id="content-full" class="main-general-text">
     <div id="hr">
         <div id="hr-center">
             <div id="intro">
