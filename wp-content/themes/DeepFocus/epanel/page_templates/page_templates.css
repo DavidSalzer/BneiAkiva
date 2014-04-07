@@ -260,7 +260,7 @@ textarea.input {
 }
 
 #et_contact_right {
-    width: 17%;
+    width: 246px;/*it was 17%*/
     margin-left: 50px;
 }
 

@@ -324,8 +324,11 @@ h1.title.about-title {
 
 #et_contact_right {
     position: absolute;
-    top: 570px;
-    right: 235px;
+    top: 590px;
+    right: 0px;
+    margin: auto !important;
+    left: 0px;
+    float: none !important;
 }
 
 #et_contact_right > p {
@@ -503,12 +506,60 @@ h1.title.c-title {
 
 /*************last-post***********************/
 
-.my-last-post #recent-comments-2, .my-last-post #archives-2, .my-last-post #categories-2, .my-last-post #meta-2 {
+/*.my-last-post #recent-comments-2, .my-last-post #archives-2, .my-last-post #categories-2, .my-last-post #meta-2 {
     display: none;
-}
+}*/
 
 .big-contact {
     background-color: rgba(255,255,255,0.5);
+}
+
+#new-post-title {
+    background-image: url("../images/pic-kehila/whats_new2.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+    text-align: center;
+    font-size: 29px;
+    text-indent: -64px;
+    line-height: 108px;
+}
+
+.my-last-post #left-area p {
+    color: black;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding: 87px 35px 73px 35px;
+    position: relative;
+    width: 704px;
+    right: -16px;
+    font-size: 15px;
+    text-shadow: none;
+    text-align: justify;
+}
+
+.my-last-post #content-area {
+    padding-bottom: 0px;
+}
+
+
+.my-last-post #left-area > div.entry.clearfix.post > h1 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3px 15px 2px 15px;
+    background-color: #567F7B;
+    border-radius: 36px;
+    color: #B8BABB;
+    font-size: 20px;
+    position: relative;
+    right: 14px;
+    bottom: -80px;
+    z-index: 1;
 }
 
 
@@ -539,3 +590,6 @@ h1.title.c-title {
     background-color: rgba(255,255,255,0.5);
     margin: auto;
 }
+
+
+   /*echo '<br/>';*/

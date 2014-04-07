@@ -154,8 +154,8 @@
                                             <?php
                                                
                                                   esc_html_e('Captcha: ','DeepFocus');
-                                                    echo '<br/>';
-                                                   echo esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
+                                                 //poot here your take away
+                                                   echo ' ' . esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
                                                    ?>
                                                 
                                                   <input type="text" name="et_contact_captcha" value="<?php if ( isset($_POST['et_contact_captcha']) ) echo esc_attr($_POST['et_contact_captcha']); ?>" id="et_contact_captcha" class="input" size="2" />
