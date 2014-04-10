@@ -105,7 +105,7 @@ embed, iframe, object, video { max-width: 100%; }
     #et-contact-message {right: 200px; top: 690px;}
     /*end cambium*/
     #et_pt_gallery\20 main-gal {width: 623px;position: relative;left: 106px; }
-    .my-own-gall #et_pt_gallery\20 main-gal {left: 0px; width: 100%;}
+    .my-own-gall #et_pt_gallery\20 main-gal {right: 16px; width: 100%;}
     .wrap-container, #hr, .hr { width: 780px;}
 
     #full.my-own-gall{width: 781px; right: 0px; } 
@@ -170,6 +170,7 @@ embed, iframe, object, video { max-width: 100%; }
 			#et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon { left: 178px !important; }
 .my-last-post #left-area p{width: 539px;right: -7px;}
 .my-last-post #left-area > div.entry.clearfix.post > h1 {right: 25px;}
+.et_pt_gallery_entry.album {margin-left: 36px;}
 }
 
 @media only screen and ( max-width: 767px ) {
@@ -185,6 +186,7 @@ embed, iframe, object, video { max-width: 100%; }
     #contact-wrapper #et-contact p #et_contact_captcha { width: 50px !important; }
 
     /*end cambium comments*/
+.et_pt_gallery_entry.album {margin-left: 21px;}
     .my-last-post #left-area p{width: 100%;right: 0px;}
 .my-last-post #left-area > div.entry.clearfix.post > h1{bottom: -63px;}
     .my-last-post .post{margin: auto;}
@@ -509,7 +511,10 @@ embed, iframe, object, video { max-width: 100%; }
 
         #logo {margin: auto;top: -135px;}
         /*end comments in cambium*/
-    #et_pt_gallery\20 main-gal\20 backround-main-gall {width: 95%;}
+    
+    .et_pt_gallery_entry.album {margin: 0px auto 10px auto !important; float: none;}
+    
+    #et_pt_gallery\20 main-gal\20 backround-main-gall {width: 95%; height: 100%;}
         #wrap-service {height: auto;width: 100%;position: relative;right: -2px;}
 
         #et_pt_gallery\20 main-gal {

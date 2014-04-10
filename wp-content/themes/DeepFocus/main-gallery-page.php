@@ -6,6 +6,7 @@
 <?php get_header(); ?>
 
 <div id="content-full">
+   
     <?php
         $mainpage=$post->ID;
         
@@ -21,7 +22,7 @@
         
     ?>
     <div id="et_pt_gallery main-gal backround-main-gall" class="clearfix">
-
+       
 
 
         <div class="page-nav clearfix">
@@ -30,14 +31,14 @@
                 <div class="alignright"></div>
             </div>
         </div> <!-- end .entry -->
-   
+     <div id="main-gallery-title">עמוד גלרייה ראשי</div>
     <?php
             foreach( $mypages as $page ) {		
         
         //        echo '<pre>';var_dump($page);echo '</pre>';
         
     ?>
-    <div class="et_pt_gallery_entry">
+    <div class="et_pt_gallery_entry album">
         <div class="et_pt_item_image" style="background-color: rgb(0, 0, 0); top: 0px;">
             <?php
                 
@@ -56,7 +57,7 @@
                    echo get_the_post_thumbnail($page->ID,array(237,136), array('class' => "portfolio",'alt'=> $page->post_title ,));
                 //  print_thumbnail($thumb, $thumbnail["use_timthumb"], $titletext , $width, $height, $classtext);
             ?>
-
+            <span class="main-post-title"><?php echo $page->post_title ;?></span>
             <a class="more-icon gal" href="<?php echo $page->guid; ?>" style="opacity: 0; visibility: visible; left: 128px;">Read more</a>
 
         </div> <!-- end .et_pt_item_image -->

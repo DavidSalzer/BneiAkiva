@@ -60,7 +60,7 @@ ul.nav li {
 
 #search-form {
     position: absolute;
-    left: 15px;
+    left: 0px;
     top: -100px;
 }
 
@@ -220,13 +220,13 @@ h1.title.about-title {
 }
 
 
-.post-title {
+.main-post-title {
     position: absolute;
     display: block;
     background: rgba(255,255,255,0.5);
     width: 94%;
     z-index: 500000000;
-    bottom: -30px;
+    bottom: -40px;
     transition: all .3s;
     -webkit-transition: all 0.3s;
     margin: auto;
@@ -240,7 +240,7 @@ h1.title.about-title {
     text-align: center;
 }
 
-.et_pt_item_image:hover .post-title {
+.et_pt_item_image:hover .main-post-title {
     bottom: 5px;
 }
 
@@ -532,7 +532,8 @@ h1.title.c-title {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box;
-    padding: 87px 35px 73px 35px;
+    padding-right: 35px;
+    padding-left: 35px;
     position: relative;
     width: 704px;
     right: -16px;
@@ -540,6 +541,15 @@ h1.title.c-title {
     text-shadow: none;
     text-align: justify;
 }
+
+#post-content-wrapper p:first-child {
+    padding-top: 87px;
+}
+
+#post-content-wrapper p:last-child {
+    padding-bottom: 73px;
+}
+
 
 .my-last-post #content-area {
     padding-bottom: 0px;
@@ -576,6 +586,12 @@ h1.title.c-title {
     padding-left: 20px;
 }
 
+#main-gallery-title {
+    margin: 15px 0px 42px 0px;
+    font-size: 31px;
+    height: auto;
+}
+
 .my-own-gall h1.title {
     text-align: center;
     margin-bottom: 35px;
@@ -589,7 +605,17 @@ h1.title.c-title {
     width: 990px;
     background-color: rgba(255,255,255,0.5);
     margin: auto;
+    height: 100%;
 }
 
+.et_pt_gallery_entry.album {
+    margin-left: 28px;
+}
 
-   /*echo '<br/>';*/
+.my-own-gall #et_pt_gallery\20 main-gal {
+    position: relative;
+    right: -8px;
+    padding-right: 0px;
+}
+
+/*echo '<br/>';*/

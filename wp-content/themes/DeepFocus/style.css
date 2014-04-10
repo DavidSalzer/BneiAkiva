@@ -120,7 +120,7 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 			input#searchinput { background:none; border: none; font-size: 12px; font-style: italic; color: #7d7d7d; text-shadow: 1px 1px 1px #ffffff; margin-top:0px; padding-left:13px; width:105px; float: left; margin-right: 4px; position: relative; top: 6px; }
 			input#searchsubmit { float:left; margin-top:9px; }
 
-#content-full { position: relative; /*padding-bottom: 196px;*/ height: 100%;}
+#content-full { position: relative; /*padding-bottom: 196px;*/ height: 100%; /*min-height: 752px;*/}/*maby need to do min hehgt with java*/
 	.center-highlight { background: url(images/light-overlay.png) repeat-y top center; text-shadow: 2px 2px 1px rgba(0,0,0,0.25); /*background-color: rgba(255,255,255,0.52);it is doubled*/ color: #797979;}
     #content-full > div.center-highlight {background-color: transparent;}
 
