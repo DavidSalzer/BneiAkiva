@@ -51,7 +51,12 @@
 					<?php $logo = (get_option('deepfocus_logo') <> '') ? get_option('deepfocus_logo') : get_template_directory_uri().'/images/logo.png'; ?>
 					<img src="<?php echo esc_url($logo); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" id="logo"/>
 				</a>
-				<div id="menu" class="clearfix">
+                <?php 
+                    if(is_front_page()){
+                        $homeclass='is-home';  
+                    }
+                ?>
+				<div id="menu" class="clearfix <?php echo $homeclass;?>">
 					<?php $menuClass = 'nav';
 					$menuID = 'primary';
 					$primaryNav = '';
