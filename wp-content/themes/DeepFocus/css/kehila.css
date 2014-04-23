@@ -1,3 +1,11 @@
+/*html {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: 100% 100%;
+}*/
+
 html, body {
     width: 100%;
     height: auto;
@@ -18,7 +26,7 @@ body {
 }
 
 #top {
-    padding-top: 52px;
+    padding-top: 61px;
 }
 
 .post-meta {
@@ -37,10 +45,28 @@ body {
 }
 /******************header******************************/
 
+#rrrr{
+    height: 100%;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+}
+.main-callender {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.sf-sub-indicator {
+    display: none;
+}
+
 ul.nav li {
     margin-left: 0px;
-    padding: 20px 3px 0 3px;
+    padding: 20px 9px 0 9px;
+    /*width: 100%;*/
+    text-align: center;
 }
+
+
 
 #primary img {
     position: relative;
@@ -55,12 +81,12 @@ ul.nav li {
 #logo {
     right: 0px;
     z-index: 6;
-    top: -52px;
+    top: -65px;
 }
 
 #search-form {
     position: absolute;
-    left: 0px;
+    left: 20px;
     top: -100px;
 }
 
@@ -112,6 +138,10 @@ ul.nav {
     display: none;
 }
 
+#homeService1 {
+    margin-left: 20px;
+}
+
 #homeService3 {
     padding-right: 0px;
 }
@@ -131,6 +161,8 @@ ul.nav {
 /*.about-container .entry.clearfix.post.full p {
     color: green;
 }*/
+
+
 
 
 h1.title.about-title {
@@ -213,7 +245,7 @@ h1.title.about-title {
     position: relative;
     right: -15px;
     background-color: rgba(255,255,255,0.5);
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box;
@@ -281,6 +313,7 @@ h1.title.about-title {
     color: #575758;
     font-size: 20px;
     width: 345px;
+    text-shadow: none;
 }
 
 
@@ -290,17 +323,16 @@ h1.title.about-title {
 }
 
 #kehila-phone {
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 #kehila-fax {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 #conect-good-point {
     display: block;
     line-height: 59px;
-    top: 30px;
     width: 315px;
     height: 42px;
     text-indent: 68px;
@@ -308,12 +340,12 @@ h1.title.about-title {
     background-repeat: no-repeat;
     background-position: right;
     margin-right: -7px;
-    margin-top: 20px;
+    margin-top: 36px;
 }
 
 .castoum_contant {
     background-color: rgba(255,255,255,0.7);
-    height: 310px;
+    height: 347px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -329,6 +361,8 @@ h1.title.about-title {
     margin: auto !important;
     left: 0px;
     float: none !important;
+    text-shadow: none;
+    font-weight: bold;
 }
 
 #et_contact_right > p {
@@ -381,7 +415,7 @@ h1.title.about-title {
     width: 70%;
     margin: auto;
     height: 735px;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.6);
     -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.52);
@@ -391,24 +425,25 @@ h1.title.about-title {
 #et-contact-message {
     position: absolute;
     top: 690px;
-    color: red;
     right: 255px;
+    color: #BC1111;
+    text-shadow: none;
 }
 
 h1.title.c-title {
+    text-shadow: none;
     text-align: center;
     position: relative;
     top: -50px;
     background-image: url("../images/pic-kehila/contactus.png");
     background-repeat: no-repeat;
-    background-position-x: 182px;
-    color: black;
-    background-position-y: -2px;
-    height: 78px;
+    background-position: center;
+    height: 87px;
     line-height: 100px;
-    text-indent: -13px;
+    text-indent: -53px;
     color: #797979;
-    font-size: 20px;
+    font-size: 22px;
+    padding-bottom: 0px;
 }
 
 #wrapper1-castoum {
@@ -588,8 +623,15 @@ h1.title.c-title {
 
 #main-gallery-title {
     margin: 15px 0px 42px 0px;
-    font-size: 31px;
-    height: auto;
+    font-size: 25px;
+    background-image: url("../images/pic-kehila/galery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    text-indent: -58px;
+    height: 92px;
+    line-height: 98px;
+    color: #9B9B9B;
 }
 
 .my-own-gall h1.title {

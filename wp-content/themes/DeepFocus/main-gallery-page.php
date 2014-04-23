@@ -31,7 +31,7 @@
                 <div class="alignright"></div>
             </div>
         </div> <!-- end .entry -->
-     <div id="main-gallery-title">עמוד גלרייה ראשי</div>
+     <div id="main-gallery-title">גלרייה</div>
     <?php
             foreach( $mypages as $page ) {		
         

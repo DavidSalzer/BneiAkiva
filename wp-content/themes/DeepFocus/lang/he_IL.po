@@ -192,7 +192,7 @@ msgstr ""
 
 #: ../page-contact.php:37
 msgid "Invalid Email. "
-msgstr ""
+msgstr "הכנסת כתובת מייל לא תקינה"
 
 #: ../page-contact.php:65
 msgid "Thanks for contacting us"
@@ -398,19 +398,19 @@ msgstr ""
 
 #: ../epanel/page_templates/page_templates.php:22
 msgid "Captcha"
-msgstr ""
+msgstr "קוד האימות"
 
 #: ../epanel/page_templates/page_templates.php:22
 msgid "Fill"
-msgstr ""
+msgstr "בבקשה מלא את שדה"
 
 #: ../epanel/page_templates/page_templates.php:22
 msgid "field"
-msgstr ""
+msgstr " "
 
 #: ../epanel/page_templates/page_templates.php:22
 msgid "Invalid email"
-msgstr ""
+msgstr "הכנסת כתובת אמייל לא תקינה"
 
 #: ../epanel/page_templates/page_templates.php:37
 msgid "ET Page Template Settings"

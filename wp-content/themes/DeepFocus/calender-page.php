@@ -23,7 +23,7 @@ Template Name: לוח שנה
     </div> <!-- end .hr -->
     <div class="hr">
     <div class="hr-center">
-    <div class="center-highlight">
+    <div class="center-highlight main-callender">
         <div class="container">
 
             <?php if ($fullwidth) { ?>
@@ -59,7 +59,10 @@ Template Name: לוח שנה
                             <?php }; ?>
                             <?php $urlCalender=$cfs->get('addCalender');//, $post_id, $options ?>
                             
-                            <iframe src="<?php echo $urlCalender?>" style="border: 0" max-width="540" width="90%" height="400" frameborder="0" scrolling="no"></iframe>
+                            <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=<?php echo $urlCalender?>%40gmail.com&amp;color=%23875509&amp;ctz=Asia%2FJerusalem" style=" border-width:0 " width="90%" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+                            <!--<iframe src="<?php echo $urlCalender?>" style="border: 0" max-width="540" width="90%" height="400" frameborder="0" scrolling="no"></iframe>-->
                             <?php wp_link_pages(array('before' => '<p><strong>'.esc_html__('Pages','DeepFocus').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
                             <div id="et-contact">

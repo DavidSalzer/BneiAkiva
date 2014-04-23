@@ -244,7 +244,7 @@ textarea.input {
 }
 
 #et-contact p .et_contact_error {
-    border: 1px solid red !important;
+    border: 1px solid #BC1111 !important;
 }
 
 #et-contact .et_hidden {
@@ -268,8 +268,9 @@ textarea.input {
     border: 0px !important;
     color: #4c4b4b !important;
     float: right;
+    font-weight: bold;
     font-size: 12px;
-    text-shadow: 1px 1px 1px #fff;
+    /*text-shadow: 1px 1px 1px #fff;*/
     text-transform: uppercase;
     margin-right: 9px;
     height: 35px;
