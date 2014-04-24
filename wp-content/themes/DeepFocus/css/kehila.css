@@ -55,6 +55,9 @@ body {
     text-indent: 34px;
     font-size: 20px;
     background-color: #2089A2;
+    box-shadow: inset 0px 15px 16px -13px #000000, inset 0px -13px 16px -13px #000000;
+    -webkit-box-shadow: inset 0px 15px 16px -13px #000000, inset 0px -13px 16px -13px #000000;
+    -moz-box-shadow: inset 0px 15px 16px -13px #000000, inset 0px -13px 16px -13px #000000;
 }
 /******************header******************************/
 
@@ -75,7 +78,7 @@ body {
 
 ul.nav li {
     margin-left: 0px;
-    padding: 20px 9px 0 9px;
+    padding: 20px 8px 0 8px;
     /*width: 100%;*/
     text-align: center;
 }
@@ -115,9 +118,13 @@ ul.nav li {
     font-family: 'MyriadHebrew-Regular';
 }
 
+#menu .sub-menu {
+    font-weight: 100;
+}
+
 ul.nav {
     float: right;
-    padding: 20px 190px 0px 190px;
+    padding: 20px 190px 0px 160px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -127,6 +134,7 @@ ul.nav {
     text-align: right;
     padding-top: 0;
     height: 55px;
+    font-weight: bold;
 }
 
 
@@ -171,6 +179,7 @@ ul.nav {
 
 #portfolio-items > a > span {
     line-height: 29px;
+    color: gray;
 }
 /******about******/
 
@@ -286,6 +295,7 @@ h1.title.about-title {
     border-radius: 9px;
     color: white;
     text-align: center;
+    border: 1px solid white;
 }
 
 .et_pt_item_image:hover .main-post-title {
