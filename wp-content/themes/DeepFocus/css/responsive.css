@@ -347,6 +347,15 @@ embed, iframe, object, video {
         top: 690px;
     }
     /*end cambium*/
+
+    #footer:before {
+        width: 800px;
+    }
+
+    #breadcrumbs:after {
+        left: -14px;
+    }
+
     #et_pt_gallery\20 main-gal {
         width: 623px;
         position: relative;
@@ -610,7 +619,7 @@ embed, iframe, object, video {
     }
 
     #footer p#developer {
-        top: 10px;
+        top: 54px;
         left: -21px;
         width: 168px;
     }
@@ -627,6 +636,29 @@ embed, iframe, object, video {
     }
 
     /*end cambium comments*/
+
+    #footer:before {
+        width: 495px;
+    }
+
+    #breadcrumbs:after {
+        left: -9px;
+    }
+
+    /*#breadcrumbs:before {
+    left: -9px;
+    top: -27px;
+}*/
+
+    #wrap-service:after, #wrap-service:before {
+        left: -13px;
+    }
+
+
+
+
+
+
     .et_pt_gallery_entry.album {
         margin-left: 21px;
     }
@@ -992,7 +1024,7 @@ embed, iframe, object, video {
     #footer p#copyright {
         text-align: center;
         width: 140px;
-        top: 22px;
+        top: 66px;
     }
 
     #et-contact-message {
@@ -1012,22 +1044,21 @@ embed, iframe, object, video {
             margin-top: 20px;
         }
 
-        #footer #contact-us {
-            /*margin-top: -18px;*/
-        }
+
 
         #footer p#developer {
             width: 120px;
             margin-left: 10px; /*from here my comennts for smart-phone*/
             position: absolute;
-            top: 14px;
+            top: 56px;
             padding-bottom: 0px;
             margin-top: 0px;
-            left: -5px;
+            left: -41px;
         }
 
         #footer p#copyright {
-            top: 5px;
+            top: 46px;
+            right: -58px;
         }
     }
 
@@ -1042,7 +1073,7 @@ embed, iframe, object, video {
         }
 
         #footer p#copyright {
-            width: 88px;
+            width: 95px;
             right: 15px;
         }
         /*yishai changed*/
@@ -1060,6 +1091,43 @@ embed, iframe, object, video {
             top: -135px;
         }
         /*end comments in cambium*/
+
+        /*#footer-newsletter input[type='checkbox']:checked + label {
+        background-position-y: -22px;
+        }
+    
+    
+    #footer-newsletter input[type='checkbox'] + label {
+        padding: 2px 22px 2px 0;
+        background-size: 22px;
+        letter-spacing: 0.7px;
+        word-spacing: 0px;
+        background-position-x: 273px;
+        font-size: 15px;
+      
+    }*/
+
+
+        #footer #contact-us {
+            /*margin-top: -18px;*/
+            width: 94px;
+            height: 34px;
+            font-size: 21px;
+            line-height: 29px;
+            right: -5px;
+        }
+
+        #footer:before {
+            width: 100%;
+        }
+
+
+        .formError {
+            opacity: 0.95 !important;
+            position: absolute !important;
+            top: 81px !important;
+            left: 100px !important;
+        }
 
         .et_pt_gallery_entry.album {
             margin: 0px auto 10px auto !important;
@@ -1134,7 +1202,7 @@ embed, iframe, object, video {
 
             /*start comments in cambium*/
             #top {
-                padding-top: 135px;
+                padding-top: 192px;
             }
 
             .wrap-container, #hr, .hr {
@@ -1142,7 +1210,7 @@ embed, iframe, object, video {
             }
 
             #tagline p:first-child {
-                top: -97px;
+                top: -126px;
             }
 
             .flex-container {
@@ -1151,7 +1219,7 @@ embed, iframe, object, video {
 
             #logo {
                 margin: auto;
-                top: -135px;
+                top: -191px;
             }
 
             .my-last-post #left-area > div.entry.clearfix.post > h1 {
@@ -1209,6 +1277,12 @@ embed, iframe, object, video {
             }
             /*#wrapper1-castoum {height: 250px; }*/
 
+
+            #wrap-service:before {
+                display: none;
+            }
+
+
             .castoum_contant {
                 height: 300px;
                 padding-right: 48px;
@@ -1228,6 +1302,17 @@ embed, iframe, object, video {
 
 
             /*end comments in cambium*/
+
+            #footer p#developer {
+                left: 0px;
+            }
+
+            #breadcrumbs:after {
+                width: 100%;
+                left: 0px;
+            }
+
+
             #et_pt_gallery\20 main-gal {
                 width: 350px;
                 padding-right: 0px;
@@ -1278,8 +1363,8 @@ embed, iframe, object, video {
 
             h3.hometitle, #footer p#copyright {
                 text-align: center;
-                top: 0px;
-                right: 5px;
+                top: 39px;
+                right: 6px;
             }
 
             #blog {

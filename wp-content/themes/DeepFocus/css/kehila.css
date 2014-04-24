@@ -55,10 +55,44 @@ body {
     text-indent: 34px;
     font-size: 20px;
     background-color: #2089A2;
-    box-shadow: inset 0px 15px 16px -13px #000000, inset 0px -13px 16px -13px #000000;
-    -webkit-box-shadow: inset 0px 15px 16px -13px #000000, inset 0px -13px 16px -13px #000000;
-    -moz-box-shadow: inset 0px 15px 16px -13px #000000, inset 0px -13px 16px -13px #000000;
+    -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
 }
+
+
+/*#breadcrumbs:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -26px;
+    height: 57px;
+    width: 104%;
+    left: -17px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}*/
+
+
+#breadcrumbs:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    height: 64px;
+    width: 104%;
+    left: -17px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+}
+
+
 /******************header******************************/
 
 #rrrr {
@@ -81,6 +115,7 @@ ul.nav li {
     padding: 20px 8px 0 8px;
     /*width: 100%;*/
     text-align: center;
+    z-index: 15;
 }
 
 
@@ -276,6 +311,45 @@ h1.title.about-title {
     box-sizing: border-box;
 }
 
+#footer:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 252px;
+    height: 57px;
+    width: 1030px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+
+#wrap-service:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -31px;
+    height: 57px;
+    width: 105%;
+    left: -24px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+}
+
+
+#wrap-service:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -35px;
+    height: 64px;
+    width: 105%;
+    left: -24px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+}
+
 
 .main-post-title {
     position: absolute;
@@ -441,7 +515,7 @@ h1.title.about-title {
     width: 70%;
     margin: auto;
     height: 735px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.4);
     -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.52);
@@ -514,6 +588,12 @@ h1.title.c-title {
     max-width: 90%;
     height: auto;
     padding: 0 5% 20px 5%;
+    display: block;
+    margin: auto;
+}
+
+.text-image-page {
+    margin-top: 30px;
 }
 
 #content-area.news h1.title.c-title {
@@ -622,8 +702,8 @@ h1.title.c-title {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 3px 15px 2px 15px;
-    background-color: #567F7B;
+    padding: 3px 15px 5px 15px;
+    background-color: #325465;
     border-radius: 36px;
     color: #B8BABB;
     font-size: 20px;
