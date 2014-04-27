@@ -302,7 +302,17 @@ h1.title.about-title {
 }*/
 
 #content-full-textpage {
-    margin-top: -15px;
+    margin-top: -20px;
+    font-family: 'Alef-Regular';
+}
+
+#mobile_menu li a {
+    display: block;
+}
+
+div#content-full-buildpage {
+    font-size: 30px;
+    text-align: center;
 }
 
 .main-homegal #et_pt_gallery.clearfix.main-gal {
@@ -390,7 +400,7 @@ h1.title.about-title {
     height: 57px;
     width: 105%;
     left: -24px;
-    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-image: url("../images/pic-kehila/light-shadow.png");
     background-size: 100% 100%;
 }
 
@@ -403,7 +413,7 @@ h1.title.about-title {
     height: 64px;
     width: 105%;
     left: -24px;
-    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-image: url("../images/pic-kehila/light-shadow.png");
     background-size: 100% 100%;
 }
 
@@ -411,7 +421,7 @@ h1.title.about-title {
 .main-post-title {
     position: absolute;
     display: block;
-    background: rgba(255,255,255,0.5);
+    background: rgba(149,149,149,0.55);
     width: 94%;
     z-index: 500000000;
     bottom: -40px;
@@ -665,6 +675,15 @@ h1.title.c-title {
 
 .text-image-page {
     margin-top: 30px;
+    font-family: 'Alef-Regular';
+}
+
+#sidebar {
+    font-family: 'Alef-Regular';
+}
+
+#post-content-wrapper {
+    font-family: 'Alef-Regular';
 }
 
 #content-area.news h1.title.c-title {
@@ -774,7 +793,7 @@ h1.title.c-title {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 3px 15px 5px 15px;
-    background-color: #325465;
+    background-color: #526d7a;
     border-radius: 36px;
     color: #B8BABB;
     font-size: 20px;

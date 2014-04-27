@@ -35,7 +35,19 @@
 <html>
     <head>
         <title></title>
+        <style>
+         @font-face {
+                font-family: 'Alef-Regular';
+                src: url('Alef-Regular.otf') format('truetype');
+                src: local('Alef-Regular'),url('Alef-Regular.eot') format('eot'), url('Alef-Regular.svg') format('svg'),url('Alef-Regular.ttf') format('truetype'),url('Alef-Regular.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+           
+
+        </style>
     </head>
+
     <body style="direction: rtl">
         <br />
         <table cellspacing="0" align="center" border="0" style="max-width:600px; width:600px; background-color: #eee;" cellpadding="0" width="600px">
@@ -49,9 +61,13 @@
                 <td style="color: #fff; font-size: 30px; font-family: Arial;text-indent: 42px; color: #fff;" align="right" valign="middle">ינואר 2014
                 </td>
             </tr>
-            <tr style="background-color: #f49b3b; height:12px;width:600px;" cellspacing="0" border="0" cellpadding="0"><td ></td></tr>
-            <tr style="background-color: #fbd416; height:12px;width:600px;" cellspacing="0" border="0" cellpadding="0"><td ></td></tr>
-          
+            <tr style="background-color: #f49b3b; height:12px;width:600px;" cellspacing="0" border="0" cellpadding="0">
+                <td></td>
+            </tr>
+            <tr style="background-color: #fbd416; height:12px;width:600px;" cellspacing="0" border="0" cellpadding="0">
+                <td></td>
+            </tr>
+
             <tr>
                 <td>
                     <table cellspacing="0" border="0" style="max-width:600px; width:600px; background-color: #eee;font-family:helvetica,arial,sans-serif;color:#555;font-size:13px;line-height:15px;" align="center" cellpadding="20" width="600px">
@@ -72,18 +88,18 @@
                                             $image = nt_post_image(get_the_ID());
                                     ?>
                                     <tr>
-                                        <td style="font-family: Arial; font-size: 15px; padding: 15px 15px 15px 15px;position: relative;">
-                                          
+                                        <td class="poster" style="font-family: Arial; font-size: 15px; padding: 15px 15px 15px 15px;position: relative;">
+
                                             <?php if ($image != null) { ?>
-                                            <img src="<?php echo $image; ?>" alt="picture" align="right" width="100px" height="100" style="margin-left: 10px;" />
+                                            <img src="<?php echo $image; ?>" alt="picture" align="right" width="150px" height="100" style="margin-left: 10px;" />
                                             <?php } ?>
-                                            <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #000; font-size: 20px; text-decoration: none"><b><?php the_title(); ?></b></a><br />
-                                            <div id="text-news-latters" style="width: 85%;">
-                                            <?php the_excerpt(); ?>
-                                                </div>
-                                            <div id="read-new-wrap" style="position: absolute;left: 5px;bottom: 10px;">
-                                             <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #208AA4;  font-size: 20px; text-decoration: none; bottom: 0px; left: 0px;"><b>קרא עוד</b></a><br />
-                                                </div>  
+                                            <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #000; font-size: 20px; text-decoration: none; max-width: 310px;overflow: hidden;text-overflow: ellipsis;display: block;white-space: nowrap;"><b><?php the_title(); ?></b></a><br />
+                                            <div id="text-news-latters" style="width: 68%; height: 68px; overflow: hidden; margin-top: -20px;">
+                                                <?php the_excerpt(); ?>
+                                            </div>
+                                            
+                                                <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #208AA4;  font-size: 15px; text-decoration: none;position: absolute;left: 15px;bottom: 10px;;"><b>קרא עוד...</b></a><br />
+                                            
                                         </td>
                                     </tr>
                                     <?php
@@ -112,5 +128,7 @@
                 </td>
             </tr>
         </table>
+
+
     </body>
 </html>
