@@ -382,6 +382,11 @@ embed, iframe, object, video {
         }
     }
 
+    #right-side-poster {
+        width: 239px;
+        right: 0px;
+    }
+
     .container.breadcrumbs {
         width: 780px;
     }
@@ -429,7 +434,7 @@ embed, iframe, object, video {
     #search-form {
         position: absolute;
         left: 15px;
-        top: -100px;
+        top: -58px;
     }
 
     #featured {
@@ -637,6 +642,11 @@ embed, iframe, object, video {
 
     /*end cambium comments*/
 
+#right-side-poster {
+     display: none;
+    }
+
+
     #footer:before {
         width: 495px;
     }
@@ -842,7 +852,7 @@ embed, iframe, object, video {
         margin: auto;
         right: 0px;
         left: 0px;
-        top: -82px;
+        top: -41px;
     }
 
     #featured {

@@ -20,10 +20,58 @@ body {
 }
 
 @font-face {
+    font-family: 'Alef-Regular';
+    src: url('fonts/Alef-Regular.otf') format('truetype');
+    src: local('Alef-Regular'),url('fonts/Alef-Regular.eot') format('eot'), url('fonts/Alef-Regular.svg') format('svg'),url('fonts/Alef-Regular.ttf') format('truetype'),url('fonts/Alef-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
     font-family: 'MyriadHebrew-Regular';
     src: url('fonts/MyriadHebrew-Regular.otf') format('otf');
     src: local('MyriadHebrew-Regular'), url('fonts/MyriadHebrew-Regular.otf') format('truetype');
 }
+
+@font-face {
+    font-family: 'MyriadHebrew-Bold';
+    src: url('fonts/MyriadHebrew-Bold.otf') format('otf');
+    src: local('MyriadHebrew-Bold'), url('fonts/MyriadHebrew-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadHebrew-BoldIt';
+    src: url('fonts/MyriadHebrew-BoldIt.otf') format('otf');
+    src: local('MyriadHebrew-BoldIt'), url('fonts/MyriadHebrew-BoldIt.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadHebrew-It';
+    src: url('fonts/MyriadHebrew-It.otf') format('otf');
+    src: local('MyriadHebrew-It'), url('fonts/MyriadHebrew-It.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('fonts/MyriadPro-Regular.otf') format('otf');
+    src: local('MyriadPro-Regular'), url('fonts/MyriadPro-Regular.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Alef-Bold';
+    src: url('fonts/Alef-Bold.eot');
+    format('eot');
+    src: local('Alef-Bold'), url('fonts/Alef-Bold.woff') format('woff'), url('fonts/Alef-Bold.ttf') format('truetype'), url('fonts/Alef-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 
 @font-face {
     font-family: 'MyriadPro';
@@ -95,11 +143,13 @@ body {
 
 /******************header******************************/
 
-#rrrr {
+#right-side-poster {
     height: 100%;
-    width: 20px;
-    background-color: red;
+    width: 285px;
+    background-color: rgba(255,255,255,1);
     position: absolute;
+    z-index: -1;
+    right: -14px;
 }
 
 .main-callender {
@@ -138,8 +188,8 @@ ul.nav li {
 
 #search-form {
     position: absolute;
-    left: 0px;
-    top: -100px;
+ left: 0px;
+top: -61px;
     box-shadow: 0px 1px 0px #a5a7a8;
 }
 
@@ -370,6 +420,7 @@ h1.title.about-title {
     color: white;
     text-align: center;
     border: 1px solid white;
+    text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8);
 }
 
 .et_pt_item_image:hover .main-post-title {
@@ -463,11 +514,13 @@ h1.title.about-title {
     float: none !important;
     text-shadow: none;
     font-weight: bold;
+    width: 271px !important;
 }
 
 #et_contact_right > p {
     line-height: 33px;
     font-size: 16px;
+    text-indent: 20px;
 }
 
 #et_contact_left#et__left {

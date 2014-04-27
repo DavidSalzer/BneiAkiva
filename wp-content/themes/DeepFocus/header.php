@@ -37,15 +37,23 @@
                 /* ]]> */
                 </script><script type="text/javascript" src="http://localhost/kehila/wp-content/plugins/wysija-newsletters/js/front-subscribers.js?ver=2.6"></script>
 <!--END Scripts-->
-
+    
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 
 </head>
 <body<?php if (is_home()) { if (get_option('deepfocus_featured') == 'on') echo(' id="home-featured"'); else echo(' id="home"'); } ?> <?php body_class(); ?>>
 	<div class="wrap-container">
+        		
     <div id="top">
 		<div class="container">
+            <div id="search-form">
+						<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<input type="text" placeholder="<?php esc_attr_e('חפש באתר...','DeepFocus'); ?>" name="s" id="searchinput" />
+
+							<input type="image" src="<?php echo get_template_directory_uri(); ?>/images/search-btn.png" id="searchsubmit" />
+						</form>
+					</div> <!-- end #search-form -->
 			<div id="header">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<?php $logo = (get_option('deepfocus_logo') <> '') ? get_option('deepfocus_logo') : get_template_directory_uri().'/images/logo.png'; ?>
@@ -76,13 +84,7 @@
 					<?php }
 					else echo($primaryNav); ?>
 
-					<div id="search-form">
-						<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<input type="text" value="<?php esc_attr_e('חפש באתר...','DeepFocus'); ?>" name="s" id="searchinput" />
-
-							<input type="image" src="<?php echo get_template_directory_uri(); ?>/images/search-btn.png" id="searchsubmit" />
-						</form>
-					</div> <!-- end #search-form -->
+				
 
 					<?php do_action('et_header_menu'); ?>
 				</div> <!-- end #menu -->
