@@ -157,6 +157,10 @@ Template Name:  תבנית גנרית עם תמונה
                                 </div>
 
                             </div> <!-- end #et-contact -->
+                            <div class="text-container text-image-page">
+                                <?php the_content(); ?>
+                            </div>
+
                             <div class="clear"></div>
 
                             <?php edit_post_link(esc_html__('Edit this page','DeepFocus')); ?>
@@ -164,11 +168,7 @@ Template Name:  תבנית גנרית עם תמונה
     </div>
                         </div>
 
-                        <div id="wrapper1-castoum"> 
-                            <div class="text-container">
-                                <?php the_content(); ?>
-                            </div>
-                        </div>
+          
                         </div>
 
                         <!-- end .entry -->
@@ -180,6 +180,7 @@ Template Name:  תבנית גנרית עם תמונה
                     
 
                 </div> <!-- end #content-area -->
+       
             </div> <!-- end .container -->
             </div> <!-- end .wrap-container -->
         </div> <!-- end .center-highlight -->

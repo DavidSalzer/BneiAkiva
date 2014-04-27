@@ -39,7 +39,7 @@
         
     ?>
     
-    	<?php if($counter<4):?>   
+    	<?php if($counter<8):?>   
      <div class="et_pt_gallery_entry">
         <div class="et_pt_item_image" style="background-color: rgb(0, 0, 0); top: 0px;">
             <?php

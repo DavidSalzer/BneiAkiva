@@ -260,7 +260,7 @@ textarea.input {
 }
 
 #et_contact_right {
-    width: 246px;/*it was 17%*/
+    width: 263px;/*it was 17%*/
     margin-left: 50px;
 }
 
@@ -285,9 +285,12 @@ textarea.input {
     border-radius: 6px;
     right: 196px;
     top: 60px;
-    -webkit-box-shadow: 3px 4px 10px 2px rgba(0,0,0,0.62);
+    /*-webkit-box-shadow: 3px 4px 10px 2px rgba(0,0,0,0.62);
     -moz-box-shadow: 3px 4px 10px 2px rgba(0,0,0,0.62);
-    box-shadow: 3px 4px 10px 2px rgba(0,0,0,0.62);
+    box-shadow: 3px 4px 10px 2px rgba(0,0,0,0.62);*/
+    -webkit-box-shadow: -2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+     box-shadow: -2px 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
 #et_contact_reset {

@@ -20,10 +20,58 @@ body {
 }
 
 @font-face {
+    font-family: 'Alef-Regular';
+    src: url('fonts/Alef-Regular.otf') format('truetype');
+    src: local('Alef-Regular'),url('fonts/Alef-Regular.eot') format('eot'), url('fonts/Alef-Regular.svg') format('svg'),url('fonts/Alef-Regular.ttf') format('truetype'),url('fonts/Alef-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
     font-family: 'MyriadHebrew-Regular';
     src: url('fonts/MyriadHebrew-Regular.otf') format('otf');
     src: local('MyriadHebrew-Regular'), url('fonts/MyriadHebrew-Regular.otf') format('truetype');
 }
+
+@font-face {
+    font-family: 'MyriadHebrew-Bold';
+    src: url('fonts/MyriadHebrew-Bold.otf') format('otf');
+    src: local('MyriadHebrew-Bold'), url('fonts/MyriadHebrew-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadHebrew-BoldIt';
+    src: url('fonts/MyriadHebrew-BoldIt.otf') format('otf');
+    src: local('MyriadHebrew-BoldIt'), url('fonts/MyriadHebrew-BoldIt.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadHebrew-It';
+    src: url('fonts/MyriadHebrew-It.otf') format('otf');
+    src: local('MyriadHebrew-It'), url('fonts/MyriadHebrew-It.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('fonts/MyriadPro-Regular.otf') format('otf');
+    src: local('MyriadPro-Regular'), url('fonts/MyriadPro-Regular.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Alef-Bold';
+    src: url('fonts/Alef-Bold.eot');
+    format('eot');
+    src: local('Alef-Bold'), url('fonts/Alef-Bold.woff') format('woff'), url('fonts/Alef-Bold.ttf') format('truetype'), url('fonts/Alef-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 
 @font-face {
     font-family: 'MyriadPro';
@@ -55,14 +103,53 @@ body {
     text-indent: 34px;
     font-size: 20px;
     background-color: #2089A2;
+    -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
 }
+
+
+/*#breadcrumbs:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -26px;
+    height: 57px;
+    width: 104%;
+    left: -17px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}*/
+
+
+#breadcrumbs:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    height: 64px;
+    width: 104%;
+    left: -17px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+}
+
+
 /******************header******************************/
 
-#rrrr {
+#right-side-poster {
     height: 100%;
-    width: 20px;
-    background-color: red;
+    width: 285px;
+    background-color: rgba(255,255,255,1);
     position: absolute;
+    z-index: -1;
+    right: -14px;
 }
 
 .main-callender {
@@ -75,9 +162,10 @@ body {
 
 ul.nav li {
     margin-left: 0px;
-    padding: 20px 9px 0 9px;
+    padding: 20px 8px 0 8px;
     /*width: 100%;*/
     text-align: center;
+    z-index: 15;
 }
 
 
@@ -100,8 +188,8 @@ ul.nav li {
 
 #search-form {
     position: absolute;
-    left: 0px;
-    top: -100px;
+ left: 0px;
+top: -61px;
     box-shadow: 0px 1px 0px #a5a7a8;
 }
 
@@ -115,9 +203,13 @@ ul.nav li {
     font-family: 'MyriadHebrew-Regular';
 }
 
+#menu .sub-menu {
+    font-weight: 100;
+}
+
 ul.nav {
     float: right;
-    padding: 20px 190px 0px 190px;
+    padding: 20px 190px 0px 160px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -127,6 +219,7 @@ ul.nav {
     text-align: right;
     padding-top: 0;
     height: 55px;
+    font-weight: bold;
 }
 
 
@@ -171,6 +264,7 @@ ul.nav {
 
 #portfolio-items > a > span {
     line-height: 29px;
+    color: gray;
 }
 /******about******/
 
@@ -267,6 +361,45 @@ h1.title.about-title {
     box-sizing: border-box;
 }
 
+#footer:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 252px;
+    height: 57px;
+    width: 1030px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+
+#wrap-service:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -31px;
+    height: 57px;
+    width: 105%;
+    left: -24px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+}
+
+
+#wrap-service:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -35px;
+    height: 64px;
+    width: 105%;
+    left: -24px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+}
+
 
 .main-post-title {
     position: absolute;
@@ -286,6 +419,8 @@ h1.title.about-title {
     border-radius: 9px;
     color: white;
     text-align: center;
+    border: 1px solid white;
+    text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8);
 }
 
 .et_pt_item_image:hover .main-post-title {
@@ -379,11 +514,13 @@ h1.title.about-title {
     float: none !important;
     text-shadow: none;
     font-weight: bold;
+    width: 271px !important;
 }
 
 #et_contact_right > p {
     line-height: 33px;
     font-size: 16px;
+    text-indent: 20px;
 }
 
 #et_contact_left#et__left {
@@ -431,7 +568,7 @@ h1.title.about-title {
     width: 70%;
     margin: auto;
     height: 735px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.4);
     -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.52);
@@ -504,6 +641,12 @@ h1.title.c-title {
     max-width: 90%;
     height: auto;
     padding: 0 5% 20px 5%;
+    display: block;
+    margin: auto;
+}
+
+.text-image-page {
+    margin-top: 30px;
 }
 
 #content-area.news h1.title.c-title {
@@ -612,8 +755,8 @@ h1.title.c-title {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 3px 15px 2px 15px;
-    background-color: #567F7B;
+    padding: 3px 15px 5px 15px;
+    background-color: #325465;
     border-radius: 36px;
     color: #B8BABB;
     font-size: 20px;
