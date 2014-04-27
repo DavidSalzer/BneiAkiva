@@ -188,8 +188,8 @@ ul.nav li {
 
 #search-form {
     position: absolute;
- left: 0px;
-top: -61px;
+    left: 0px;
+    top: -61px;
     box-shadow: 0px 1px 0px #a5a7a8;
 }
 
@@ -301,7 +301,14 @@ h1.title.about-title {
     background-color: #2089A2;
 }*/
 
+#content-full-textpage {
+    margin-top: -15px;
+}
 
+.main-homegal #et_pt_gallery.clearfix.main-gal {
+    background: none;
+    width: 986px;
+}
 
 .about-container #breadcrumbs {
     text-align: right;
@@ -431,11 +438,22 @@ h1.title.about-title {
     overflow: hidden;
 }
 
+#title-khilagal {
+    background-image: url("../images/pic-kehila/galery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    line-height: 97px;
+    text-indent: -80px;
+}
 
-#et_pt_gallery\20 main-gal {
+.big-wrap-galpage #et_pt_gallery.main-gal {
+    background: none;
+}
+/*#et_pt_gallery\20 main-gal {
     margin: auto;
     width: 990px;
-}
+}*/
 
 .more-icon.gal {
     left: 75px !important;
@@ -798,11 +816,11 @@ h1.title.c-title {
     margin-bottom: 35px;
 }
 
-#et_pt_gallery#main-gal {
+#et_pt_gallery.main-gal {
     background-color: rgba(255,255,255,0.5);
 }
 
-#et_pt_gallery\20 main-gal\20 backround-main-gall {
+div#et_pt_gallery {
     width: 990px;
     background-color: rgba(255,255,255,0.5);
     margin: auto;
@@ -813,7 +831,7 @@ h1.title.c-title {
     margin-left: 28px;
 }
 
-.my-own-gall #et_pt_gallery\20 main-gal {
+.my-own-gall #et_pt_gallery.main-gal {
     position: relative;
     right: -8px;
     padding-right: 0px;

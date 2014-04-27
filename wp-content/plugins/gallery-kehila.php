@@ -51,7 +51,7 @@
     
         $images = get_posts($args);
 ?>
-<div id="et_pt_gallery main-gal" class="clearfix">
+<div id="et_pt_gallery" class="clearfix main-gal">
     <?php
         
         foreach ( $images as $image ) {     

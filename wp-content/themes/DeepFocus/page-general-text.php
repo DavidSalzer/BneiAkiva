@@ -124,8 +124,9 @@ Template Name:  תבנית גנרית לטקסט
                                 <span class="overlay"></span>
                             </div> 	<!-- end .thumbnail -->
                             <?php }; ?>
-                            
+                            <div id="content-full-textpage">
                             <?php the_content(); ?>
+                                </div>
                             <?php wp_link_pages(array('before' => '<p><strong>'.esc_html__('Pages','DeepFocus').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
                             <div id="et-contact">
@@ -156,3 +157,10 @@ Template Name:  תבנית גנרית לטקסט
             </div> <!-- end .center-highlight -->
         </div> <!-- end #content-full -->
             <?php get_footer(); ?>
+    <script>
+ a = jQuery("#footer").height();
+     b = jQuery("#top").height();
+     d = window.outerHeight;
+     h = d - a - b - 120- 74 - 50;
+     jQuery('#contact-wrapper').css('min-height', h + 'px');
+    </script>

@@ -1813,6 +1813,8 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 
                 $formObj = WYSIJA::get("forms", "helper");
 
+                usort( $this->data['lists'], array('WYSIJA_view_back_campaigns', 'sort_by_name' ) );
+
                 foreach ($this->data['lists'] as $list) {
 
                     $checked = false;
@@ -2261,7 +2263,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 
         // categories
         $output .= '<div class="block clearfix" id="categories_filters">';
-        $output .= '    <label>'.__('Category filter', WYSIJA).'</label>';
+        $output .= '    <label>'.__('Taxonomy filter', WYSIJA).'</label>';
         $output .= '    <div class="group">';
         $output .= '        <p class="clearfix" style="display:none;">';
         $output .= '            <label class="radio"><input type="radio" name="category_condition" value="include" '.(($data['params']['category_condition'] === 'include') ? 'checked="checked"' : '').' />'.__('include', WYSIJA).'</label>';

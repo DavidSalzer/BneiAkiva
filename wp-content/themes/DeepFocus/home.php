@@ -79,7 +79,7 @@
 
 					<h3 class="hometitle recentworks"></h3>
 
-					<div id="portfolio-items" class="clearfix">
+					<div id="portfolio-items" class="clearfix main-homegal">
 						<?php get_template_part('includes/galeryExapmle'); ?><!--sara check it out       gallery-->
 
 						<div class="clear"></div>

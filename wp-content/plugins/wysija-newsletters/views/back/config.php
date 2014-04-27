@@ -133,7 +133,7 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
         $model_list = WYSIJA::get('list', 'model');
         $lists = $model_list->get(array('name', 'list_id', 'is_public'), array('is_enabled' => 1));
 
-
+        usort( $lists, array( $this, 'sort_by_name' ) );
         foreach ($lists as $list) {
             if ($list['is_public'])
                 $checked = true;
@@ -599,17 +599,17 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
         <div id="wysija-config">
                     <?php $this->tabs(); ?>
             <form name="wysija-settings" method="post" id="wysija-settings" action="" class="form-valid" autocomplete="off">
-                <div id="basics" class="wysija-panel" style="display:none;">
+                <div id="basics" class="wysija-panel hidden">
         <?php $this->basics(); ?>
                     <p class="submit">
                         <input type="submit" value="<?php echo esc_attr(__('Save settings', WYSIJA)); ?>" class="button-primary wysija" />
                     </p>
                 </div>
-                <div id="forms" class="wysija-panel" style="display:none;">
+                <div id="forms" class="wysija-panel hidden">
                     <?php /* if(WYSIJA::is_wysija_admin()) */ $this->form_list(); ?>
                 </div>
 
-                <div id="signupconfirmation" class="wysija-panel" style="display:none;">
+                <div id="signupconfirmation" class="wysija-panel hidden">
         <?php $this->signupconfirmation(); ?>
                     <p class="submit">
                         <input type="submit" value="<?php echo esc_attr(__('Save settings', WYSIJA)); ?>" class="button-primary wysija" />
@@ -618,7 +618,7 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
         <?php
         if ($this->_user_can('change_sending_method')) {
             ?>
-                    <div id="sendingmethod" class="wysija-panel" style="display:none;">
+                    <div id="sendingmethod" class="wysija-panel hidden">
             <?php $this->sendingmethod(); ?>
                         <p class="submit">
                             <input type="submit" value="<?php echo esc_attr(__('Save settings', WYSIJA)); ?>" class="button-primary wysija" />
@@ -629,14 +629,14 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
                 ?>
 
 
-                <div id="advanced" class="wysija-panel" style="display:none;">
+                <div id="advanced" class="wysija-panel hidden">
                 <?php $this->advanced($data); ?>
                     <p class="submit">
                         <input type="submit" value="<?php echo esc_attr(__('Save settings', WYSIJA)); ?>" class="button-primary wysija" />
                     </p>
                 </div>
 
-                <div id="add-ons" class="wysija-panel" style="display:none;">
+                <div id="add-ons" class="wysija-panel hidden">
                     <?php $this->add_ons(); ?>
                 </div>
 
@@ -833,9 +833,6 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
                             echo $field;
                         ?>
                     </th>
-
-                    <td>
-                    </td>
                 </tr>
 
                 <tr class="hidechoice choice-sending-method-site">
@@ -1083,7 +1080,7 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
                         echo $field . '<p class="description">' . str_replace(array('[link]', '[/link]'), array('<a href="http://support.mailpoet.com/knowledgebase/wp-cron-batch-emails-sending-frequency/?utm_source=wpadmin&utm_campaign=choosing%20frequency" target="_blank">', '</a>'), __('Your web host has limits. We suggest 70 emails per hour to be safe. [link]Find out more[/link].', WYSIJA)) . '</p>';
                         ?>
                     </th>
-                    <td colspan="1">
+                    <td colspan="2">
 
                         <?php
                             $name='sending_emails_number';
@@ -1092,19 +1089,16 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
                             $params=array("id"=>$id,'name'=>'wysija[config]['.$name.']','size'=>'6');
                             //if($this->model->getValue("smtp_host")=="smtp.gmail.com") $params["readonly"]="readonly";
                             $field=$helper_forms->input($params,$value);
-                            $field.= '&nbsp;'.__('emails', WYSIJA).'&nbsp;';
+                            $field.= '<span class="mailpoet-frequency_inner_texting">' . __( 'emails', WYSIJA ) . '</span>';
 
 
                             $name='sending_emails_each';
                             $id=str_replace('_','-',$name);
                             $value=$this->model->getValue($name);
-                            $field.=$helper_forms->dropdown(array('name'=>'wysija[config]['.$name.']','id'=>$id),$helper_forms->eachValues,$value);
+                            $field .=$helper_forms->dropdown(array('name'=>'wysija[config]['.$name.']','id'=>$id),$helper_forms->eachValues,$value);
                             echo $field;
+                            echo '<div class="mailpoet-frequency_warning hidden"><b>' . __('This is fast!', WYSIJA) . '</b> ' . str_replace(array('[link]', '[/link]'), array('<a href="http://support.mailpoet.com/knowledgebase/wp-cron-batch-emails-sending-frequency/?utm_source=wpadmin&utm_campaign=cron" target="_blank">', '</a>'), __('We suggest you setup a cron job. [link]Read more[/link] on support.mailpoet.com', WYSIJA)) . '</span>';
                         ?>
-                    </td>
-                    <td>
-        <?php echo '<span class="choice-above15 choice-frequency">' . apply_filters('wysija_sending_frequency', '') . '</span>'; ?>
-        <?php echo '<span class="choice-under15 choice-frequency"><b>' . __('This is fast!', WYSIJA) . '</b> ' . str_replace(array('[link]', '[/link]'), array('<a href="http://support.mailpoet.com/knowledgebase/wp-cron-batch-emails-sending-frequency/?utm_source=wpadmin&utm_campaign=cron" target="_blank">', '</a>'), __('We suggest you setup a cron job. [link]Read more[/link] on support.mailpoet.com', WYSIJA)) . '</span>'; ?>
                     </td>
                 </tr>
 
@@ -1330,7 +1324,7 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
         $mConfig = WYSIJA::get('config', 'model');
         $formsHelp = WYSIJA::get('forms', 'helper');
 
-        $htmlContent .='<div id="multisite" class="wysija-panel" style="display:none;">'; //start multisite div
+        $htmlContent .='<div id="multisite" class="wysija-panel hidden">'; //start multisite div
         $htmlContent.= '<div class="intro"><h3>' . __('Pick your prefered configuration?', WYSIJA) . '</h3></div>';
 
         $htmlContent.= '<table class="form-table" id="form-ms-config">
@@ -1855,6 +1849,8 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
                             if ($form_lists === null or is_array($form_lists) === false)
                                 $form_lists = array();
 
+                            usort( $data['lists'], array( $this, 'sort_by_name' ) );
+
                             print '<select id="lists-selection" name="lists" data-placeholder="'.__('Choose a list', WYSIJA).'" multiple class="chosen_select">';
 
                             for ($i = 0, $count = count($data['lists']); $i < $count; $i++) {
@@ -2099,8 +2095,10 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
                 // setup widget events
                 setupToolbar();
 
-                // setup chosen for list selection
-                new Chosen($('lists-selection'), { width: '642px', no_results_text: "<?php _e('Oops, nothing found!', WYSIJA); ?>" });
+                // Setups the jQuery Select2
+                jQuery('#lists-selection').select2({
+                    'width': 640
+                });
 
                 // in place editor for form name
                 new Ajax.InPlaceEditor('form-name', wysijaAJAX.ajaxurl, {
@@ -2350,7 +2348,7 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
         $output .= '<h3>' . __('Select the list you want to add:', WYSIJA) . '</h3>';
 
         // available lists select
-        $output .= '<select id="lists-available">';
+        $output .= '<select id="lists-available" class="mp-select-sort">';
         for ($j = 0, $count = count($extra['lists']); $j < $count; $j++) {
             // set current list
             $list = $extra['lists'][$j];
@@ -2659,6 +2657,20 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
         return $output;
     }
 
+    // widget feature: data validation - is_required checkbox
+    private function _widget_validation_is_required($data = array()) {
+        // is the field mandatory?
+        $is_required = (bool)(isset($data['params']['required']) && (int) $data['params']['required'] > 0);
+        $output  = '<p class="clearfix">';
+        $output .= '    <label>' . __('Is this field mandatory?', WYSIJA) . '</label>';
+        $output .= '    <span class="group">';
+        $output .= '        <label class="radio"><input type="radio" name="required" value="1" ' . (($is_required === true) ? 'checked="checked"' : '') . ' />' . __('Yes', WYSIJA) . '</label>';
+        $output .= '        <label class="radio"><input type="radio" name="required" value="0" ' . (($is_required === false) ? 'checked="checked"' : '') . ' />' . __('No', WYSIJA) . '</label>';
+        $output .= '    </span>';
+        $output .= '</p>';
+        return $output;
+    }
+
     // widget feature: data validation
     private function _widget_validation($data = array()) {
 
@@ -2666,14 +2678,22 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
 
         // display hidden parameters in case we're editing display settings
         if($data['is_editing_field'] === false) {
-            if(isset($data['params']['required'])) {
-                $required_value = (isset($data['params']['required']) && (int)$data['params']['required'] > 0) ? 1 : 0;
-                $output .= '<input type="hidden" name="required" value="'.$required_value.'" />';
-            }
 
-            if(isset($data['params']['validate'])) {
-                $validate_value = (isset($data['params']['validate']) && strlen(trim($data['params']['validate'])) > 0) ? trim($data['params']['validate']) : '';
-                $output .= '<input type="hidden" name="validate" value="'.$validate_value.'" />';
+            // special case for firstname & lastname
+            // we need to display the "is_required" in the form since they're not actual custom fields, they don't have "field settings"
+            if(in_array($data['field'], array('firstname', 'lastname'))) {
+                $output .= $this->_widget_validation_is_required($data);
+            } else {
+                // display hidden input since these settings are set on the custom field itself
+                if(isset($data['params']['required'])) {
+                    $required_value = (isset($data['params']['required']) && (int)$data['params']['required'] > 0) ? 1 : 0;
+                    $output .= '<input type="hidden" name="required" value="'.$required_value.'" />';
+                }
+
+                if(isset($data['params']['validate'])) {
+                    $validate_value = (isset($data['params']['validate']) && strlen(trim($data['params']['validate'])) > 0) ? trim($data['params']['validate']) : '';
+                    $output .= '<input type="hidden" name="validate" value="'.$validate_value.'" />';
+                }
             }
         } else {
             // validation
@@ -2681,15 +2701,7 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
                 // the email field is always mandatory, no questions asked
                 $output .= '<input type="hidden" name="required" value="1" />';
             } else {
-                // is the field mandatory?
-                $is_required = (bool) (isset($data['params']['required']) && (int) $data['params']['required'] > 0);
-                $output .= '<p class="clearfix">';
-                $output .= '	<label>' . __('Is this field mandatory?', WYSIJA) . '</label>';
-                $output .= '	<span class="group">';
-                $output .= '		<label class="radio"><input type="radio" name="required" value="1" ' . (($is_required === true) ? 'checked="checked"' : '') . ' />' . __('Yes', WYSIJA) . '</label>';
-                $output .= '		<label class="radio"><input type="radio" name="required" value="0" ' . (($is_required === false) ? 'checked="checked"' : '') . ' />' . __('No', WYSIJA) . '</label>';
-                $output .= '	</span>';
-                $output .= '</p>';
+                $output .= $this->_widget_validation_is_required($data);
             }
 
             // extra validation rules
@@ -2704,7 +2716,7 @@ class WYSIJA_view_back_config extends WYSIJA_view_back {
             if(in_array($data['type'], array('input', 'textarea'))) {
                 $output .= '<p class="clearfix">';
                 $output .= '    <label>'.__('Validate for:', WYSIJA).'</label>';
-                $output .= '    <select name="validate">';
+                    $output .= '    <select name="validate">';
                 $output .= '        <option value="">'.__('Nothing', WYSIJA).'</option>';
                 foreach($rules as $rule => $label) {
                     $is_selected = (isset($data['params']['validate']) && ($rule === $data['params']['validate'])) ? ' selected="selected"' : '';

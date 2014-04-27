@@ -127,7 +127,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'parent'    => 'wp-logo-external',
 		'id'        => 'wporg',
 		'title'     => __('WordPress.org'),
-		'href'      => __('http://wordpress.org/'),
+		'href'      => __('https://wordpress.org/'),
 	) );
 
 	// Add codex link
@@ -143,7 +143,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'parent'    => 'wp-logo-external',
 		'id'        => 'support-forums',
 		'title'     => __('Support Forums'),
-		'href'      => __('http://wordpress.org/support/'),
+		'href'      => __('https://wordpress.org/support/'),
 	) );
 
 	// Add feedback link
@@ -151,7 +151,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'parent'    => 'wp-logo-external',
 		'id'        => 'feedback',
 		'title'     => __('Feedback'),
-		'href'      => __('http://wordpress.org/support/forum/requests-and-feedback'),
+		'href'      => __('https://wordpress.org/support/forum/requests-and-feedback'),
 	) );
 }
 
@@ -768,11 +768,11 @@ function wp_admin_bar_header() { ?>
  */
 function _admin_bar_bump_cb() { ?>
 <style type="text/css" media="screen">
-	html { padding-top: 32px !important; }
-	* html body { padding-top: 32px !important; }
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
 	@media screen and ( max-width: 782px ) {
-		html { padding-top: 46px !important; }
-		* html body { padding-top: 46px !important; }
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
 	}
 </style>
 <?php

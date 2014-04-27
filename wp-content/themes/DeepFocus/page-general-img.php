@@ -186,3 +186,11 @@ Template Name:  תבנית גנרית עם תמונה
         </div> <!-- end .center-highlight -->
         </div> <!-- end #content-full -->
             <?php get_footer(); ?>
+
+ <script>
+ a = jQuery("#footer").height();
+     b = jQuery("#top").height();
+     d = window.outerHeight;
+     h = d - a - b - 120- 74-50;
+     jQuery('#contact-wrapper').css('min-height', h + 'px');
+    </script>

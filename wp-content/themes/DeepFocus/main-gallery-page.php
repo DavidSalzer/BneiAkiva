@@ -21,7 +21,7 @@
         $mypages = get_pages($arg);    
         
     ?>
-    <div id="et_pt_gallery main-gal backround-main-gall" class="clearfix">
+    <div id="et_pt_gallery" class="clearfix main-gal backround-main-gall">
        
 
 
@@ -67,10 +67,21 @@
 
 
  </div>
-
-
+    
+   
 
 
 </div> <!-- end .container -->
 
+
+
 <?php get_footer(); ?>
+
+
+ <script>
+     a = jQuery("#footer").height();
+     b = jQuery("#top").height();
+     d = window.outerHeight;
+     h = d - a - b;
+     jQuery('#et_pt_gallery').css('min-height', h + 'px');
+    </script>

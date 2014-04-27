@@ -600,6 +600,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 
 /* Admin header */
 #newsletter-header-new {
+    display: none;
     text-align: left;
     background-color: #fff;
     padding: 10px;

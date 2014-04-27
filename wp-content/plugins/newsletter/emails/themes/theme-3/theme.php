@@ -59,6 +59,7 @@
                             <td style="padding: 0;">
                                 <table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor="#ffffff">
                                     <?php
+                                        $caunter=0;
                                         // Do not use &post, it leads to problems...
                                         foreach ($posts as $post) {
                                             // Setup the post (WordPress requirement)
@@ -71,15 +72,22 @@
                                             $image = nt_post_image(get_the_ID());
                                     ?>
                                     <tr>
-                                        <td style="font-family: Arial; font-size: 12px">
+                                        <td style="font-family: Arial; font-size: 15px; padding: 15px 15px 15px 15px;position: relative;">
+                                          
                                             <?php if ($image != null) { ?>
-                                            <img src="<?php echo $image; ?>" alt="picture" align="right" width="100" height="100" style="margin-left: 10px" />
+                                            <img src="<?php echo $image; ?>" alt="picture" align="right" width="100px" height="100" style="margin-left: 10px;" />
                                             <?php } ?>
-                                            <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #000; text-decoration: none"><b><?php the_title(); ?></b></a><br />
+                                            <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #000; font-size: 20px; text-decoration: none"><b><?php the_title(); ?></b></a><br />
+                                            <div id="text-news-latters" style="width: 85%;">
                                             <?php the_excerpt(); ?>
+                                                </div>
+                                            <div id="read-new-wrap" style="position: absolute;left: 5px;bottom: 10px;">
+                                             <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #208AA4;  font-size: 20px; text-decoration: none; bottom: 0px; left: 0px;"><b>קרא עוד</b></a><br />
+                                                </div>  
                                         </td>
                                     </tr>
                                     <?php
+                                         $caunter++;
                                         }
                                     ?>
                                 </table>

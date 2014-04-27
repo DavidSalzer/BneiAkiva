@@ -333,7 +333,7 @@ embed, iframe, object, video {
 
 
     /*ul.nav li{padding: 0;}*/
-    #et_pt_gallery\20 main-gal\20 backround-main-gall {
+    div#et_pt_gallery {
         width: 781px;
     }
 
@@ -356,13 +356,18 @@ embed, iframe, object, video {
         left: -14px;
     }
 
-    #et_pt_gallery\20 main-gal {
-        width: 623px;
+    #et_pt_gallery.main-gal {
+        width: 780px;
         position: relative;
-        left: 106px;
+        left: 0px;
     }
 
-    .my-own-gall #et_pt_gallery\20 main-gal {
+    .main-homegal #et_pt_gallery.clearfix.main-gal {
+        width: 525px;
+    }
+
+
+    .my-own-gall #et_pt_gallery.main-gal {
         right: 16px;
         width: 100%;
     }
@@ -632,8 +637,8 @@ embed, iframe, object, video {
     #et_contact_right { /*right: 108px;width: 122px !important;*/
     }
 
-    #et_pt_gallery\20 main-gal\20 backround-main-gall {
-        width: 492px;
+    #et_pt_gallery.main-gal.backround-main-gall {
+        width: 478px;
     }
 
     #contact-wrapper #et-contact p #et_contact_captcha {
@@ -642,8 +647,8 @@ embed, iframe, object, video {
 
     /*end cambium comments*/
 
-#right-side-poster {
-     display: none;
+    #right-side-poster {
+        display: none;
     }
 
 
@@ -699,9 +704,10 @@ embed, iframe, object, video {
         padding-top: 14px;
     }
 
-    #et_pt_gallery\20 main-gal {
+    #et_pt_gallery.main-gal {
         width: 494px;
-        padding-right: 33px;
+        padding-right: 11px;
+        padding-left: 0px;
     }
 
     .wrap-container, #hr, .hr {
@@ -824,10 +830,14 @@ embed, iframe, object, video {
         width: 306px;
     }
 
-    #et_pt_gallery\20 main-gal {
+    #et_pt_gallery.main-gal {
         width: 494px;
         position: relative;
-        right: -28px;
+        right: 0px;
+    }
+
+    .main-homegal #et_pt_gallery.clearfix.main-gal {
+        width: 260px;
     }
 
     .container, #menu, .slide .overlay, .slide .overlay2 {
@@ -1144,7 +1154,7 @@ embed, iframe, object, video {
             float: none;
         }
 
-        #et_pt_gallery\20 main-gal\20 backround-main-gall {
+        div#et_pt_gallery.main-gal.backround-main-gall {
             width: 95%;
             height: 100%;
         }
@@ -1156,7 +1166,7 @@ embed, iframe, object, video {
             right: -2px;
         }
 
-        #et_pt_gallery\20 main-gal {
+        #et_pt_gallery.main-gal {
             width: 360px;
             padding-right: 0px;
         }
@@ -1323,12 +1333,12 @@ embed, iframe, object, video {
             }
 
 
-            #et_pt_gallery\20 main-gal {
+            #et_pt_gallery.main-gal {
                 width: 350px;
                 padding-right: 0px;
             }
 
-            .my-own-gall #et_pt_gallery\20 main-gal {
+            .my-own-gall #et_pt_gallery.main-gal {
                 right: 0px;
                 width: 213px;
             }

@@ -1,7 +1,9 @@
 <?php
 		$pages = get_pages(array(
 			'meta_key' => '_wp_page_template',
-			'meta_value' => 'main-gallery-page.php'
+			'meta_value' => 'main-gallery-page.php',
+            'sort_column' => 'post_date',
+            'sort_order' => 'desc'
 		));
 		
 		
@@ -15,12 +17,14 @@
         	'child_of' => $pageID,
         	'post_type' => 'page',
         	'post_status' => 'publish',
+             'sort_column' => 'post_date',
+            'sort_order' => 'desc'
 		);
         
         $mypages = get_pages($arg);    
         
     ?>
-    <div id="et_pt_gallery main-gal" class="clearfix">
+    <div id="et_pt_gallery" class="clearfix main-gal">
 
 
 
