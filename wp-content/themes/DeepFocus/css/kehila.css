@@ -99,6 +99,7 @@ body {
 }
 
 #breadcrumbs {
+     font-family: 'Alef-Regular';
     text-align: right;
     text-indent: 34px;
     font-size: 20px;
@@ -136,7 +137,7 @@ body {
     height: 64px;
     width: 104%;
     left: -17px;
-    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-image: url("../images/pic-kehila/light-shadow.png");
     background-size: 100% 100%;
 }
 
@@ -150,6 +151,15 @@ body {
     position: absolute;
     z-index: -1;
     right: -14px;
+}
+
+/*a.sf-with-ul {
+font-weight: bold;
+}*/
+
+#mobile_nav.closed {
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .main-callender {
@@ -218,7 +228,7 @@ ul.nav {
     box-sizing: border-box;
     text-align: right;
     padding-top: 0;
-    height: 55px;
+    height: 54px;
     font-weight: bold;
 }
 
