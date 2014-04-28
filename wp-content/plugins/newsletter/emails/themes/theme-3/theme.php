@@ -35,42 +35,32 @@
 <html>
     <head>
         <title></title>
-        <style>
-         @font-face {
-                font-family: 'Alef-Regular';
-                src: url('Alef-Regular.otf') format('truetype');
-                src: local('Alef-Regular'),url('Alef-Regular.eot') format('eot'), url('Alef-Regular.svg') format('svg'),url('Alef-Regular.ttf') format('truetype'),url('Alef-Regular.woff') format('woff');
-                font-weight: normal;
-                font-style: normal;
-            }
-           
-
-        </style>
+        
     </head>
 
     <body style="direction: rtl">
         <br />
-        <table cellspacing="0" align="center" border="0" style="max-width:600px; width:600px; background-color: #eee;" cellpadding="0" width="600px">
+        <table cellspacing="0" align="center" border="0" style="max-width:440px; width:440px; background-color: #eee;" cellpadding="0" width="440px">
             <!-- Header -->
-            <tr style="background: #455560; background-image: url(<?php echo plugins_url('header.jpg', __FILE__); ?>); height:144px;width:600px;background-size:100% 100%;" cellspacing="0" border="0" align="center" cellpadding="0" width="600" height="80">
+            <tr style="background: #455560; background-image: url(<?php echo plugins_url('header.jpg', __FILE__); ?>); height:144px;width:440px;background-size:100% 100%;" cellspacing="0" border="0" align="center" cellpadding="0" width="600" height="80">
                 <td height="80" width="600" style="color: #fff; font-size: 30px; font-family: Arial; " align="center" valign="middle">
                     <?php //echo get_option('blogname'); ?>
                 </td>
             </tr>
-            <tr style="background-color: #2088a2; height:55px;width:600px;" cellspacing="0" border="0" align="center" cellpadding="0" width="600" height="80">
+            <tr style="background-color: #2088a2; height:55px;width:440px;" cellspacing="0" border="0" align="center" cellpadding="0" width="600" height="80">
                 <td style="color: #fff; font-size: 30px; font-family: Arial;text-indent: 42px; color: #fff;" align="right" valign="middle">ינואר 2014
                 </td>
             </tr>
-            <tr style="background-color: #f49b3b; height:12px;width:600px;" cellspacing="0" border="0" cellpadding="0">
+            <tr style="background-color: #f49b3b; height:12px;width:440px;" cellspacing="0" border="0" cellpadding="0">
                 <td></td>
             </tr>
-            <tr style="background-color: #fbd416; height:12px;width:600px;" cellspacing="0" border="0" cellpadding="0">
+            <tr style="background-color: #fbd416; height:12px;width:440px;" cellspacing="0" border="0" cellpadding="0">
                 <td></td>
             </tr>
 
             <tr>
                 <td>
-                    <table cellspacing="0" border="0" style="max-width:600px; width:600px; background-color: #eee;font-family:helvetica,arial,sans-serif;color:#555;font-size:13px;line-height:15px;" align="center" cellpadding="20" width="600px">
+                    <table cellspacing="0" border="0" style="max-width:440px; width:440px; background-color: #eee;font-family:helvetica,arial,sans-serif;color:#555;font-size:13px;line-height:15px;" align="center" cellpadding="20" width="440px">
                         <tr>
                             <td style="padding: 0;">
                                 <table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor="#ffffff">
@@ -87,21 +77,45 @@
                                             // Extract a thumbnail, return null if no thumb can be found
                                             $image = nt_post_image(get_the_ID());
                                     ?>
+
+                                     <?php 
+                                                if($caunter%2==0){
+                                                   ?>  <?php   ?>
+                                                  <?php   
+                                                }else{
+                                                    $modClass='';
+                                                }   
+                                            ?>
+
                                     <tr>
-                                        <td class="poster" style="font-family: Arial; font-size: 15px; padding: 15px 15px 15px 15px;position: relative;">
+                                        
+                                        <td class="poster<?php echo " ".$modClass;?>" style="font-family: Arial; font-size: 15px; padding: 15px 15px 15px 15px;position: relative;<?php if($caunter%2==0){echo "background-color:#fbfbf5;";}?>" >
 
                                             <?php if ($image != null) { ?>
-                                            <img src="<?php echo $image; ?>" alt="picture" align="right" width="150px" height="100" style="margin-left: 10px;" />
+                                            
+                                            <img src="<?php echo $image; ?>" alt="picture" align="right" width="110px" height="80px" style="margin-left: 10px;" />
+                                            
                                             <?php } ?>
-                                            <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #000; font-size: 20px; text-decoration: none; max-width: 310px;overflow: hidden;text-overflow: ellipsis;display: block;white-space: nowrap;"><b><?php the_title(); ?></b></a><br />
-                                            <div id="text-news-latters" style="width: 68%; height: 68px; overflow: hidden; margin-top: -20px;">
+                                            <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #000; font-size: 20px; text-decoration: none; max-width: 310px;"><b><?php the_title(); ?></b></a><br />
+                                            <div id="text-news-latters" style="width: 250px; max-width: 250px; ">
                                                 <?php the_excerpt(); ?>
                                             </div>
-                                            
-                                                <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #208AA4;  font-size: 15px; text-decoration: none;position: absolute;left: 15px;bottom: 10px;;"><b>קרא עוד...</b></a><br />
-                                            
+                                                <div style="text-align: left; width: 400px;">
+                                                <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #208AA4;  font-size: 15px; text-decoration: none;"><b>קרא עוד...</b></a><br />
+                                            </div>
                                         </td>
+
+                                       
                                     </tr>
+
+                                      <?php 
+                                                if($caunter%2==0){
+                                                   ?>   <?php   ?><?php/*end of special-color */?>
+                                                  <?php   
+                                                }else{
+                                                    $modClass='';
+                                                }   
+                                            ?>
                                     <?php
                                          $caunter++;
                                         }
