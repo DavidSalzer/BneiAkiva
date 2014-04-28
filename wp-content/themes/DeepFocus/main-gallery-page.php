@@ -80,7 +80,7 @@
 
  <script>
      a = jQuery("#footer").height();
-     b = jQuery("#top").height();
+     b = jQuery(".tell-height-wrap").height();
      d = window.outerHeight;
      h = d - a - b;
      jQuery('#et_pt_gallery').css('min-height', h + 'px');

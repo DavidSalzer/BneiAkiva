@@ -43,7 +43,7 @@
 
 </head>
 <body<?php if (is_home()) { if (get_option('deepfocus_featured') == 'on') echo(' id="home-featured"'); else echo(' id="home"'); } ?> <?php body_class(); ?>>
-	<div class="wrap-container">
+	<div class="wrap-container tell-height-wrap">
         		
     <div id="top">
 		<div class="container">

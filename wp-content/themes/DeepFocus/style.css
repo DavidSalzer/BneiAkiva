@@ -476,6 +476,7 @@ a.readmore {
     padding-right: 9px;
     margin-top: 14px;
     font-weight: normal;
+    background-position-x: -234px;
 }
 
 a.readmore span { /*display: none;*/
@@ -849,7 +850,7 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
     padding-bottom: 31px;
     background: url(images/featured-bottom-shadow.png) no-repeat bottom left;
     height: 447px;
-    z-index: 4;
+    z-index: 5;
 }
 
 #featured span#left-shadow, #featured span#right-shadow {
@@ -1346,7 +1347,7 @@ span.fn a:hover {
 }
 
 #footer-newsletter input[type='checkbox']:checked + label {
-    background-position-y: -32px;
+    background-position-y: -31px;
 }
 
 #footer-newsletter input[type="text"] {
