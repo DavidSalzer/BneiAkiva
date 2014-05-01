@@ -675,7 +675,7 @@ msgstr ""
 
 #: ../includes/breadcrumbs.php:16
 msgid "Search results for"
-msgstr ""
+msgstr "חפש תוצאות עבור"
 
 #: ../includes/breadcrumbs.php:25
 msgid "Posts by "

@@ -492,6 +492,7 @@ a.readmore.entergallery {
 
 a.readmore.entergallery span {
     background-position-y: 2px;
+    background-position: left 2px;
 }
 
 a.readmore:hover {
@@ -1003,6 +1004,7 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
     background: url("images/pic-kehila/slidebar_dot.png");
     background-position-x: 19px;
     background-position-y: -7px;
+    background-position: 19px -7px;
     margin-right: 3px;
     top: 3px;
     position: relative;
@@ -1012,6 +1014,7 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
     background: url("images/pic-kehila/slidebar_dot.png");
     background-position-x: -2px;
     background-position-y: -7px;
+    background-position: -2px -7px;
     margin-right: 3px;
     margin-right: 3px;
 }
@@ -1031,12 +1034,14 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
     height: 37px;
     width: 16px;
     top: -13px;
+    background-position: -9px 2px;
 }
 
 #controllers-wrapper a#right-arrow { /*background: url(images/featured-controllers-rightarrow.png) no-repeat;*/
     margin-left: 16px;
     background: url("images/pic-kehila/slidebar_arrow.png");
     background-position-x: -34px;
+    background-position: -34px 1px;
     height: 37px;
     width: 16px;
     top: -13px;
@@ -1348,6 +1353,8 @@ span.fn a:hover {
 
 #footer-newsletter input[type='checkbox']:checked + label {
     background-position-y: -31px;
+    background-position: right -31px;
+    display: block;
 }
 
 #footer-newsletter input[type="text"] {

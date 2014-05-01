@@ -227,9 +227,15 @@ ul.nav {
     width: 100%;
     box-sizing: border-box;
     text-align: right;
+    
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 
+    
     padding-top: 0;
     height: 54px;
     font-weight: bold;
+    
 }
 
 
@@ -503,6 +509,7 @@ div#content-full-buildpage {
     font-size: 20px;
     width: 345px;
     text-shadow: none;
+    font-family: 'Alef-Regular';
 }
 
 
@@ -688,12 +695,20 @@ h1.title.c-title {
     font-family: 'Alef-Regular';
 }
 
+.text-image-page strong {
+    font-family: 'Alef-Regular';
+}
+
 #sidebar {
     font-family: 'Alef-Regular';
 }
 
 #post-content-wrapper {
     font-family: 'Alef-Regular';
+}
+
+.entry.clearfix.post {
+     font-family: 'Alef-Regular';
 }
 
 #content-area.news h1.title.c-title {
