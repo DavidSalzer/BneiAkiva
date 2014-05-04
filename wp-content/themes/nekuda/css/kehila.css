@@ -1,0 +1,912 @@
+/*html {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: 100% 100%;
+}*/
+
+html, body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-size: 100% 100%;
+}
+
+body {
+    /*background-image: url("../images/pic-kehila/background_img.png");*/
+    /*background-size: 100% 100%;*/
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Alef-Regular';
+    src: url('fonts/Alef-Regular.otf') format('truetype');
+    src: local('Alef-Regular'),url('fonts/Alef-Regular.eot') format('eot'), url('fonts/Alef-Regular.svg') format('svg'),url('fonts/Alef-Regular.ttf') format('truetype'),url('fonts/Alef-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'MyriadHebrew-Regular';
+    src: url('fonts/MyriadHebrew-Regular.otf') format('otf');
+    src: local('MyriadHebrew-Regular'), url('fonts/MyriadHebrew-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadHebrew-Bold';
+    src: url('fonts/MyriadHebrew-Bold.otf') format('otf');
+    src: local('MyriadHebrew-Bold'), url('fonts/MyriadHebrew-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadHebrew-BoldIt';
+    src: url('fonts/MyriadHebrew-BoldIt.otf') format('otf');
+    src: local('MyriadHebrew-BoldIt'), url('fonts/MyriadHebrew-BoldIt.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadHebrew-It';
+    src: url('fonts/MyriadHebrew-It.otf') format('otf');
+    src: local('MyriadHebrew-It'), url('fonts/MyriadHebrew-It.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('fonts/MyriadPro-Regular.otf') format('otf');
+    src: local('MyriadPro-Regular'), url('fonts/MyriadPro-Regular.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Alef-Bold';
+    src: url('fonts/Alef-Bold.eot');
+    format('eot');
+    src: local('Alef-Bold'), url('fonts/Alef-Bold.woff') format('woff'), url('fonts/Alef-Bold.ttf') format('truetype'), url('fonts/Alef-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('fonts/MyriadPro-Regular.otf');
+    src: local('MyriadPro'), url('fonts/MyriadPro-Regular.otf') format('truetype');
+}
+
+
+@media only screen and ( min-width: 1053px ) {
+    body {
+        background-size: 100% 100%;
+    }
+}
+
+#top {
+    padding-top: 61px;
+}
+
+.post-meta {
+    display: none;
+}
+
+.post-edit-link {
+    display: none;
+}
+
+#breadcrumbs {
+    font-family: 'Alef-Regular';
+    text-align: right;
+    text-indent: 34px;
+    font-size: 20px;
+    background-color: #2089A2;
+    -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+}
+
+
+/*#breadcrumbs:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -26px;
+    height: 57px;
+    width: 104%;
+    left: -17px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}*/
+
+
+#breadcrumbs:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    height: 64px;
+    width: 104%;
+    left: -17px;
+    background-image: url("../images/pic-kehila/light-shadow.png");
+    background-size: 100% 100%;
+}
+
+
+/******************header******************************/
+
+#right-side-poster {
+    height: 100%;
+    width: 285px;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    z-index: -1;
+    right: -14px;
+}
+
+/*a.sf-with-ul {
+font-weight: bold;
+}*/
+
+#mobile_nav.closed {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.main-callender {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.sf-sub-indicator {
+    display: none;
+}
+
+ul.nav li {
+    margin-left: 0px;
+    padding: 20px 8px 0 8px;
+    /*width: 100%;*/
+    text-align: center;
+    z-index: 15;
+}
+
+
+
+#primary img {
+    position: relative;
+    top: -14px;
+}
+
+#menu {
+    background: #887399;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#logo {
+    right: 0px;
+    z-index: 6;
+    top: -60px;
+    margin: auto;
+}
+
+#search-form {
+    position: absolute;
+    left: 0px;
+    top: -61px;
+    box-shadow: 0px 1px 0px #a5a7a8;
+}
+
+#tagline p:first-child {
+    position: relative;
+    z-index: 6;
+    text-align: center;
+    width: 100%;
+    top: -197px;
+    color: #2089A2;
+    font-family: 'MyriadHebrew-Regular';
+}
+
+#menu .sub-menu {
+    font-weight: 100;
+}
+
+#title2-home-page {
+    text-align: center;
+    position: relative;
+    top: -152px;
+}
+
+#content-home-page {
+    margin: auto;
+    width: 860px;
+    position: relative;
+    top: -111px;
+}
+
+#content-home-page p:first-child {
+    color: #000000;
+    text-align: center;
+    top: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+#tagline span {
+    display: block;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    top: -170px;
+}
+
+ul.nav {
+    float: right;
+    padding: 20px 190px 0px 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-top: 0;
+    height: 54px;
+    font-weight: bold;
+}
+
+
+/*@media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
+    #search-form {
+        left: 0px;
+    }
+}*/
+
+
+/*.service a.readmore {
+    float: none;
+    height: 77px;
+    background: none;
+    position: relative;
+    top: -128px;
+}
+
+.service a.readmore span {
+    display: none;
+}*/
+
+
+.service h3 {
+    display: none;
+}
+
+#homeService1 {
+    margin-left: 20px;
+}
+
+#homeService3 {
+    padding-right: 0px;
+}
+
+@media only screen and ( max-width: 767px ) and (min-width: 479px) {
+    #homeService3 {
+        padding-left: 31%;
+    }
+}
+
+
+#portfolio-items > a > span {
+    line-height: 29px;
+    color: gray;
+}
+/******about******/
+
+/*.about-container .entry.clearfix.post.full p {
+    color: green;
+}*/
+
+
+
+
+h1.title.about-title {
+    text-align: center;
+    background-image: url("../images/pic-kehila/about_button.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90px;
+    font-size: 23px;
+    color: #9D9D9D;
+    line-height: 108px;
+    text-indent: -73px;
+    margin-bottom: 20px;
+    background-position-y: 2px;
+    position: relative;
+    top: 6px;
+    z-index: 1;
+}
+
+#container-aboutpage {
+    margin-bottom: 78px;
+    margin-top: -55px;
+}
+
+/*container.about-container {
+    background-color: #2089A2;
+}*/
+
+#content-full-textpage {
+    margin-top: -20px;
+    font-family: 'Alef-Regular';
+}
+
+#mobile_menu li a {
+    display: block;
+}
+
+div#content-full-buildpage {
+    font-size: 30px;
+    text-align: center;
+}
+
+.main-homegal #et_pt_gallery.clearfix.main-gal {
+    background: none;
+    width: 986px;
+}
+
+.about-container #breadcrumbs {
+    text-align: right;
+    text-indent: 34px;
+    font-size: 20px;
+    background-color: #2089A2;
+}
+
+.about-container #breadcrumbs .raquo, .about-container #breadcrumbs a {
+    color: white;
+}
+
+.clearfix.about-clearfix p {
+    color: #909193;
+    font-size: 20px;
+}
+
+
+.main-general-text #hr {
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+#full.about-clearfix {
+    box-sizing: border-box;
+    background: none;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 75px;
+    padding-bottom: 70px;
+    width: 93%;
+    margin: auto;
+    background-color: rgba(255,255,255,0.6);
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.52);
+}
+
+/******end-about******/
+
+/********main-gallery*************/
+
+
+.hometitle.recentworks {
+    display: none;
+}
+
+#wrap-service {
+    height: 243px;
+    width: 989px;
+    position: relative;
+    right: -15px;
+    background-color: rgba(255,255,255,0.5);
+    margin-bottom: 30px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+#footer:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 252px;
+    height: 57px;
+    width: 1030px;
+    background-image: url("../images/pic-kehila/Home-shadow.png");
+    background-size: 100% 100%;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+
+#wrap-service:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -31px;
+    height: 57px;
+    width: 105%;
+    left: -24px;
+    background-image: url("../images/pic-kehila/light-shadow.png");
+    background-size: 100% 100%;
+}
+
+
+#wrap-service:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -35px;
+    height: 64px;
+    width: 105%;
+    left: -24px;
+    background-image: url("../images/pic-kehila/light-shadow.png");
+    background-size: 100% 100%;
+}
+
+
+.main-post-title {
+    position: absolute;
+    display: block;
+    background: rgba(149,149,149,0.55);
+    width: 94%;
+    z-index: 500000000;
+    bottom: -40px;
+    transition: all .3s;
+    -webkit-transition: all 0.3s;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    font-size: 20px;
+    height: 35px;
+    line-height: 34px;
+    border-radius: 9px;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8);
+}
+
+.et_pt_item_image:hover .main-post-title {
+    bottom: 5px;
+}
+
+.et_pt_item_image {
+    overflow: hidden;
+}
+
+#title-khilagal {
+    background-image: url("../images/pic-kehila/galery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    line-height: 97px;
+    text-indent: -80px;
+}
+
+.big-wrap-galpage #et_pt_gallery.main-gal {
+    background: none;
+}
+/*#et_pt_gallery\20 main-gal {
+    margin: auto;
+    width: 990px;
+}*/
+
+.more-icon.gal {
+    left: 75px !important;
+}
+
+
+/********end-main-gallery*************/
+/********contact*************/
+#main-contact {
+    width: 91%;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+#et-contact {
+    width: 513px;
+    margin: auto;
+    /*background-color: green;*/
+}
+
+
+.kehila-details {
+    color: #575758;
+    font-size: 20px;
+    width: 345px;
+    text-shadow: none;
+    font-family: 'Alef-Regular';
+}
+
+
+#kehila-address {
+    width: 260px;
+    margin-top: 20px;
+}
+
+#kehila-phone {
+    margin-top: 33px;
+}
+
+#kehila-fax {
+    margin-top: 10px;
+}
+
+#conect-good-point {
+    display: block;
+    line-height: 59px;
+    width: 315px;
+    height: 42px;
+    text-indent: 68px;
+    background-image: url("../images/pic-kehila/facebook.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: -7px;
+    margin-top: 36px;
+}
+
+.castoum_contant {
+    background-color: rgba(255,255,255,0.7);
+    height: 347px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 167px;
+    padding-top: 62px;
+    text-align: right;
+}
+
+#et_contact_right {
+    position: absolute;
+    top: 590px;
+    right: 0px;
+    margin: auto !important;
+    left: 0px;
+    float: none !important;
+    text-shadow: none;
+    font-weight: bold;
+    width: 271px !important;
+}
+
+#et_contact_right > p {
+    line-height: 33px;
+    font-size: 16px;
+    text-indent: 20px;
+}
+
+#et_contact_left#et__left {
+    float: none;
+}
+
+#et-contact p input.input {
+    width: 512px;
+    height: 50px;
+    font-size: 20px;
+    color: #797979 !important;
+    border-radius: 6px !important;
+}
+
+.clearfix.wrap-message-contact {
+    width: 538px;
+    height: 200px;
+}
+
+#et_contact_form > p {
+    margin-bottom: 20px;
+    margin-right: 1px;
+}
+
+#content-full.my-content-full {
+    height: auto;
+}
+
+#et_contact_message {
+    font-size: 20px;
+    font-family: inherit;
+}
+
+#et_contact_reset {
+    display: none;
+}
+
+#full.full-contact {
+    /*padding: 0px 0px;
+    padding-top: 30px;*/
+    /*background-color: rgba(255,255,255,0.52);*/
+}
+
+#contact-wrapper {
+    width: 70%;
+    margin: auto;
+    height: 735px;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.52);
+}
+
+
+#et-contact-message {
+    position: absolute;
+    top: 690px;
+    right: 255px;
+    color: #BC1111;
+    text-shadow: none;
+}
+
+h1.title.c-title {
+    text-shadow: none;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    background-image: url("../images/pic-kehila/contactus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 87px;
+    line-height: 100px;
+    text-indent: -53px;
+    color: #797979;
+    font-size: 22px;
+    padding-bottom: 0px;
+}
+
+#wrapper1-castoum {
+    -webkit-box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
+    box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
+}
+
+
+#wrapper2-castoum {
+    background: url(../images/shadow-bar-centerbg.png) no-repeat top center;
+    background-position-y: -40px;
+}
+
+#page-wrapper {
+    background-color: rgba(255,255,255,0.52);
+    height: 227px;
+    z-index: 0;
+    width: 960px;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+/*-------------------news-------------------*/
+#content-area.news {
+    background-image: none;
+    /*background-color: rgba(255,255,255,0.52);*/
+    padding: 0;
+}
+
+#content-area.news #left-area {
+    width: 100%;
+}
+
+#content-area.news #contact-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+#content-area.news #left-area img {
+    max-width: 90%;
+    height: auto;
+    padding: 0 5% 20px 5%;
+    display: block;
+    margin: auto;
+}
+
+.text-image-page {
+    margin-top: 30px;
+    font-family: 'Alef-Regular';
+}
+
+.text-image-page strong {
+    font-family: 'Alef-Regular';
+}
+
+#sidebar {
+    font-family: 'Alef-Regular';
+}
+
+#post-content-wrapper {
+    font-family: 'Alef-Regular';
+}
+
+.entry.clearfix.post {
+    font-family: 'Alef-Regular';
+}
+
+#content-area.news h1.title.c-title {
+    background-position-x: 50%;
+    text-indent: -60px;
+    /*background-image: url("../images/pic-kehila/whats_new2.png");*/
+}
+
+#intro > div > div {
+    width: 100%;
+}
+
+#content-area.news .castoum_contant {
+    height: auto;
+    padding-bottom: 37px;
+}
+
+#content-area.news #wrapper1-castoum {
+    height: auto;
+    background-color: rgba(255,255,255,0.52);
+    background-position-y: -44px;
+}
+
+#content-area.news #contact-wrapper, #content-area.news #wrapper1-castoum .text-container {
+    width: 80%;
+    /*padding: 30px 0 30px 0;*/
+    color: #797979;
+    margin: auto;
+    font-size: 15px;
+}
+
+#content-area.news #wrapper1-castoum .text-container > p:first-child {
+    padding-top: 30px;
+}
+
+#content-area.news #wrapper1-castoum .text-container > p:last-child {
+    padding-bottom: 30px;
+}
+
+#content-area.news #contact-wrapper {
+    width: 90%;
+    padding: 20px 5%;
+    padding-top: 0;
+}
+/**************calender***************/
+#contact-wrapper > iframe {
+    display: block;
+    margin: auto;
+}
+
+
+/*************last-post***********************/
+
+/*.my-last-post #recent-comments-2, .my-last-post #archives-2, .my-last-post #categories-2, .my-last-post #meta-2 {
+    display: none;
+}*/
+
+.big-contact {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#new-post-title {
+    background-image: url("../images/pic-kehila/whats_new2.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+    text-align: center;
+    font-size: 29px;
+    text-indent: -64px;
+    line-height: 108px;
+}
+
+.my-last-post #left-area p {
+    color: black;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-right: 35px;
+    padding-left: 35px;
+    position: relative;
+    width: 704px;
+    right: -16px;
+    font-size: 15px;
+    text-shadow: none;
+    text-align: justify;
+}
+
+#post-content-wrapper p:first-child {
+    padding-top: 87px;
+}
+
+#post-content-wrapper p:last-child {
+    padding-bottom: 73px;
+}
+
+
+.my-last-post #content-area {
+    padding-bottom: 0px;
+}
+
+
+.my-last-post #left-area > div.entry.clearfix.post > h1 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3px 15px 5px 15px;
+    background-color: #526d7a;
+    border-radius: 36px;
+    color: #B8BABB;
+    font-size: 20px;
+    position: relative;
+    right: 14px;
+    bottom: -80px;
+    z-index: 1;
+}
+
+
+/********gallery******/
+#full.my-own-gall {
+    background-color: rgba(255,255,255,0.5);
+    width: 990px;
+    position: relative;
+    right: -14px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#main-gallery-title {
+    margin: 15px 0px 42px 0px;
+    font-size: 25px;
+    background-image: url("../images/pic-kehila/galery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    text-indent: -58px;
+    height: 92px;
+    line-height: 98px;
+    color: #9B9B9B;
+}
+
+.my-own-gall h1.title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#et_pt_gallery.main-gal {
+    background-color: rgba(255,255,255,0.5);
+}
+
+div#et_pt_gallery {
+    width: 990px;
+    background-color: rgba(255,255,255,0.5);
+    margin: auto;
+    height: 100%;
+}
+
+.et_pt_gallery_entry.album {
+    margin-left: 28px;
+}
+
+.my-own-gall #et_pt_gallery.main-gal {
+    position: relative;
+    right: -8px;
+    padding-right: 0px;
+}
+
+/*echo '<br/>';*/

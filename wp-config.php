@@ -81,6 +81,14 @@ define ('WPLANG', 'he_IL');
  */
 define('WP_DEBUG', false);
 
+/* Multisite */
+define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'localhost');
+define('PATH_CURRENT_SITE', '/kehila/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 
 
 /* That's all, stop editing! Happy blogging. */

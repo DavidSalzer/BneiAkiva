@@ -1,0 +1,98 @@
+<?php get_header(); ?>
+
+	<div id="content-full">
+		<div id="home-top"></div>
+		<div class="hr">
+			<div class="hr-center">
+				<div class="intro">
+					<div class="center-highlight">
+                        <div class="wrap-container">
+						<div class="container">
+
+						
+								<div id="tagline">
+									<p></p>
+									<span class="quote2"></span>
+								</div>	<!-- end #tagline-->
+						
+
+						</div> <!-- end .container -->
+                        </div> <!-- wrap-container -->
+					</div> <!-- end .center-highlight -->
+				</div>	<!-- end .intro -->
+			</div> <!-- end .hr-center -->
+		</div> <!-- end .hr -->
+        
+	    <div class="center-highlight">
+            <div class="wrap-container">
+			<div class="container">
+
+				
+				
+							<div class="service" id="homeService<?php echo $i;?>">
+							<h3 class="hometitle"></h3>      
+                                <a href="<?php the_permalink(); ?>" class="home-links" >
+                                
+								</a>
+                               
+							
+								<a href="<?php the_permalink(); ?>" class="readmore"><span></span></a>
+							</div> <!-- end .service -->
+					
+
+
+				<div class="service" id="blog">
+						<div id="blog-top"></div>
+						<div id="blog-wrapper">
+							<div id="blog-content">
+								<h4 class="widgettitle"></h4>
+								<div class="recentscroll">
+									<ul>
+									
+										
+											<li class="clearfix">
+												<a href="<?php the_permalink(); ?>" class="title"><span></span></a>
+												<span class="postinfo"></span>
+											</li>
+										
+									</ul> <!-- end ul.nav -->
+								</div> <!-- end .recentscroll -->
+							</div> <!-- end #blog-center -->
+						</div> <!-- end #blog-wrapper -->
+                       
+						<div id="controllers2">
+							<a href="#" id="cleft-arrow"></a>
+							<a href="#" id="cright-arrow"><</a>
+						</div>	<!-- end #controllers2 -->
+					</div>
+     
+         <!-- end .service -->  
+
+					<div class="clear"></div>
+
+					<h3 class="hometitle recentworks"></h3>
+
+					<div id="portfolio-items" class="clearfix">
+						 ?><!--sara check it out       gallery-->
+
+						<div class="clear"></div>
+
+						<a href="<?php echo esc_url(get_category_link(get_catId(get_option('deepfocus_portfolio_cat')))); ?>" class="readmore entergallery"><span><?php esc_html_e('כניסה לגלריה','DeepFocus'); ?></span></a>
+					</div> <!-- end #portfolio-items -->
+            </div> <!-- wrap-container -->
+				
+					<div id="content-area" class="clearfix">
+
+						<div id="left-area">
+							
+						</div> <!-- end #left-area -->
+
+					
+
+					</div> <!-- end #content-area -->
+			
+			</div> <!-- end .container -->
+      </div>  
+</div>
+</div>
+			<?php get_footer(); ?>
