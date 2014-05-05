@@ -8,7 +8,7 @@
                         
                         
 
-    <div class="widget_wysija_cont html_wysija"><div id="msg-form-wysija-html532ef52bc0b5c-2" class="wysija-msg ajax"></div><form id="form-wysija-html532ef52bc0b5c-2" method="post" action="#wysija" class="widget_wysija html_wysija"><div class="wysija-msg"><div class="notice-msg updated"><ul><li>הטופס שלך נשמר.</li></ul></div></div><div class="wysija-msg ajax"></div><input type="hidden" value="e460dfd4cd" id="wysijax" />
+    <!--<div class="widget_wysija_cont html_wysija"><div id="msg-form-wysija-html532ef52bc0b5c-2" class="wysija-msg ajax"></div><form id="form-wysija-html532ef52bc0b5c-2" method="post" action="#wysija" class="widget_wysija html_wysija"><div class="wysija-msg"><div class="notice-msg updated"><ul><li>הטופס שלך נשמר.</li></ul></div></div><div class="wysija-msg ajax"></div><input type="hidden" value="e460dfd4cd" id="wysijax" />
     <p class="wysija-paragraph">
         <input type="checkbox" name="newsletter" id="newsletter" checked="checked" /><label for="newsletter">ברצוני לקבל את הניוזלטר של קהילת ירוחם</label>
         <input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title=""  value="" />
@@ -19,11 +19,59 @@
     <input type="hidden" name="controller" value="subscribers" />
     <input type="hidden" value="1" name="wysija-page" />
     <input type="hidden" name="wysija[user_list][list_ids]" value="1" />
-</form></div>
+</form></div>-->
+
+
+
+<!--end-->
+    
+
+
+<script type="text/javascript">
+//<![CDATA[
+if (typeof newsletter_check !== "function") {
+window.newsletter_check = function (f) {
+    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+    if (!re.test(f.elements["ne"].value)) {
+        alert("The email is not correct");
+        return false;
+    }
+    if (f.elements["ny"] && !f.elements["ny"].checked) {
+        alert("You must accept the privacy statement");
+        return false;
+    }
+    return true;
+}
+}
+//]]>
+</script>
+
+<div class="newsletter newsletter-subscription">
+<form method="post" action="http://localhost/kehila/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+
+<!--<table cellspacing="0" cellpadding="3" border="0">-->
+
+<!-- email -->
+<!--<tr>-->
+	<!--<th>Email</th>-->
+    <input type="checkbox" name="newsletter" id="newsletter" checked="checked" /><label for="newsletter">ברצוני לקבל את הניוזלטר של קהילת ירוחם</label>
+	<!--<td align="left">--><input class="newsletter-email" id="the-newsletter-email" type="email" name="ne" size="30" required><!--</td>-->
+<!--</tr>-->
+
+<!--<tr>-->
+	<!--<td colspan="2" class="newsletter-td-submit">-->
+		<input class="newsletter-submit" id="the-newsletter-submit" type="submit" value="הירשם"/>
+	<!--</td>-->
+<!--</tr>-->
+
+<!--</table>-->
+</form>
+</div>
 
 
 
 
+<!--end-->
 
 
 

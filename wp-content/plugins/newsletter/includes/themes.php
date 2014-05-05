@@ -146,13 +146,13 @@ class NewsletterThemes {
     function get_default_options() {
         if ($this->is_extension) {
             $path2 = WP_CONTENT_DIR . '/extensions/newsletter/' . $this->module . '/themes/' . $theme . '/languages';
-            @include $path2 . '/en_US.php';
+            @include $path2 . '/he_IS.php';
             @include $path2 . '/' . WPLANG . '.php';
         } else {
             $path1 = NEWSLETTER_DIR . '/' . $this->module . '/themes/' . $theme . '/languages';
             $path2 = WP_CONTENT_DIR . '/extensions/newsletter/' . $this->module . '/themes/' . $theme . '/languages';
-            @include $path1 . '/en_US.php';
-            @include $path2 . '/en_US.php';
+            @include $path1 . '/he_IS.php';
+            @include $path2 . '/he_IS.php';
             @include $path1 . '/' . WPLANG . '.php';
             @include $path2 . '/' . WPLANG . '.php';
         }

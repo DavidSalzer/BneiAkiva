@@ -8,7 +8,7 @@
                         
                         
 
-    <div class="widget_wysija_cont html_wysija"><div id="msg-form-wysija-html532ef52bc0b5c-2" class="wysija-msg ajax"></div><form id="form-wysija-html532ef52bc0b5c-2" method="post" action="#wysija" class="widget_wysija html_wysija"><div class="wysija-msg"><div class="notice-msg updated"><ul><li>הטופס שלך נשמר.</li></ul></div></div><div class="wysija-msg ajax"></div><input type="hidden" value="e460dfd4cd" id="wysijax" />
+    <!--<div class="widget_wysija_cont html_wysija"><div id="msg-form-wysija-html532ef52bc0b5c-2" class="wysija-msg ajax"></div><form id="form-wysija-html532ef52bc0b5c-2" method="post" action="#wysija" class="widget_wysija html_wysija"><div class="wysija-msg"><div class="notice-msg updated"><ul><li>הטופס שלך נשמר.</li></ul></div></div><div class="wysija-msg ajax"></div><input type="hidden" value="e460dfd4cd" id="wysijax" />
     <p class="wysija-paragraph">
         <input type="checkbox" name="newsletter" id="newsletter" checked="checked" /><label for="newsletter">ברצוני לקבל את הניוזלטר של קהילת ירוחם</label>
         <input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title=""  value="" />
@@ -19,7 +19,7 @@
     <input type="hidden" name="controller" value="subscribers" />
     <input type="hidden" value="1" name="wysija-page" />
     <input type="hidden" name="wysija[user_list][list_ids]" value="1" />
-</form></div>
+</form></div>-->
 
 
 
@@ -44,7 +44,7 @@
 									</div> <!-- end #footer-widgets -->
 								<?php } ?>
 								<p id="copyright"><a href="#">&#169; כל הזכויות שמורות לקהילת בני עקיבא</a></p>
-                                <div id="contact-us">צור קשר</div>
+                                <!--<div id="contact-us">צור קשר</div>-->
                                 <p id="developer"><?php esc_html_e('Developed by ','DeepFocus'); ?> <a target="_blank" href="http://www.cambium.co.il" title="Cambium"></a></p>
 							</div> <!-- end .container -->
 						</div> <!-- end #footer-center -->

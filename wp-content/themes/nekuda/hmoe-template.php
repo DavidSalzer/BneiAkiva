@@ -12,7 +12,7 @@ Template Name:  תבנית עמוד ראשי
 				<div class="intro">
                     
 					<div class="center-highlight">
-                        <div class="wrap-container">
+                        <div class="wrap-container the-main-wrapcontainer">
 						<div class="container">
 
 							<?php if (get_option('deepfocus_featured') == 'on') get_template_part('includes/featured'); ?>
@@ -20,9 +20,9 @@ Template Name:  תבנית עמוד ראשי
 							<?php if (get_option('deepfocus_quote') == 'on') { ?>
 								<div id="tagline">
 									<p><?php echo wp_kses_post(get_option('deepfocus_quote_one')); ?></p>
-									<span class="quote2"><?php echo wp_kses_post(get_option('deepfocus_quote_two')); ?></span>
-                                    <div id="title2-home-page"><?php the_title(); ?> </div>
-                                    <div id="content-home-page"> <?php the_content(); ?></div>
+									<div class="quote2 main-text-homepage"><?php echo wp_kses_post(get_option('deepfocus_quote_two')); ?></div>
+                                    <div id="title2-home-page" class="main-text-homepage"><?php the_title(); ?> </div>
+                                    <div id="content-home-page" class="main-text-homepage"> <?php the_content(); ?></div>
 								</div>	<!-- end #tagline-->
 							<?php } ?>
 

@@ -327,7 +327,7 @@ embed, iframe, object, video {
 @media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
     /*cambium comments*/
     ul.nav {
-        padding: 20px 190px 0px 9px;
+        padding: 20px 35px 35px 9px;
         padding-top: 0px;
     }
 
@@ -351,6 +351,10 @@ embed, iframe, object, video {
         top: 690px;
     }
     /*end cambium*/
+
+    .main-text-homepage {
+        max-width: 680px;
+    }
 
     #footer:before {
         width: 800px;
@@ -435,9 +439,7 @@ embed, iframe, object, video {
     }
     /*#menu { background-image: url(../images/menu-bg_750.png); }*/ /*this is the defult of 
             "deep foucs" and i changed it to the row bellow*/
-    #menu {
-        background: #FCD26E;
-    }
+
     /*#search-form { position: absolute; right: 14px; top: -60px; }*/ /*this is the defult of 
             "deep foucs" and i changed it to the row bellow*/
     #search-form {
@@ -718,6 +720,11 @@ embed, iframe, object, video {
         width: 490px;
     }
 
+    .main-text-homepage {
+        max-width: 450px;
+    }
+
+
     @media only screen ( max-width: 490px ) {
         .wrap-container, #hr, .hr {
             width: 460px;
@@ -737,7 +744,6 @@ embed, iframe, object, video {
     }
 
     #menu { /*background-image: url(../images/menu-bg_460.png);this is the defult*/
-        background: #FCD26E;
         text-align: center;
     }
     /*#search-form { position: absolute; right: 14px; top: -60px; }*/ /*this is defult of "deep-focus"*/
@@ -857,7 +863,6 @@ embed, iframe, object, video {
     }
 
     #menu { /*background-image: url(../images/menu-bg_460.png);this is the defult*/
-        background: #FCD26E;
         text-align: center;
     }
     /*#search-form { position: absolute; right: 14px; top: -60px; }*/ /*this is defult of "deep-focus"*/
@@ -1132,6 +1137,27 @@ embed, iframe, object, video {
     }*/
 
 
+        #content-home-page {
+            top: 0px;
+        }
+
+        .main-text-homepage {
+            max-width: 90%;
+        }
+
+        #content-home-page.main-text-homepage p:first-child {
+            top: 0px;
+            padding-bottom: 50px;
+        }
+
+        #title2-home-page {
+            top: 0px;
+        }
+
+        #tagline .quote2 {
+            top: 0px;
+        }
+
         #footer #contact-us {
             /*margin-top: -18px;*/
             width: 94px;
@@ -1183,9 +1209,9 @@ embed, iframe, object, video {
             width: 300px;
         }
 
-        #menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/
+        /*#menu { background-image: url(../images/menu-bg_300.png);this is the deful
             background: #FCD26E;
-        }
+        }*/
 
         body#home-featured #hr, body#home-featured .hr {
             min-height: 0;
@@ -1232,9 +1258,13 @@ embed, iframe, object, video {
             .wrap-container, #hr, .hr {
                 width: 95%;
             }
+        .wrap-container.the-main-wrapcontainer{
+            width: 100%;
+        }
+        
 
             #tagline p:first-child {
-                top: -126px;
+                top: -165px;
             }
 
             .flex-container {
@@ -1355,9 +1385,7 @@ embed, iframe, object, video {
                 width: 100%;
             }
 
-            #menu { /*background-image: url(../images/menu-bg_300.png);this is the defult*/
-                background: #FCD26E;
-            }
+
 
             body#home-featured #hr {
                 min-height: 0;

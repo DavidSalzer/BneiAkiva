@@ -226,9 +226,6 @@ ul.nav li {
 }
 
 #content-home-page {
-    margin: auto;
-    width: 860px;
-    position: relative;
     top: -111px;
 }
 
@@ -240,17 +237,22 @@ ul.nav li {
     font-size: 20px;
 }
 
-#tagline span {
+#tagline .quote2 {
+    top: -170px;
+}
+
+.main-text-homepage {
     display: block;
     color: #000000;
     text-align: center;
     position: relative;
-    top: -170px;
+    max-width: 937px;
+    margin: auto;
 }
 
 ul.nav {
     float: right;
-    padding: 20px 190px 0px 160px;
+    padding: 20px 160px 0px 160px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -1327,19 +1327,19 @@ span.fn a:hover {
 @media only screen and ( max-width: 479px ) {
 
     #footer-newsletter input[type='checkbox'] + label {
-        letter-spacing: 0.6px;
-        word-spacing: 0px;
-        padding-right: 25px;
-        width: 270px;
-        line-height: 26px;
-        margin-bottom: 2px;
-        background-position-y: -23px !important;
-        background-repeat: no-repeat;
-        background-size: 26px;
-        margin-top: -20px;
+      letter-spacing: 0.6px;
+word-spacing: 0px;
+padding-right: 25px;
+width: 270px !important;
+line-height: 26px;
+margin-bottom: 2px !important;
+background-position-y: -23px !important;
+background-repeat: no-repeat;
+background-size: 26px;
+margin-top: -20px !important;
     }
 
-    #footer-newsletter input[type="text"] {
+    #footer-newsletter input[type="text"], input#the-newsletter-email {
         width: 201px !important;
         height: 29px !important;
     }
@@ -1355,9 +1355,13 @@ span.fn a:hover {
     background-position-y: -31px;
     background-position: right -31px;
     display: block;
+    width: 441px;
+    margin: auto;
+    margin-top: -16px;
+    margin-bottom: 12px;
 }
 
-#footer-newsletter input[type="text"] {
+#footer-newsletter input[type="text"], input#the-newsletter-email {
     width: 305px;
     background-color: #708894;
     border-radius: 13px;

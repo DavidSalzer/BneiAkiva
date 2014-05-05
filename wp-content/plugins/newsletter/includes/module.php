@@ -161,8 +161,8 @@ class NewsletterModule {
     function get_default_options($sub = '') {
         if (!empty($sub))
             $sub .= '-';
-        @include NEWSLETTER_DIR . '/' . $this->module . '/languages/' . $sub . 'en_US.php';
-        @include WP_CONTENT_DIR . '/extensions/newsletter/' . $this->module . '/languages/' . $sub . 'en_US.php';
+        @include NEWSLETTER_DIR . '/' . $this->module . '/languages/' . $sub . 'he_IS.php';
+        @include WP_CONTENT_DIR . '/extensions/newsletter/' . $this->module . '/languages/' . $sub . 'he_IS.php';
         @include NEWSLETTER_DIR . '/' . $this->module . '/languages/' . $sub . WPLANG . '.php';
         @include WP_CONTENT_DIR . '/extensions/newsletter/' . $this->module . '/languages/' . $sub . WPLANG . '.php';
         if (!isset($options) || !is_array($options)) {
