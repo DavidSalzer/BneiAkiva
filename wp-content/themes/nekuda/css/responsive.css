@@ -31,6 +31,7 @@
     display: block;
     width: auto;
     margin: auto;
+    height: 100%;
 }
 
 .flex-pauseplay span {
@@ -798,7 +799,7 @@ embed, iframe, object, video {
     }
 
     #hompage-contact-details {
-        width: 355px;
+        width: 310px;
         height: 358px;
         left: 0px;
         right: 0px;
@@ -1244,7 +1245,7 @@ embed, iframe, object, video {
 
 
         #hompage-contact-details {
-            width: 90%;
+            width: 77%;
         }
 
         #et_pt_gallery.main-gal {
@@ -1410,7 +1411,7 @@ embed, iframe, object, video {
                 width: 170px;
                 height: 52px;
                 text-indent: 0px;
-                right: 23px;
+                right: 0px;
                 line-height: 22px;
                 padding-right: 55px;
                 background-position-y: -2px;
@@ -1530,6 +1531,11 @@ embed, iframe, object, video {
                 margin-left: 0 !important;
                 width: 272px !important;
             }
+
+            #wrapper1-castoum.point-wrapper1-castoum:before {
+                display: none;
+            }
+
 
             .et_portfolio_more_icon, .et_portfolio_zoom_icon, #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon, #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
                 top: 68px !important;

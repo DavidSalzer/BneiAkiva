@@ -103,7 +103,7 @@ body {
     text-align: right;
     text-indent: 34px;
     font-size: 20px;
-    background-color: #2089A2;
+    background-color: #6e95ad;
     -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
     -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
     box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
@@ -213,7 +213,7 @@ ul.nav li {
     top: -197px;
     color: #828282;
     font-family: 'MyriadHebrew-Regular';
-    letter-spacing: 5px;
+    letter-spacing: 6px;
 }
 
 #menu .sub-menu {
@@ -225,12 +225,42 @@ ul.nav li {
     position: relative;
     top: -152px;
     font-size: 40px;
-    letter-spacing: 9px;
+    letter-spacing: 10px;
+    word-spacing: 4px;
     margin-top: 14px;
+}
+
+#content-home-page.main-text-homepage p:first-child, #content-home-page.main-text-homepage p span:first-child {
+    text-align: right;
+    letter-spacing: 4px;
+    text-indent: 0px;
+    padding: 0px;
+    color: #828282 !important;
+    text-shadow: none;
+    font-size: 29px;
+    font-family: 'MyriadHebrew-Regular';
 }
 
 #content-home-page {
     top: -111px;
+}
+
+
+#wrapper1-castoum:before {
+    background: url("../images/footer-top-centerbg.png") no-repeat top center;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 140px;
+    height: 57px;
+    width: 104%;
+    left: -17px;
 }
 
 #content-home-page p:first-child {
@@ -245,7 +275,8 @@ ul.nav li {
 #tagline .quote2 {
     top: -170px;
     font-size: 50px;
-    letter-spacing: 8px;
+    letter-spacing: 9px;
+    word-spacing: 7px;
 }
 
 .main-text-homepage {
@@ -739,7 +770,32 @@ h1.title.c-title {
 #wrapper1-castoum.point-wrapper1-castoum {
     padding-top: 60px;
     padding-bottom: 60px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    position: relative;
 }
+
+
+#wrapper1-castoum.point-wrapper1-castoum:before {
+    background: url("../images/footer-top-centerbg.png") no-repeat top center;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -56px;
+    height: 57px;
+    width: 100%;
+    left: 2px;
+}
+
+
+
 
 #wrapper2-castoum {
     background: url(../images/shadow-bar-centerbg.png) no-repeat top center;
