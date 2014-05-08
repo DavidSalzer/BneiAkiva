@@ -101,3 +101,12 @@
 		</div> <!-- end .container -->
         </div> <!-- end .wrap-container -->
 		<?php get_footer(); ?>
+
+<script>
+    a = jQuery("#footer").height();
+    b = jQuery(".tell-height-wrap").height();
+    d = window.outerHeight;
+    v = jQuery(".center-highlight").height();
+    h = d - a - b - v;
+    jQuery('#content-area.clearfix').css('min-height', h + 'px');
+    </script>

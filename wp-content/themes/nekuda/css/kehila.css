@@ -226,6 +226,7 @@ ul.nav li {
     top: -152px;
     font-size: 40px;
     letter-spacing: 9px;
+    margin-top: 14px;
 }
 
 #content-home-page {
@@ -326,6 +327,10 @@ ul.nav {
 
 
 
+#et_contact_submit {
+    background: #6e95ad !important;
+    width: 98px !important;
+}
 
 h1.title.about-title {
     text-align: center;
@@ -505,8 +510,9 @@ div#content-full-buildpage {
     background-repeat: no-repeat;
     background-position: center;
     height: 80px;
-    line-height: 97px;
-    text-indent: -80px;
+    line-height: 102px;
+    text-indent: -77px;
+    font-size: 32px;
 }
 
 .big-wrap-galpage #et_pt_gallery.main-gal {
@@ -536,6 +542,7 @@ div#content-full-buildpage {
 .title.c-title.title-in-mainpage {
     background-position-x: 528px;
     text-indent: -454px;
+    background-image: url("../images/pic-kehila/contact_dot.png");
 }
 
 #et-contact {
@@ -767,6 +774,7 @@ h1.title.c-title {
 
 #footer {
     height: 142px;
+    background-color: #587db4;
 }
 
 #content-area.news #left-area img {

@@ -796,7 +796,7 @@ ul.nav ul {
 }
 
 ul.nav ul, #mobile_menu {
-    background: #fee497;
+    background: #887399;
     width: 189px; /*background: #e7e7e7 url(images/dropdown-bottom.png) bottom left repeat-x;*/
     border: 1px solid #ffffff;
     border-top: none;
@@ -826,7 +826,7 @@ ul.nav ul li, #mobile_menu li {
 /*ul.nav ul li a, #mobile_menu li a { background: url(images/dropdown-bullet2.png) no-repeat 0px 4px; padding: 0px 0px 0px 17px; width: 130px; }*/
 ul.nav ul li a, #mobile_menu li a {
     /*background: url(images/dropdown-bullet2.png) no-repeat 139px 4px;*/
-    background: url(images/pic-kehila/small_arrow.png) no-repeat 139px 4px;
+    background: url(images/pic-kehila/small_arrow_white.png) no-repeat 139px 4px;
     padding: 0px 25px 0px 0px;
     width: 130px;
     position: relative;
@@ -1001,10 +1001,8 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
     float: left;
     width: 18px;
     height: 22px; /*background: url(images/featured-controller.png) no-repeat;*/
-    background: url("images/pic-kehila/slidebar_dot.png");
-    background-position-x: 19px;
-    background-position-y: -7px;
-    background-position: 19px -7px;
+    background: url("images/pic-kehila/slidebar_dot2.png");
+    background-position: 19px -4px;
     margin-right: 3px;
     top: 3px;
     position: relative;
@@ -1653,7 +1651,7 @@ img.alignright {
 
 .nav li:hover {
     visibility: inherit; /* fixes IE7 'sticky bug' */
-    background-color: rgba(255,255,255,0.4);
+    background-color: #c3afd3;
 }
 
 .nav .sub-menu li:hover {

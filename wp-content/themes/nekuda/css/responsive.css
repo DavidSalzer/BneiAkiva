@@ -157,7 +157,7 @@ div.service img, #left-area img {
     display: block;
     width: 29px;
     height: 26px;
-    background: url(../images/pic-kehila/small_arrow.png) no-repeat;
+    background: url(../images/pic-kehila/small_arrow_white.png) no-repeat;
     position: absolute;
     top: 4px;
     background-size: 17px;
@@ -359,6 +359,7 @@ embed, iframe, object, video {
 
     .main-text-homepage {
         max-width: 680px;
+        line-height: 42px;
     }
 
     #footer:before {
@@ -662,7 +663,7 @@ embed, iframe, object, video {
     }
 
     #contact-wrapper #et-contact p #et_contact_captcha {
-        width: 50px !important;
+        width: 30px !important;
     }
 
     /*end cambium comments*/
@@ -748,6 +749,7 @@ embed, iframe, object, video {
 
     .main-text-homepage {
         max-width: 450px;
+        line-height: 40px;
     }
 
 
@@ -1192,10 +1194,15 @@ embed, iframe, object, video {
 
         #title2-home-page {
             top: 0px;
+            line-height: 32px;
+            margin-bottom: 22px;
         }
 
         #tagline .quote2 {
             top: 0px;
+            line-height: 40px;
+            margin-bottom: 22px;
+            margin-top: -34px;
         }
 
         #footer #contact-us {
@@ -1233,13 +1240,13 @@ embed, iframe, object, video {
             height: auto;
             width: 100%;
             position: relative;
-           
         }
 
-    
-    #hompage-contact-details{
-        width: 90%;
-    }
+
+        #hompage-contact-details {
+            width: 90%;
+        }
+
         #et_pt_gallery.main-gal {
             width: 360px;
             padding-right: 0px;
@@ -1361,7 +1368,8 @@ embed, iframe, object, video {
             }
 
             #et_contact_right p {
-                font-size: 11px;
+                font-size: 15px;
+                text-indent: 8px;
             }
 
             #et-contact p input.input {
