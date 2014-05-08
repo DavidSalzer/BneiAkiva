@@ -111,6 +111,8 @@
                                                                  $thumbnail = get_thumbnail($width,$height,$classtext,$titletext,$titletext);
                                                                  $thumb = $thumbnail["thumb"];
                             ?>
+
+
 <div id="contact-wrapper">
                             <h1 class="title c-title"><?php the_title(); ?></h1>
 
@@ -186,6 +188,8 @@
                             <?php edit_post_link(esc_html__('Edit this page','DeepFocus')); ?>
 
     </div>
+
+
                         </div>
                         <div id="cshadow-down"></div>
                     

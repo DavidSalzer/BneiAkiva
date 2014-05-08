@@ -101,7 +101,7 @@ body {
 #breadcrumbs {
      font-family: 'Alef-Regular';
     text-align: right;
-    text-indent: 34px;
+    padding-right: 34px;
     font-size: 20px;
     background-color: #2089A2;
     -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);

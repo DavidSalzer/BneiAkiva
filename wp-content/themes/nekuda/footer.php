@@ -1,5 +1,5 @@
 				<div id="footer">
-                    <div id="footer-newsletter">
+                    <!--<div id="footer-newsletter">-->
                         <!--<form>
                             
                             <input type="text" name="">
@@ -23,12 +23,7 @@
 
 
 
-
-
-
-
-
-                    </div>
+                    <!--</div>-->
                     
     
                     <!--<script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>

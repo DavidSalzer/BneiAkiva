@@ -977,7 +977,7 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
 
 #controllers-wrapper #controllers {
     /* background: url(images/featured-controllers-bg.png) repeat-x; */
-    background-color: #FCD26E;
+    background-color: #6e95ad;
     padding: 10px;
     height: 28px;
     padding-bottom: 0;
@@ -1000,7 +1000,7 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
     display: block;
     float: left;
     width: 18px;
-    height: 15px; /*background: url(images/featured-controller.png) no-repeat;*/
+    height: 22px; /*background: url(images/featured-controller.png) no-repeat;*/
     background: url("images/pic-kehila/slidebar_dot.png");
     background-position-x: 19px;
     background-position-y: -7px;
@@ -1011,11 +1011,9 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
 }
 
 #controllers-wrapper a.active { /*background: url(images/featured-controller-active.png) no-repeat;*/
-    background: url("images/pic-kehila/slidebar_dot.png");
-    background-position-x: -2px;
-    background-position-y: -7px;
-    background-position: -2px -7px;
-    margin-right: 3px;
+    background: url("images/pic-kehila/slidebar_dot2.png");
+    background-position: -2px -4px;
+    height: 22px;
     margin-right: 3px;
 }
 
@@ -1027,24 +1025,22 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
 }
 
 #controllers-wrapper a#left-arrow {
-    background: url(images/featured-controllers-leftarrow.png) no-repeat;
+    /*background: url(images/featured-controllers-leftarrow.png) no-repeat;*/
     margin-right: 17px;
-    background: url("images/pic-kehila/slidebar_arrow.png");
-    background-position-x: -9px;
-    height: 37px;
+    background: url("images/pic-kehila/slidebar_arrow2.png");
+    height: 43px;
     width: 16px;
     top: -13px;
-    background-position: -9px 2px;
+    background-position: -2px 6px;
 }
 
 #controllers-wrapper a#right-arrow { /*background: url(images/featured-controllers-rightarrow.png) no-repeat;*/
     margin-left: 16px;
-    background: url("images/pic-kehila/slidebar_arrow.png");
-    background-position-x: -34px;
-    background-position: -34px 1px;
-    height: 37px;
+    background: url("images/pic-kehila/slidebar_arrow2.png");
+    background-position: -28px -3px;
+    height: 27px;
     width: 16px;
-    top: -13px;
+    top: -3px;
 }
 
 .recentscroll {

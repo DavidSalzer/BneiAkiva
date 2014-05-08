@@ -211,8 +211,9 @@ ul.nav li {
     text-align: center;
     width: 100%;
     top: -197px;
-    color: #2089A2;
+    color: #828282;
     font-family: 'MyriadHebrew-Regular';
+    letter-spacing: 5px;
 }
 
 #menu .sub-menu {
@@ -223,6 +224,8 @@ ul.nav li {
     text-align: center;
     position: relative;
     top: -152px;
+    font-size: 40px;
+    letter-spacing: 9px;
 }
 
 #content-home-page {
@@ -230,20 +233,23 @@ ul.nav li {
 }
 
 #content-home-page p:first-child {
-    color: #000000;
+    color: #828282;
     text-align: center;
     top: 0px;
     padding: 0px;
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 28px;
 }
 
 #tagline .quote2 {
     top: -170px;
+    font-size: 50px;
+    letter-spacing: 8px;
 }
 
 .main-text-homepage {
     display: block;
-    color: #000000;
+    color: #828282;
     text-align: center;
     position: relative;
     max-width: 937px;
@@ -428,7 +434,7 @@ div#content-full-buildpage {
     content: "";
     position: absolute;
     z-index: 1;
-    bottom: 252px;
+    bottom: 114px;
     height: 57px;
     width: 1030px;
     background-image: url("../images/pic-kehila/Home-shadow.png");
@@ -527,10 +533,15 @@ div#content-full-buildpage {
     margin-top: 60px;
 }
 
+.title.c-title.title-in-mainpage {
+    background-position-x: 528px;
+    text-indent: -454px;
+}
+
 #et-contact {
+    position: relative;
     width: 513px;
-    margin: auto;
-    /*background-color: green;*/
+    margin-right: 30px;
 }
 
 
@@ -540,6 +551,7 @@ div#content-full-buildpage {
     width: 345px;
     text-shadow: none;
     font-family: 'Alef-Regular';
+    text-align: right;
 }
 
 
@@ -567,6 +579,8 @@ div#content-full-buildpage {
     background-position: right;
     margin-right: -7px;
     margin-top: 36px;
+    bottom: 41px;
+    position: absolute;
 }
 
 .castoum_contant {
@@ -581,15 +595,12 @@ div#content-full-buildpage {
 }
 
 #et_contact_right {
-    position: absolute;
-    top: 590px;
     right: 0px;
-    margin: auto !important;
     left: 0px;
     float: none !important;
     text-shadow: none;
     font-weight: bold;
-    width: 271px !important;
+    width: 310px !important;
 }
 
 #et_contact_right > p {
@@ -603,15 +614,16 @@ div#content-full-buildpage {
 }
 
 #et-contact p input.input {
-    width: 512px;
-    height: 50px;
+    width: 340px;
+    height: 31px;
     font-size: 20px;
     color: #797979 !important;
     border-radius: 6px !important;
+    float: right;
 }
 
 .clearfix.wrap-message-contact {
-    width: 538px;
+    width: 355px;
     height: 200px;
 }
 
@@ -642,21 +654,57 @@ div#content-full-buildpage {
 #contact-wrapper {
     width: 70%;
     margin: auto;
-    height: 735px;
+    height: 575px;
     background-color: rgba(255,255,255,0.4);
     -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.52);
     box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.52);
 }
 
+#contact-wrapper.point-contact-wrapper {
+    width: 930px;
+    position: relative;
+}
+
+
+
+#et-contact p #et_contact_captcha {
+    float: none;
+}
 
 #et-contact-message {
     position: absolute;
-    top: 690px;
-    right: 255px;
+    right: 302px;
     color: #BC1111;
     text-shadow: none;
+    bottom: 81px;
+    margin-right: 84px;
+    text-align: right;
+    width: 150px;
+    display: inline-block;
 }
+
+#et-contact-message ul {
+    list-style: initial;
+}
+
+#et_contact_submit {
+    right: 374px !important;
+    top: -54px !important;
+}
+
+
+#hompage-contact-details {
+    display: inline-block;
+    position: absolute;
+    margin-right: 109px;
+    width: 355px;
+    margin-top: 81px;
+    height: 495px;
+    top: 0px;
+    left: 0px;
+}
+
 
 h1.title.c-title {
     text-shadow: none;
@@ -680,6 +728,11 @@ h1.title.c-title {
     box-shadow: 2px -10px 25px -4px rgba(0,0,0,0.52);
 }
 
+
+#wrapper1-castoum.point-wrapper1-castoum {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 #wrapper2-castoum {
     background: url(../images/shadow-bar-centerbg.png) no-repeat top center;
@@ -710,6 +763,10 @@ h1.title.c-title {
 #content-area.news #contact-wrapper {
     width: 100%;
     height: auto;
+}
+
+#footer {
+    height: 142px;
 }
 
 #content-area.news #left-area img {

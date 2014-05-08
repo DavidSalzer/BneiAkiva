@@ -347,10 +347,15 @@ embed, iframe, object, video {
     }
 
     #et-contact-message {
-        right: 200px;
-        top: 690px;
+        right: 383px;
+        top: 350px;
+        width: 200px;
     }
     /*end cambium*/
+
+    #contact-wrapper.point-contact-wrapper {
+        width: 740px;
+    }
 
     .main-text-homepage {
         max-width: 680px;
@@ -418,16 +423,25 @@ embed, iframe, object, video {
     }
 
     .clearfix.wrap-message-contact {
-        width: 452px;
+        width: 320px;
     }
 
     #et-contact #et_contact_submit {
-        right: 165px;
+        right: 343px !important;
+    }
+
+    .title.c-title.title-in-mainpage {
+        background-position-x: 408px;
+        text-indent: -405px;
+    }
+
+    #hompage-contact-details {
+        height: 360px;
     }
 
     #et-contact p input.input {
-        width: 430px;
-        height: 48px;
+        width: 305px;
+        height: 32px;
     }
 
     .container, #menu, .slide .overlay, .slide .overlay2 {
@@ -653,6 +667,18 @@ embed, iframe, object, video {
 
     /*end cambium comments*/
 
+    .title.c-title.title-in-mainpage {
+        background-position: center;
+        text-align: center;
+        text-indent: -41px;
+    }
+
+    #contact-wrapper.point-contact-wrapper {
+        width: 405px;
+        height: 1120px;
+    }
+
+
     #right-side-poster {
         display: none;
     }
@@ -765,7 +791,19 @@ embed, iframe, object, video {
     }
 
     #et-contact {
-        width: 290px;
+        width: 312px;
+        margin: auto;
+    }
+
+    #hompage-contact-details {
+        width: 355px;
+        height: 358px;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        top: 755px;
     }
 
     #et_contact_form > p {
@@ -791,6 +829,7 @@ embed, iframe, object, video {
 
     #et_contact_submit {
         right: 90px !important;
+        top: 15px !important;
     }
 
     .kehila-details {
@@ -825,11 +864,11 @@ embed, iframe, object, video {
     }
 
     #conect-good-point {
-        top: 20px;
+        bottom: 33px;
         width: 300px;
         height: 42px;
         text-indent: 56px;
-        right: 67px;
+        right: 0px;
     }
 
     #et-contact p input.input {
@@ -1057,8 +1096,9 @@ embed, iframe, object, video {
     }
 
     #et-contact-message {
-        top: 694px;
-        right: 124px;
+        top: 531px;
+        right: -57px;
+        width: 220px;
     }
 
 
@@ -1098,7 +1138,7 @@ embed, iframe, object, video {
         }
 
         #et-contact-message {
-            right: 60px;
+            right: -67px;
         }
 
         #footer p#copyright {
@@ -1193,9 +1233,13 @@ embed, iframe, object, video {
             height: auto;
             width: 100%;
             position: relative;
-            right: -2px;
+           
         }
 
+    
+    #hompage-contact-details{
+        width: 90%;
+    }
         #et_pt_gallery.main-gal {
             width: 360px;
             padding-right: 0px;
@@ -1258,10 +1302,11 @@ embed, iframe, object, video {
             .wrap-container, #hr, .hr {
                 width: 95%;
             }
-        .wrap-container.the-main-wrapcontainer{
-            width: 100%;
-        }
-        
+
+            .wrap-container.the-main-wrapcontainer {
+                width: 100%;
+            }
+
 
             #tagline p:first-child {
                 top: -165px;
@@ -1301,7 +1346,7 @@ embed, iframe, object, video {
                 background-position-x: 50%;
             }
 
-            #contact-wrapper {
+            #contact-wrapper, #contact-wrapper.point-contact-wrapper {
                 width: 87%;
             }
 
@@ -1309,12 +1354,22 @@ embed, iframe, object, video {
                 width: 250px;
             }
 
+
+            #et_contact_right {
+                width: 100% !important;
+                text-align: right;
+            }
+
+            #et_contact_right p {
+                font-size: 11px;
+            }
+
             #et-contact p input.input {
-                width: 250px;
+                width: 90%;
             }
 
             .clearfix.wrap-message-contact {
-                width: 262px;
+                width: 95%;
             }
 
             #et-contact #et_contact_submit {
@@ -1344,7 +1399,6 @@ embed, iframe, object, video {
             }
 
             #conect-good-point {
-                top: 20px;
                 width: 170px;
                 height: 52px;
                 text-indent: 0px;
