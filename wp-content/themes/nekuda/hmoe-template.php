@@ -39,7 +39,7 @@ Template Name:  תבנית עמוד ראשי
 <div id="wrap-service">
     
 				<?php if (get_option('deepfocus_blog_style') == 'false') { ?>
-					<?php for ($i=1; $i <= 3; $i++) { ?>
+					<?php for ($i=1; $i <= 6; $i++) { ?>
 						<?php query_posts('page_id=' . get_pageId(html_entity_decode(get_option('deepfocus_home_page_'.$i)))); while (have_posts()) : the_post(); ?>
 							<div class="service" id="homeService<?php echo $i;?>">
 							<h3 class="hometitle"><?php the_title(); ?></h3>      
@@ -110,6 +110,7 @@ Template Name:  תבנית עמוד ראשי
 <!--<div id="this is a ode of contact">-->
 
 <?php
+
     $et_ptemplate_settings = array();
     $et_ptemplate_settings = maybe_unserialize( get_post_meta(get_the_ID(),'et_ptemplate_settings',true) );
     
@@ -124,17 +125,19 @@ Template Name:  תבנית עמוד ראשי
         if ( !isset($_POST['et_contact_captcha']) || empty($_POST['et_contact_captcha']) ) {
             $et_error_message .= '<p>' . esc_html__('Make sure you entered the captcha. ','DeepFocus') . '</p>';
             $et_contact_error = true;
-        } else if ( $_POST['et_contact_captcha'] <> ( $_SESSION['et_first_digit'] + $_SESSION['et_second_digit'] ) ) {
-            $et_numbers_string = $et_regenerate_numbers ? esc_html__('Numbers regenerated.','DeepFocus') : '';
-            $et_error_message .= '<p>' . esc_html__('You entered the wrong number in captcha. ','DeepFocus') . $et_numbers_string . '</p>';
+        } 
+        //else if ( $_POST['et_contact_captcha'] <> ( $_SESSION['et_first_digit'] + $_SESSION['et_second_digit'] ) ) {
+        //    $et_numbers_string = $et_regenerate_numbers ? esc_html__('Numbers regenerated.','DeepFocus') : '';
+        //    $et_error_message .= '<p>' . esc_html__('You entered the wrong number in captcha. ','DeepFocus') . $et_numbers_string . '</p>';
     
-            if ($et_regenerate_numbers) {
-                unset( $_SESSION['et_first_digit'] );
-                unset( $_SESSION['et_second_digit'] );
-            }
+  //      //    if ($et_regenerate_numbers) {
+        //        unset( $_SESSION['et_first_digit'] );
+        //        unset( $_SESSION['et_second_digit'] );
+        //    }
     
-            $et_contact_error = true;
-        } else if ( empty($_POST['et_contact_name']) || empty($_POST['et_contact_email']) || empty($_POST['et_contact_subject']) || empty($_POST['et_contact_message']) ){
+  //      //    $et_contact_error = true;
+        //} 
+        else if ( empty($_POST['et_contact_name']) || empty($_POST['et_contact_email']) || empty($_POST['et_contact_subject']) || empty($_POST['et_contact_message']) ){
             $et_error_message .= '<p>' . esc_html__('Make sure you fill all fields. ','DeepFocus') . '</p>';
             $et_contact_error = true;
         }
@@ -154,7 +157,15 @@ Template Name:  תבנית עמוד ראשי
     
     if ( !isset($_SESSION['et_second_digit'] ) ) $_SESSION['et_second_digit'] = $et_second_digit = rand(1, 15);
     else $et_second_digit = $_SESSION['et_second_digit'];
+
+     $mailMain= get_post_meta( $post->ID, 'emailMain', true );
+        if($mailMain){
+             $admin_email = $mailMain;
+        }else{
+             $admin_email = get_option( 'admin_email' );
+        }
     
+
     if ( ! $et_contact_error && isset( $_POST['_wpnonce-et-contact-form-submitted'] ) && wp_verify_nonce( $_POST['_wpnonce-et-contact-form-submitted'], 'et-contact-form-submit' ) ) {
         $et_email_to = ( isset($et_ptemplate_settings['et_email_to']) && !empty($et_ptemplate_settings['et_email_to']) ) ? $et_ptemplate_settings['et_email_to'] : get_site_option('admin_email');
     
@@ -165,9 +176,12 @@ Template Name:  תבנית עמוד ראשי
     
         $headers  = 'From: ' . $contact_name . ' <' . $contact_email . '>' . "\r\n";
         $headers .= 'Reply-To: ' . $contact_name . ' <' . $contact_email . '>';
-    
-        wp_mail( apply_filters( 'et_contact_page_email_to', $et_email_to ), sprintf( '[%s] ' . stripslashes( sanitize_text_field( $_POST['et_contact_subject'] ) ), $et_site_name ), stripslashes( wp_strip_all_tags( $_POST['et_contact_message'] ) ), apply_filters( 'et_contact_page_headers', $headers, $contact_name, $contact_email ) );
-    
+
+         //$admin_email = get_option( 'admin_email' );
+        
+       
+        wp_mail( $admin_email, sprintf( '[%s] ' . stripslashes( sanitize_text_field( $_POST['et_contact_subject'] ) ), $et_site_name ), stripslashes( wp_strip_all_tags( $_POST['et_contact_message'] ) ), apply_filters( 'et_contact_page_headers', $headers, $contact_name, $contact_email ) );
+    //apply_filters( 'et_contact_page_email_to', $et_email_to )
         $et_error_message = '<p>' . esc_html__('Thanks for contacting us','DeepFocus') . '</p>';
     }
 ?>

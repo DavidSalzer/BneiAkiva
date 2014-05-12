@@ -172,7 +172,7 @@ font-weight: bold;
 
 ul.nav li {
     margin-left: 0px;
-    padding: 20px 8px 0 8px;
+    padding: 20px 13px 0 13px;
     /*width: 100%;*/
     text-align: center;
     z-index: 15;
@@ -209,11 +209,12 @@ ul.nav li {
     position: relative;
     z-index: 6;
     text-align: center;
-    width: 100%;
+    width: 102%;
     top: -197px;
     color: #828282;
-    font-family: 'MyriadHebrew-Regular';
-    letter-spacing: 6px;
+    font-family: 'Alef-Regular';
+    letter-spacing: 4.9px;
+    text-indent: -23px;
 }
 
 #menu .sub-menu {
@@ -221,13 +222,14 @@ ul.nav li {
 }
 
 #title2-home-page {
-    text-align: center;
-    position: relative;
-    top: -152px;
-    font-size: 40px;
-    letter-spacing: 10px;
-    word-spacing: 4px;
-    margin-top: 14px;
+   text-align: center;
+position: relative;
+top: -152px;
+font-size: 40px;
+letter-spacing: 10.0px;
+word-spacing: 4px;
+margin-top: 14px;
+text-indent: -7px;
 }
 
 #content-home-page.main-text-homepage p:first-child, #content-home-page.main-text-homepage p span:first-child {
@@ -238,8 +240,15 @@ ul.nav li {
     color: #828282 !important;
     text-shadow: none;
     font-size: 29px;
-    font-family: 'MyriadHebrew-Regular';
+    font-family: 'Alef-Regular';
 }
+
+#content-home-page.main-text-homepage p:first-child {
+    width: 944px;
+    padding-right: 6px;
+    text-align: justify;
+}
+
 
 #content-home-page {
     top: -111px;
@@ -274,23 +283,26 @@ ul.nav li {
 
 #tagline .quote2 {
     top: -170px;
-    font-size: 50px;
-    letter-spacing: 9px;
-    word-spacing: 7px;
+    font-size: 40px;
+    letter-spacing: 14.1px;
+    word-spacing: 2px;
+    width: 990px;
+    text-indent: -6px;
 }
 
 .main-text-homepage {
+    font-family: 'Alef-Regular';
     display: block;
     color: #828282;
-    text-align: center;
+    text-align: right;
     position: relative;
-    max-width: 937px;
+    max-width: 990px;
     margin: auto;
 }
 
 ul.nav {
     float: right;
-    padding: 20px 160px 0px 160px;
+    padding: 20px 193px 0px 193px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -331,17 +343,31 @@ ul.nav {
     display: none;
 }
 
-#homeService1 {
+#homeService1, #homeService4 {
     margin-left: 20px;
 }
 
-#homeService3 {
+#homeService3, #homeService6 {
     padding-right: 0px;
+}
+
+
+#tagline {
+    text-shadow: none;
+}
+
+#homeService4 {
+}
+
+#homeService5 {
+}
+
+#homeService6 {
 }
 
 @media only screen and ( max-width: 767px ) and (min-width: 479px) {
     #homeService3 {
-        padding-left: 31%;
+        padding-left: 22px;
     }
 }
 
@@ -455,7 +481,7 @@ div#content-full-buildpage {
 }
 
 #wrap-service {
-    height: 243px;
+    height: 486px;
     width: 989px;
     position: relative;
     right: -15px;
@@ -883,6 +909,21 @@ h1.title.c-title {
     background-position-y: -44px;
 }
 
+#post-content-wrapper {
+    min-height: 120px;
+}
+
+.center-highlight.main-callender #wrapper1-castoum:before {
+    display: none;
+}
+
+
+
+
+#content-area.news #contact-wrapper p span {
+    color: #797979 !important;
+}
+
 #content-area.news #contact-wrapper, #content-area.news #wrapper1-castoum .text-container {
     width: 80%;
     /*padding: 30px 0 30px 0;*/
@@ -969,7 +1010,8 @@ h1.title.c-title {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 3px 15px 5px 15px;
-    background-color: #526d7a;
+    background-color: #587db4;
+    ;
     border-radius: 36px;
     color: #B8BABB;
     font-size: 20px;

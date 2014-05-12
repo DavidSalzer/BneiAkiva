@@ -146,7 +146,7 @@ div.service img, #left-area img {
     padding: 12px 26px 12px 44px;
     font-family: 'ColaborateThinRegular', Arial, sans-serif;
     font-size: 16px; /*text-shadow: 1px 1px 0 #fff;take of most shadow in site*/
-    color: #535353;
+    color: #ffffff;
 }
 
 #mobile_nav:hover {
@@ -217,10 +217,16 @@ div.service img, #left-area img {
 
 #mobile_menu a {
     font-style: normal;
-    color: #393939;
+    color: #ffffff;
 }
 
-#mobile_menu li.current-menu-item > a, #mobile_menu a:hover {
+/*#mobile_menu li.current-menu-item > a {
+    color: #ffffff;
+    text-decoration: none;
+}*/
+
+
+#mobile_menu a:hover {
     color: #010101;
     text-decoration: none;
 }
@@ -495,7 +501,7 @@ embed, iframe, object, video {
     }
 
     #wrap-service {
-        height: 238px;
+        height: 425px;
         width: 781px;
         right: -2px;
     }
@@ -730,7 +736,7 @@ embed, iframe, object, video {
     }
 
     #wrap-service {
-        height: 220px;
+        height: 345px;
         width: 100%;
         position: relative;
         right: -2px;
@@ -956,6 +962,26 @@ embed, iframe, object, video {
         margin-top: 7px;
         margin-bottom: 10px;
     }
+
+
+    #homeService4 {
+        margin-top: 7px;
+        margin-bottom: 10px;
+        margin-left: 48px;
+    }
+
+    #homeService5 {
+        margin-top: 7px;
+        margin-bottom: 10px;
+        padding-left: 22px;
+    }
+
+    #homeService6 {
+        margin-top: 7px;
+        margin-bottom: 10px;
+        margin-left: 49px;
+    }
+
 
     body#home-featured #hr, body#home-featured .hr {
         min-height: 0px;
@@ -1241,6 +1267,7 @@ embed, iframe, object, video {
             height: auto;
             width: 100%;
             position: relative;
+            margin-bottom: 35px;
         }
 
 
@@ -1340,10 +1367,18 @@ embed, iframe, object, video {
                 margin: auto;
             }
 
-            #homeService1, #homeService2, #homeService3 {
+            #homeService1, #homeService2, #homeService3, #homeService4, #homeService5, #homeService6 {
                 float: none;
                 margin: auto;
                 right: inherit;
+            }
+
+            #homeService5 {
+                padding-left: 0px;
+            }
+
+            #homeService6 {
+                padding-bottom: 51px;
             }
 
             #homeService1 {
@@ -1495,6 +1530,8 @@ embed, iframe, object, video {
             #portfolio-items {
                 margin-left: 9px;
             }
+
+           
 
             .post {
                 width: 300px;

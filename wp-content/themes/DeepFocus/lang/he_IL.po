@@ -196,7 +196,7 @@ msgstr "הכנסת כתובת מייל לא תקינה"
 
 #: ../page-contact.php:65
 msgid "Thanks for contacting us"
-msgstr ""
+msgstr "נשלחה הודעתך תודה רבה"
 
 #: ../page-contact.php:130 ../page-contact.php:131
 msgid "Name"
