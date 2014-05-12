@@ -169,10 +169,10 @@ Template Name:  תבנית גנרית לטקסט
 
            f1 = jQuery('.title.c-title').text();
     f2 = jQuery('.title.c-title').html();
-    if (f1.length > 20 || f2.length > 20)
+    if (f1.length > 17 || f2.length > 17)
        {
-             jQuery('.title.c-title').css('font-size', '17px');
-            jQuery('#content-area.news .title.c-title').css('text-indent', '-84px');
+             jQuery('.title.c-title').css('font-size', '19px');
+            jQuery('.title.c-title').css('text-indent', '-84px');
         }
 
     </script>

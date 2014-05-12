@@ -99,7 +99,7 @@
                                             
                                             <?php } ?>
                                             <a target="_tab" href="<?php echo get_permalink(); ?>" style="color: #000;direction: rtl; font-size: 20px; text-decoration: none; max-width: 310px;"><b><?php the_title(); ?></b></a><br />
-                                            <div id="text-news-latters" style="width: 320px; max-width: 320px; ">
+                                            <div id="text-news-latters" style="width: 350px; max-width: 350px; ">
                                                 <?php the_excerpt(); ?>
                                             </div>
                                                 <div style="text-align: left; width: 400px;">

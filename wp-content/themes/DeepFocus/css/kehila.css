@@ -740,6 +740,10 @@ h1.title.c-title {
     font-size: 15px;
 }
 
+strong {
+    color: #797979;
+}
+
 #content-area.news #wrapper1-castoum .text-container > p:first-child {
     padding-top: 30px;
 }

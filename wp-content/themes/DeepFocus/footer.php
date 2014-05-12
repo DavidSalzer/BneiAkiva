@@ -54,7 +54,7 @@ window.newsletter_check = function (f) {
 <!-- email -->
 <!--<tr>-->
 	<!--<th>Email</th>-->
-    <input type="checkbox" name="newsletter" id="newsletter" checked="checked" /><label for="newsletter">ברצוני לקבל את הניוזלטר של קהילת ירוחם</label>
+    <input type="checkbox" name="newsletter" id="newsletter" checked="checked" /><label for="newsletter">ברצוני לקבל את הניוזלטר של קהילת בני עקיבא ירוחם</label>
 	<!--<td align="left">--><input class="newsletter-email" id="the-newsletter-email" type="email" name="ne" size="30" required><!--</td>-->
 <!--</tr>-->
 

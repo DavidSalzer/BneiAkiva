@@ -685,7 +685,7 @@ p.post-meta a:hover {
 }
 
 .entry a {
-    color: #FFFFFF;
+    color: #797979;
     font-weight: bold;
 }
 
@@ -699,7 +699,7 @@ p.post-meta a:hover {
 }
 
 .entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
-    color: #ffffff;
+    color: #797979;
 }
 
 #gallery {
@@ -1314,29 +1314,30 @@ span.fn a:hover {
     background-size: 28px;
     background-position-y: -25px;
     /*text-shadow: 2px 1px 2px rgba(25, 35, 42, 0.8);*/
-    font-size: 22px;
+    font-size: 20px;
     color: #f5f5f5;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     word-spacing: 0px;
     text-shadow: -2px 2px 3px rgba(0, 0, 0, 1);
     margin-bottom: 6px;
     margin-top: -10px;
+    text-indent: 2px;
 }
 
 
 @media only screen and ( max-width: 479px ) {
 
     #footer-newsletter input[type='checkbox'] + label {
-      letter-spacing: 0.6px;
-word-spacing: 0px;
-padding-right: 25px;
-width: 270px !important;
-line-height: 26px;
-margin-bottom: 2px !important;
-background-position-y: -23px !important;
-background-repeat: no-repeat;
-background-size: 26px;
-margin-top: -20px !important;
+        letter-spacing: 0.6px;
+        word-spacing: 0px;
+        padding-right: 25px;
+        width: 270px !important;
+        line-height: 26px;
+        margin-bottom: 2px !important;
+        background-position-y: -23px !important;
+        background-repeat: no-repeat;
+        background-size: 26px;
+        margin-top: -20px !important;
     }
 
     #footer-newsletter input[type="text"], input#the-newsletter-email {
@@ -1371,6 +1372,7 @@ margin-top: -20px !important;
     color: #fff;
     font-size: 16px;
     margin-left: 6px;
+    text-indent: 20px;
 }
 
 #footer-newsletter input[type="submit"] {
@@ -1387,6 +1389,7 @@ margin-top: -20px !important;
     position: relative;
     top: 1px;
     line-height: 2px;
+    cursor: pointer;
 }
 
 .notice-msg.updated {
@@ -1947,9 +1950,9 @@ ul.nav a, #featured h2.title, #tagline, h3.hometitle, .entry h2.title, .entry h1
     padding: 0px 0 0 13px !important;
 }
 
-#tagline, h3.hometitle, .entry h2.title, .entry h1.title, .comment-author, h3#comments, #reply-title span, .entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+/*#tagline, h3.hometitle, .entry h2.title, .entry h1.title, .comment-author, h3#comments, #reply-title span, .entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
     text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-}
+}*/
 
 .entry h1.title {
     color: #797979;
