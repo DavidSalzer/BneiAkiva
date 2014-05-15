@@ -1,4 +1,5 @@
 <?php
+    if ( ! isset( $_SESSION ) ) session_start();
 /*
 Template Name:  תבנית עמוד ראשי
 */
@@ -110,7 +111,7 @@ Template Name:  תבנית עמוד ראשי
 <!--<div id="this is a ode of contact">-->
 
 <?php
-
+$checker1;$checker2;$ff;$et_first_digit;$et_second_digit;
     $et_ptemplate_settings = array();
     $et_ptemplate_settings = maybe_unserialize( get_post_meta(get_the_ID(),'et_ptemplate_settings',true) );
     
@@ -126,17 +127,18 @@ Template Name:  תבנית עמוד ראשי
             $et_error_message .= '<p>' . esc_html__('Make sure you entered the captcha. ','DeepFocus') . '</p>';
             $et_contact_error = true;
         } 
-        //else if ( $_POST['et_contact_captcha'] <> ( $_SESSION['et_first_digit'] + $_SESSION['et_second_digit'] ) ) {
-        //    $et_numbers_string = $et_regenerate_numbers ? esc_html__('Numbers regenerated.','DeepFocus') : '';
-        //    $et_error_message .= '<p>' . esc_html__('You entered the wrong number in captcha. ','DeepFocus') . $et_numbers_string . '</p>';
+        else if ( $_POST['et_contact_captcha'] <> ( $_SESSION['et_first_digit'] + $_SESSION['et_second_digit'] ) ) {
+            
+            $et_numbers_string = $et_regenerate_numbers ? esc_html__('Numbers regenerated.','DeepFocus') : '';
+            $et_error_message .= '<p>' . esc_html__('You entered the wrong number in captcha. ','DeepFocus') . $et_numbers_string . '</p>';
     
-  //      //    if ($et_regenerate_numbers) {
-        //        unset( $_SESSION['et_first_digit'] );
-        //        unset( $_SESSION['et_second_digit'] );
-        //    }
+           if ($et_regenerate_numbers) {
+                unset( $_SESSION['et_first_digit'] );
+                unset( $_SESSION['et_second_digit'] );
+            }
     
-  //      //    $et_contact_error = true;
-        //} 
+           $et_contact_error = true;
+        } 
         else if ( empty($_POST['et_contact_name']) || empty($_POST['et_contact_email']) || empty($_POST['et_contact_subject']) || empty($_POST['et_contact_message']) ){
             $et_error_message .= '<p>' . esc_html__('Make sure you fill all fields. ','DeepFocus') . '</p>';
             $et_contact_error = true;
@@ -256,7 +258,9 @@ Template Name:  תבנית עמוד ראשי
                                                
                                                   esc_html_e('Captcha: ','DeepFocus');
                                                  //poot here your take away
+                                                 $ff = rand (0,15);
                                                    echo ' ' . esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
+                                                   $checker1 = $et_first_digit;
                                                    ?>
                                                 
                                                   <input type="text" name="et_contact_captcha" value="<?php if ( isset($_POST['et_contact_captcha']) ) echo esc_attr($_POST['et_contact_captcha']); ?>" id="et_contact_captcha" class="input" size="2" />
@@ -267,7 +271,7 @@ Template Name:  תבנית עמוד ראשי
 
                                         <input type="reset" id="et_contact_reset" value="<?php esc_attr_e('Reset','DeepFocus'); ?>" />
 
-                                        <input class="et_contact_submit" type="submit" value="<?php esc_attr_e('שלח >','DeepFocus'); ?>" id="et_contact_submit" />
+                                        <input class="et_contact_submit" type="submit" value="<?php esc_attr_e('שלח  >','DeepFocus'); ?>" id="et_contact_submit" />
 
                                         <?php wp_nonce_field( 'et-contact-form-submit', '_wpnonce-et-contact-form-submitted' ); ?>
                                 </form>

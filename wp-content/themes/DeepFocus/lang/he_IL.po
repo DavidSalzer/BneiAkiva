@@ -51,11 +51,11 @@ msgstr ""
 
 #: ../comments.php:63
 msgid "Submit Comment"
-msgstr ""
+msgstr "שלח תגובה"
 
 #: ../comments.php:63
 msgid "Leave a Comment"
-msgstr ""
+msgstr "השאר תגובה"
 
 #: ../comments.php:63
 #, php-format

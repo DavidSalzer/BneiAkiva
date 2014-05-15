@@ -344,7 +344,7 @@ input#searchsubmit {
 /*maby need to do min hehgt with java*/
 .center-highlight {
     background: url(images/light-overlay.png) repeat-y top center; /*text-shadow: 2px 2px 1px rgba(0,0,0,0.25);*/ /*background-color: rgba(255,255,255,0.52);it is doubled*/
-    color: #797979;
+    color: #353535;
 }
 
 #content-full > div.center-highlight {
@@ -449,7 +449,7 @@ a.more-icon {
 div.service {
     float: left;
     width: 274px;
-    padding: 52px 65px 26px 0px;
+    padding: 35px 65px 26px 0px;
 }
 
 #blog {
@@ -788,8 +788,12 @@ ul.nav a {
 
 ul.nav a:hover {
     color: #000000;
-    text-shadow: 1px 1px 0px #fff;
-    font-weight: bold;
+    text-shadow: 1px 1px 0px #ffffff;
+    
+}
+
+ul.nav .menu-item .menu-item a:hover{
+    color: #ffffff;
 }
 
 ul.nav ul {
@@ -1428,6 +1432,7 @@ span.fn a:hover {
     top: 73px;
     line-height: 30px;
     font-size: 15px;
+    left: 13px;
 }
 
 #footer p#developer a {
@@ -1482,7 +1487,7 @@ span.fn a:hover {
 #copyright {
     position: relative;
     top: 77px;
-    right: 25px;
+    right: 18px;
     font-size: 15px;
 }
 
@@ -1944,7 +1949,7 @@ ul.nav a, #featured h2.title, #tagline, h3.hometitle, .entry h2.title, .entry h1
 }
 
 .entry h1.title {
-    color: #797979;
+    color: #353535;
 }
 
 a.readmore, .reply-container a, #blog-content h4.widgettitle {

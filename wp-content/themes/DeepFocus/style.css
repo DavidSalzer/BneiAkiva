@@ -344,7 +344,7 @@ input#searchsubmit {
 /*maby need to do min hehgt with java*/
 .center-highlight {
     background: url(images/light-overlay.png) repeat-y top center; /*text-shadow: 2px 2px 1px rgba(0,0,0,0.25);*/ /*background-color: rgba(255,255,255,0.52);it is doubled*/
-    color: #797979;
+    color: #353535;
 }
 
 #content-full > div.center-highlight {
@@ -685,7 +685,7 @@ p.post-meta a:hover {
 }
 
 .entry a {
-    color: #797979;
+    color: #353535;
     font-weight: bold;
 }
 
@@ -699,7 +699,7 @@ p.post-meta a:hover {
 }
 
 .entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
-    color: #797979;
+    color: #353535;
 }
 
 #gallery {
@@ -1955,7 +1955,7 @@ ul.nav a, #featured h2.title, #tagline, h3.hometitle, .entry h2.title, .entry h1
 }*/
 
 .entry h1.title {
-    color: #797979;
+    color: #353535;
 }
 
 a.readmore, .reply-container a, #blog-content h4.widgettitle {

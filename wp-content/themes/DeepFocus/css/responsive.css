@@ -598,8 +598,13 @@ embed, iframe, object, video {
     }
 
     .my-last-post #left-area p {
+        text-align: justify !important;
+    }
+
+    #post-content-wrapper {
         width: 539px;
         right: -7px;
+        position: relative;
     }
 
     .my-last-post #left-area > div.entry.clearfix.post > h1 {
@@ -686,9 +691,12 @@ embed, iframe, object, video {
         width: 100%;
         right: 0px;
     }
-
+#post-content-wrapper {
+        width: 100%;
+        right: 0px;
+    }
     .my-last-post #left-area > div.entry.clearfix.post > h1 {
-        bottom: -63px;
+        bottom: 10px;
     }
 
     .my-last-post .post {

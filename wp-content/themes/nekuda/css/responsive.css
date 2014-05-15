@@ -84,7 +84,7 @@ html[xmlns] .slides {
 .flex-container {
     zoom: 1;
     position: relative;
-    margin-bottom: 230px;
+   margin-bottom: 113px;
 }
 
 /* Caption style */
@@ -365,8 +365,16 @@ embed, iframe, object, video {
     }
 
     .main-text-homepage {
-        max-width: 680px;
+        max-width: 780px;
         line-height: 42px;
+    }
+
+    #copyright {
+        right: 3px;
+    }
+
+    #footer p#developer {
+    left: 0px;
     }
 
     #footer:before {
@@ -485,6 +493,47 @@ embed, iframe, object, video {
         line-height: 37px;
     }
 
+    #tagline p:first-child {
+        text-indent: -5px;
+        margin-right: 0px;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        letter-spacing: 5.7px;
+    }
+
+    #tagline .quote2 {
+        width: 100%;
+        margin: 0;
+        font-size: 30px;
+        letter-spacing: 12.1px;
+        text-indent: -7px;
+    }
+
+    #title2-home-page {
+        width: 100%;
+        margin: 0;
+        font-size: 30px;
+        letter-spacing: 8.8px;
+        text-align: center;
+        text-indent: -9px;
+    }
+
+    #content-home-page.main-text-homepage p:first-child {
+        width: 99%;
+        padding-right: 0px;
+        margin: auto;
+        font-size: 21px;
+    }
+
+    #content-home-page.main-text-homepage p span:first-child {
+        width: 99%;
+        margin: auto;
+        font-size: 21px;
+        line-height: 21px;
+    }
+
+
     #tagline span {
         font-size: 20px;
         display: block;
@@ -493,7 +542,7 @@ embed, iframe, object, video {
 
     div.service {
         width: 220px;
-        padding: 52px 40px 26px 0px;
+        padding: 36px 40px 26px 0px;
     }
 
     #homeService1 {
@@ -501,7 +550,7 @@ embed, iframe, object, video {
     }
 
     #wrap-service {
-        height: 425px;
+        height: 335px;
         width: 781px;
         right: -2px;
     }
@@ -736,7 +785,7 @@ embed, iframe, object, video {
     }
 
     #wrap-service {
-        height: 345px;
+        height: 388px;
         width: 100%;
         position: relative;
         right: -2px;
@@ -754,9 +803,18 @@ embed, iframe, object, video {
         width: 490px;
     }
 
-    .main-text-homepage {
+    .main-text-homepage, #tagline .quote2, #title2-home-page {
         max-width: 450px;
         line-height: 40px;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 6px;
+    }
+
+    #content-home-page.main-text-homepage p:first-child {
+        width: 100%;
+        padding: 0px;
+        font-size: 21px;
     }
 
 
@@ -936,6 +994,14 @@ embed, iframe, object, video {
         text-align: center;
     }
 
+    #tagline p:first-child {
+        padding: 0px;
+        width: 100%;
+        text-indent: 0px;
+    }
+
+
+
     #tagline span {
         font-size: 20px;
         display: block;
@@ -959,7 +1025,7 @@ embed, iframe, object, video {
     }
 
     #homeService3 {
-        margin-top: 7px;
+        margin-top: 27px;
         margin-bottom: 10px;
     }
 
@@ -1229,7 +1295,8 @@ embed, iframe, object, video {
             top: 0px;
             line-height: 40px;
             margin-bottom: 22px;
-            margin-top: -34px;
+            margin-top: -75px;
+            width: 100%;
         }
 
         #footer #contact-us {
@@ -1344,7 +1411,7 @@ embed, iframe, object, video {
 
 
             #tagline p:first-child {
-                top: -165px;
+               top: -177px;
             }
 
             .flex-container {
@@ -1531,7 +1598,7 @@ embed, iframe, object, video {
                 margin-left: 9px;
             }
 
-           
+
 
             .post {
                 width: 300px;
