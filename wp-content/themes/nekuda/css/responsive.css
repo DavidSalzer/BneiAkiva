@@ -84,7 +84,7 @@ html[xmlns] .slides {
 .flex-container {
     zoom: 1;
     position: relative;
-   margin-bottom: 113px;
+    margin-bottom: 113px;
 }
 
 /* Caption style */
@@ -169,6 +169,7 @@ div.service img, #left-area img {
     transition: all 0.5s ease-in-out;
     -moz-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
 }
 
 #mobile_nav.opened > span {
@@ -374,7 +375,7 @@ embed, iframe, object, video {
     }
 
     #footer p#developer {
-    left: 0px;
+        left: 0px;
     }
 
     #footer:before {
@@ -403,6 +404,13 @@ embed, iframe, object, video {
 
     .wrap-container, #hr, .hr {
         width: 780px;
+    }
+
+
+    #post-content-wrapper {
+        width: 539px;
+        right: -7px;
+        position: relative;
     }
 
     #full.my-own-gall {
@@ -671,8 +679,6 @@ embed, iframe, object, video {
     }
 
     .my-last-post #left-area p {
-        width: 539px;
-        right: -7px;
     }
 
     .my-last-post #left-area > div.entry.clearfix.post > h1 {
@@ -735,6 +741,10 @@ embed, iframe, object, video {
         height: 1120px;
     }
 
+    #post-content-wrapper {
+        width: 100%;
+        right: 0px;
+    }
 
     #right-side-poster {
         display: none;
@@ -773,7 +783,7 @@ embed, iframe, object, video {
     }
 
     .my-last-post #left-area > div.entry.clearfix.post > h1 {
-        bottom: -63px;
+        bottom: 10px;
     }
 
     .my-last-post .post {
@@ -1411,7 +1421,7 @@ embed, iframe, object, video {
 
 
             #tagline p:first-child {
-               top: -177px;
+                top: -177px;
             }
 
             .flex-container {

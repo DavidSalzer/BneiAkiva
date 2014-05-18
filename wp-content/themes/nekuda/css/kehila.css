@@ -210,7 +210,7 @@ ul.nav li {
     z-index: 6;
     text-align: center;
     width: 102%;
-   top: -96px;
+    top: -96px;
     color: #828282;
     font-family: 'Alef-Regular';
     letter-spacing: 4.9px;
@@ -882,6 +882,22 @@ h1.title.c-title {
 
 #post-content-wrapper {
     font-family: 'Alef-Regular';
+    min-height: 120px;
+    color: black;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 35px;
+    padding-left: 35px;
+    position: relative;
+    width: 704px;
+    right: -16px;
+    font-size: 15px;
+    text-shadow: none;
+    text-align: justify;
+    padding-top: 20px;
 }
 
 .entry.clearfix.post {
@@ -909,9 +925,7 @@ h1.title.c-title {
     background-position-y: -44px;
 }
 
-#post-content-wrapper {
-    min-height: 120px;
-}
+
 
 .center-highlight.main-callender #wrapper1-castoum:before {
     display: none;
@@ -974,28 +988,17 @@ h1.title.c-title {
 }
 
 .my-last-post #left-area p {
-    color: black;
-    background-color: rgba(255,255,255,0.7);
+    color: #353535;
     width: 100%;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box; /* Firefox, other Gecko */
-    box-sizing: border-box;
-    padding-right: 35px;
-    padding-left: 35px;
-    position: relative;
-    width: 704px;
-    right: -16px;
     font-size: 15px;
     text-shadow: none;
-    text-align: justify;
+    text-align: justify !important;
 }
 
-#post-content-wrapper p:first-child {
-    padding-top: 87px;
-}
+
 
 #post-content-wrapper p:last-child {
-    padding-bottom: 73px;
+    padding-bottom: 40px;
 }
 
 
@@ -1017,7 +1020,7 @@ h1.title.c-title {
     font-size: 20px;
     position: relative;
     right: 14px;
-    bottom: -80px;
+    bottom: 0px;
     z-index: 1;
 }
 

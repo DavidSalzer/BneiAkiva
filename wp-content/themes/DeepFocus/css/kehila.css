@@ -633,6 +633,10 @@ div#content-full-buildpage {
 }
 
 
+
+
+
+
 #et-contact-message {
     position: absolute;
     top: 690px;
@@ -737,6 +741,7 @@ h1.title.c-title {
 
 .entry.clearfix.post {
     font-family: 'Alef-Regular';
+      font-size: 15px;
 }
 
 #content-area.news h1.title.c-title {
@@ -818,7 +823,7 @@ strong {
     width: 100%;
     font-size: 15px;
     text-shadow: none;
-    text-align: justify;
+    text-align: justify !important;
 }
 
 /*#post-content-wrapper p:first-child {

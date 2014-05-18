@@ -305,11 +305,11 @@ if ( ! function_exists( 'print_thumbnail' ) ) {
 			$et_size = isset( $et_theme_image_sizes ) && array_key_exists( $image_size_name, $et_theme_image_sizes ) ? $et_theme_image_sizes[$image_size_name] : array( $width, $height );
 
 			$et_attachment_image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $et_post_id ), $et_size );
-			$thumbnail = $et_attachment_image_attributes[0];
+			//$thumbnail = $et_attachment_image_attributes[0];
 		} else {
 			$thumbnail_orig = $thumbnail;
 
-			$thumbnail = et_multisite_thumbnail( $thumbnail );
+			//$thumbnail = et_multisite_thumbnail( $thumbnail );
 
 			$cropPosition = '';
 
@@ -327,7 +327,7 @@ if ( ! function_exists( 'print_thumbnail' ) ) {
 				if ( is_wp_error( $new_method_thumb ) ) $new_method_thumb = '';
 			}
 
-			$thumbnail = $new_method_thumb;
+			//$thumbnail = $new_method_thumb;
 		}
 
 		if ( false === $forstyle ) {
