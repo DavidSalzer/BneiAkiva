@@ -591,6 +591,7 @@ div#content-full-buildpage {
     font-size: 20px;
     color: #353535 !important;
     border-radius: 6px !important;
+    font-family: 'Alef-Regular';
 }
 
 .clearfix.wrap-message-contact {
@@ -610,6 +611,7 @@ div#content-full-buildpage {
 #et_contact_message {
     font-size: 20px;
     font-family: inherit;
+ 
 }
 
 #et_contact_reset {

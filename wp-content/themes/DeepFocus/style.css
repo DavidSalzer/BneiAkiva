@@ -1909,6 +1909,13 @@ h3#reply-title small a {
 
 #commentform textarea#comment {
     width: 91%;
+    height: 138px;
+    background: url(images/contact_input.png) repeat-x #f7f7f7 !important;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 11px;
 }
 
 .commentlist #respond textarea#comment {

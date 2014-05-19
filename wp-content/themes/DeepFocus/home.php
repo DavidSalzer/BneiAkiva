@@ -84,7 +84,10 @@
 
 						<div class="clear"></div>
 
-						<a href="<?php echo esc_url(get_category_link(get_catId(get_option('deepfocus_portfolio_cat')))); ?>" class="readmore entergallery"><span><?php esc_html_e('כניסה לגלריה','DeepFocus'); ?></span></a>
+						<a href="http://www.kehila-yerucham.org.il/%D7%92%D7%9C%D7%A8%D7%99%D7%94/" class="readmore entergallery"><span><?php esc_html_e('כניסה לגלריה','DeepFocus'); ?></span></a>
+                        <?php/*what was here before =echo esc_url(get_category_link(get_catId(get_option('deepfocus_portfolio_cat'))));*/?>
+
+                        
 					</div> <!-- end #portfolio-items -->
             </div> <!-- wrap-container -->
 				<?php } else { ?>

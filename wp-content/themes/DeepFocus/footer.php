@@ -92,7 +92,7 @@ window.newsletter_check = function (f) {
 									</div> <!-- end #footer-widgets -->
 								<?php } ?>
 								<p id="copyright"><a href="#">&#169; כל הזכויות שמורות לקהילת בני עקיבא</a></p>
-                                <div id="contact-us">צור קשר</div>
+                                <div id="contact-us"><a target="_blank" href="http://www.kehila-yerucham.org.il/%D7%A6%D7%95%D7%A8-%D7%A7%D7%A9%D7%A8/" style="color: #ffffff; text-decoration: none;"> צור קשר </a></div>
                                 <p id="developer"><?php esc_html_e('Developed by ','DeepFocus'); ?> <a target="_blank" href="http://www.cambium.co.il" title="Cambium"></a></p>
 							</div> <!-- end .container -->
 						</div> <!-- end #footer-center -->
