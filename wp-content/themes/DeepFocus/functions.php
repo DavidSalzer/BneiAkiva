@@ -6,7 +6,6 @@
 
 
 
-
 add_action( 'after_setup_theme', 'et_setup_theme' );
 if ( ! function_exists( 'et_setup_theme' ) ){
 	function et_setup_theme(){
@@ -364,3 +363,23 @@ function kehila_customize_register( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'kehila_customize_register' );
+
+
+
+
+add_filter( 'widget_posts_args', 'my_widget_posts_args');
+function my_widget_posts_args($args) {
+    echo $args;
+     //adds the category parameter in the query if we display a category
+    echo $args;
+        $cat = get_queried_object();
+        return array(
+            'posts_per_page' => 10,//set the number you want here 
+            'no_found_rows' => true, 
+            'post_status' => 'publish', 
+            'ignore_sticky_posts' => true,
+            'cat' => $cat -> term_id//the current category id
+             );
+    
+}
+

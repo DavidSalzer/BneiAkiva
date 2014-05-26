@@ -233,7 +233,8 @@ textarea.input {
 #et-contact p textarea {
     width: 95% !important;
     height: 113px;
-    color: #767676 !important;
+    color: #353535 !important;
+    font-family: 'Alef-Regular';
     -webkit-border-radius: 6px !important;
     -moz-border-radius: 6px !important;
 }

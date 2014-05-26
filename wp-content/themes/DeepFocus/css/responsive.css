@@ -633,6 +633,10 @@ embed, iframe, object, video {
         right: 0px;
     }
 
+    #title-of-lastpost {
+        right: 19px;
+    }
+
     #copyright {
         top: 11px;
         right: -34px;
@@ -692,10 +696,12 @@ embed, iframe, object, video {
         width: 100%;
         right: 0px;
     }
-#post-content-wrapper {
+
+    #post-content-wrapper {
         width: 100%;
         right: 0px;
     }
+
     .my-last-post #left-area > div.entry.clearfix.post > h1 {
         bottom: 10px;
     }
@@ -1146,7 +1152,7 @@ embed, iframe, object, video {
             width: 94px;
             height: 34px;
             font-size: 21px;
-            line-height: 29px;
+            line-height: 33px;
             right: -5px;
         }
 
@@ -1298,6 +1304,16 @@ embed, iframe, object, video {
 
             #et-contact #et_contact_submit {
                 right: 85px;
+            }
+
+            #title-of-lastpost {
+                right: 0px;
+                display: block;
+                width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 40px;
+                text-align: center;
             }
 
             .kehila-details {

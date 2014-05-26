@@ -1,4 +1,9 @@
 <?php
+    
+
+
+
+
 if ( ! function_exists( 'get_custom_header' ) ) {
 	// compatibility with versions of WordPress prior to 3.4.
 	add_custom_background();
@@ -10,6 +15,11 @@ if (function_exists('add_post_type_support')) add_post_type_support( 'page', 'ex
 add_theme_support( 'automatic-feed-links' );
 
 add_action('init','et_activate_features');
+
+
+
+
+
 function et_activate_features(){
 	/* activate shortcodes */
 	require_once(TEMPLATEPATH . '/epanel/shortcodes/shortcodes.php');
@@ -1774,3 +1784,5 @@ function et_gf_enqueue_fonts( $et_gf_font_names ) {
 	}
 }
 endif;
+
+

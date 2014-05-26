@@ -546,4 +546,7 @@ global $pagenow;
 if ( 'themes.php' == $pagenow && isset( $_GET['page'] ) && ( $_GET['page'] == basename(__FILE__) ) ) {
 	add_action('admin_print_scripts', 'et_epanel_media_upload_scripts');
 	add_action('admin_print_styles', 'et_epanel_media_upload_styles');
+
+
+
 } ?>
