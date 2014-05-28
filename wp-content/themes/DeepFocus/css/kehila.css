@@ -827,21 +827,21 @@ strong {
 
 
 #title-of-lastpost {
-  font-family: 'Alef-Regular';
-display: inline-block;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-padding: 3px 15px 5px 15px;
-background-color: #526d7a;
-border-radius: 36px;
-color: #B8BABB;
-font-size: 23px;
-position: relative;
-right: 5px;
-bottom: 0px;
-margin-top: 27px;
-z-index: 1;
+    font-family: 'Alef-Regular';
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3px 15px 5px 15px;
+    background-color: #526d7a;
+    border-radius: 36px;
+    color: #B8BABB;
+    font-size: 23px;
+    position: relative;
+    right: 5px;
+    bottom: 0px;
+    margin-top: 27px;
+    z-index: 1;
 }
 
 

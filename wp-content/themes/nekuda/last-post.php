@@ -38,6 +38,7 @@
 					<?php if (get_option('deepfocus_integration_single_top') <> '' && get_option('deepfocus_integrate_singletop_enable') == 'on') echo(get_option('deepfocus_integration_single_top')); ?>
 					  <?php if ( $the_query->have_posts() ) : ?>
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>  
+                      <h1 class="title" id="title-of-lastpost"><?php the_title(); ?></h1>
 						<div class="entry clearfix post">
                             <!--<h1 class="title"><?php/* the_title();*/ ?></h1>-->
 							<?php $width = 185;
@@ -66,7 +67,7 @@
 									</div> <!-- end .gallery-thumb-botton -->
 								</div> <!-- end .gallery-thumb -->
 									
-							  <h1 class="title"><?php the_title(); ?></h1>
+							 
 							<?php get_template_part('includes/postinfo'); ?>
 
 							

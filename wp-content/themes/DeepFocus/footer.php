@@ -47,7 +47,7 @@ window.newsletter_check = function (f) {
 </script>
 
 <div class="newsletter newsletter-subscription">
-<form method="post" action="http://localhost/kehila/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+<form method="post" action="http://www.kehila-yerucham.org.il/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
 
 <!--<table cellspacing="0" cellpadding="3" border="0">-->
 

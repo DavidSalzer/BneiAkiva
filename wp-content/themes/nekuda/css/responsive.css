@@ -640,6 +640,9 @@ embed, iframe, object, video {
         margin-left: -18px !important;
     }
 
+
+
+
     #et_pt_portfolio_gallery.et_portfolio_small .et_pt_portfolio_item {
         margin-left: 21px !important;
         width: 132px !important;
@@ -753,6 +756,11 @@ embed, iframe, object, video {
 
     #footer:before {
         width: 495px;
+    }
+
+
+    #title-of-lastpost {
+        right: 19px;
     }
 
     #breadcrumbs:after {
@@ -1495,6 +1503,16 @@ embed, iframe, object, video {
 
             #et-contact #et_contact_submit {
                 right: 85px;
+            }
+
+            #title-of-lastpost {
+                right: 0px;
+                display: block;
+                width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 40px;
+                text-align: center;
             }
 
             .kehila-details {
