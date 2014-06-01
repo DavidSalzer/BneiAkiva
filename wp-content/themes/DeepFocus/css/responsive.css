@@ -733,11 +733,7 @@ embed, iframe, object, video {
         width: 490px;
     }
 
-    @media only screen ( max-width: 490px ) {
-        .wrap-container, #hr, .hr {
-            width: 460px;
-        }
-    }
+ 
 
     .container.breadcrumbs {
         width: 490px;
@@ -1072,6 +1068,19 @@ embed, iframe, object, video {
     }
 
 
+}
+
+
+
+
+   @media only screen ( max-width: 490px ) {
+        .wrap-container, #hr, .hr {
+            width: 460px;
+        }
+    }
+
+
+
     @media only screen and ( max-width: 520px ) {
         #footer .container {
             width: 320px;
@@ -1237,7 +1246,7 @@ embed, iframe, object, video {
             margin-bottom: 40px;
         }
 
-        @media only screen and ( max-width: 479px ) {
+        /*@media only screen and ( max-width: 479px ) {*/
 
             /*start comments in cambium*/
             #top {
@@ -1483,6 +1492,5 @@ embed, iframe, object, video {
                 margin-left: 6px !important;
             }
             /*footer*/
-        }
+        /*}*/
     }
-}

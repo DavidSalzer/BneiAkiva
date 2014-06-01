@@ -3,6 +3,7 @@
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width" />
 <title><?php elegant_titles(); ?></title>
 <?php elegant_description(); ?>
 <?php elegant_keywords(); ?>
